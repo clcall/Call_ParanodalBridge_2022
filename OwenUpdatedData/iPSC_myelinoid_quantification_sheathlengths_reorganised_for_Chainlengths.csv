@@ -1,0 +1,734 @@
+Image,Cells,Conversion,Organoid,Cell,Length,sheath.type,Number,Bridge.length,Chain.length,Cell.type,CellID,OrgID,FREQ.SHEATH,Tot.length
+Image1,Cso2,Conv_1,Org_1,Cell_1,141.334,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,49.088,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,180.924,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,192.107,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,107.397,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,1.748,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,146.981,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,83.446,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,113.674,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,125.154,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,107.987,Anchoring sheaths,11,NA,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,80.431,Bridged sheaths,12,8.367,188.418,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,8.367,Bridge,,,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_1,188.418,Chain,,,,OLs with bridges,Cso2.Conv_1.Org_1.Cell_1,Cso2.Conv_1.Org_1,12,1330.271
+Image1,Cso2,Conv_1,Org_1,Cell_2,237.904,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_1.Org_1.Cell_2,Cso2.Conv_1.Org_1,8,1134.983
+Image1,Cso2,Conv_1,Org_1,Cell_2,138.641,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_1.Org_1.Cell_2,Cso2.Conv_1.Org_1,8,1134.983
+Image1,Cso2,Conv_1,Org_1,Cell_2,112.231,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_1.Org_1.Cell_2,Cso2.Conv_1.Org_1,8,1134.983
+Image1,Cso2,Conv_1,Org_1,Cell_2,124.962,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_1.Org_1.Cell_2,Cso2.Conv_1.Org_1,8,1134.983
+Image1,Cso2,Conv_1,Org_1,Cell_2,187.693,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_1.Org_1.Cell_2,Cso2.Conv_1.Org_1,8,1134.983
+Image1,Cso2,Conv_1,Org_1,Cell_2,135.214,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_1.Org_1.Cell_2,Cso2.Conv_1.Org_1,8,1134.983
+Image1,Cso2,Conv_1,Org_1,Cell_2,88.039,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_1.Org_1.Cell_2,Cso2.Conv_1.Org_1,8,1134.983
+Image1,Cso2,Conv_1,Org_1,Cell_2,110.299,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_1.Org_1.Cell_2,Cso2.Conv_1.Org_1,8,1134.983
+Image14,Cso2,Conv_2,Org_2,Cell_1,51.428,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,74.304,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,154.022,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,129.275,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,44.292,Anchoring sheaths,5,NA,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,27.719,Bridged sheaths,6,8.276,72.011,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,8.276,Bridge,,,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,72.011,Chain,,,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,58.118,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,30.552,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,42.574,Anchoring sheaths,9,NA,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,8.955,Bridged sheaths,10,5.36,51.529,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,5.36,Bridge,,,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,51.529,Chain,,,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,53.367,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image14,Cso2,Conv_2,Org_2,Cell_1,7.527,Non-Bridged sheaths sheaths,12,NA,,OLs with bridges,Cso2.Conv_2.Org_2.Cell_1,Cso2.Conv_2.Org_2,12,682.133
+Image15,Cso2,Conv_2,Org_2,Cell_2,51.385,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_2.Org_2.Cell_2,Cso2.Conv_2.Org_2,11,1037.607
+Image15,Cso2,Conv_2,Org_2,Cell_2,77.354,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_2.Org_2.Cell_2,Cso2.Conv_2.Org_2,11,1037.607
+Image15,Cso2,Conv_2,Org_2,Cell_2,85.481,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_2.Org_2.Cell_2,Cso2.Conv_2.Org_2,11,1037.607
+Image15,Cso2,Conv_2,Org_2,Cell_2,170.727,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_2.Org_2.Cell_2,Cso2.Conv_2.Org_2,11,1037.607
+Image15,Cso2,Conv_2,Org_2,Cell_2,30.944,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_2.Org_2.Cell_2,Cso2.Conv_2.Org_2,11,1037.607
+Image15,Cso2,Conv_2,Org_2,Cell_2,81.981,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_2.Org_2.Cell_2,Cso2.Conv_2.Org_2,11,1037.607
+Image15,Cso2,Conv_2,Org_2,Cell_2,74.589,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_2.Org_2.Cell_2,Cso2.Conv_2.Org_2,11,1037.607
+Image15,Cso2,Conv_2,Org_2,Cell_2,118.915,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_2.Org_2.Cell_2,Cso2.Conv_2.Org_2,11,1037.607
+Image15,Cso2,Conv_2,Org_2,Cell_2,135.285,Non-Bridged sheaths sheaths,9,NA,,OLs without bridges,Cso2.Conv_2.Org_2.Cell_2,Cso2.Conv_2.Org_2,11,1037.607
+Image15,Cso2,Conv_2,Org_2,Cell_2,103.006,Non-Bridged sheaths sheaths,10,NA,,OLs without bridges,Cso2.Conv_2.Org_2.Cell_2,Cso2.Conv_2.Org_2,11,1037.607
+Image15,Cso2,Conv_2,Org_2,Cell_2,107.94,Non-Bridged sheaths sheaths,11,NA,,OLs without bridges,Cso2.Conv_2.Org_2.Cell_2,Cso2.Conv_2.Org_2,11,1037.607
+Image18,SHEF4,Conv_3,Org_1,Cell_1,26.367,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,101.032,Anchoring sheaths,2,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,124.943,Bridged sheaths,3,15.046,225.975,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,15.046,Bridge,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,225.975,Chain,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,79.064,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,59.284,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,140.276,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,19.514,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,111.48,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,26.906,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,69.739,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,130.865,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,125.242,Non-Bridged sheaths sheaths,12,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,24.706,Non-Bridged sheaths sheaths,13,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,76.269,Anchoring sheaths,14,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,94.449,Bridged sheaths,15,43.042,170.718,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,43.042,Bridge,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,170.718,Chain,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,99.571,Anchoring sheaths,16,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,116.376,Bridged sheaths,17,3.206,215.947,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,3.206,Bridge,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,215.947,Chain,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,24.149,Non-Bridged sheaths sheaths,18,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,238.92,Non-Bridged sheaths sheaths,19,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image18,SHEF4,Conv_3,Org_1,Cell_1,22.022,Non-Bridged sheaths sheaths,20,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_1,SHEF4.Conv_3.Org_1,20,1711.174
+Image19,SHEF4,Conv_3,Org_1,Cell_2,101.774,Anchoring sheaths,1,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,116.285,Bridged sheaths,2,5.535,218.059,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,5.535,Bridge,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,218.059,Chain,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,93.838,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,47.855,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,57.891,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,98.801,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,145.218,Anchoring sheaths,7,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,30.881,Bridged sheaths,8,38.194,176.099,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,38.194,Bridge,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,176.099,Chain,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,84.95,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,128.633,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,65.747,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,15.768,Non-Bridged sheaths sheaths,12,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,31.793,Non-Bridged sheaths sheaths,13,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,288.358,Anchoring sheaths,14,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,134.247,Bridged sheaths,15,6.231,422.605,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,6.231,Bridge,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,422.605,Chain,,,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,112.115,Non-Bridged sheaths sheaths,16,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,113.587,Non-Bridged sheaths sheaths,17,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image19,SHEF4,Conv_3,Org_1,Cell_2,112.413,Non-Bridged sheaths sheaths,18,NA,,OLs with bridges,SHEF4.Conv_3.Org_1.Cell_2,SHEF4.Conv_3.Org_1,18,1780.154
+Image4,Cso2,Conv_4,Org_1,Cell_1,125.471,Anchoring sheaths,1,NA,,OLs with bridges,Cso2.Conv_4.Org_1.Cell_1,Cso2.Conv_4.Org_1,6,568.82
+Image4,Cso2,Conv_4,Org_1,Cell_1,21.933,Bridged sheaths,2,3.449,147.404,OLs with bridges,Cso2.Conv_4.Org_1.Cell_1,Cso2.Conv_4.Org_1,6,568.82
+Image4,Cso2,Conv_4,Org_1,Cell_1,3.449,Bridge,,,,OLs with bridges,Cso2.Conv_4.Org_1.Cell_1,Cso2.Conv_4.Org_1,6,568.82
+Image4,Cso2,Conv_4,Org_1,Cell_1,147.404,Chain,,,,OLs with bridges,Cso2.Conv_4.Org_1.Cell_1,Cso2.Conv_4.Org_1,6,568.82
+Image4,Cso2,Conv_4,Org_1,Cell_1,134.267,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_4.Org_1.Cell_1,Cso2.Conv_4.Org_1,6,568.82
+Image4,Cso2,Conv_4,Org_1,Cell_1,83.151,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_4.Org_1.Cell_1,Cso2.Conv_4.Org_1,6,568.82
+Image4,Cso2,Conv_4,Org_1,Cell_1,80.553,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_4.Org_1.Cell_1,Cso2.Conv_4.Org_1,6,568.82
+Image4,Cso2,Conv_4,Org_1,Cell_1,123.445,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_4.Org_1.Cell_1,Cso2.Conv_4.Org_1,6,568.82
+Image4,Cso2,Conv_4,Org_1,Cell_2,174.568,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_2,Cso2.Conv_4.Org_1,7,978.136
+Image4,Cso2,Conv_4,Org_1,Cell_2,137.557,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_2,Cso2.Conv_4.Org_1,7,978.136
+Image4,Cso2,Conv_4,Org_1,Cell_2,92.361,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_2,Cso2.Conv_4.Org_1,7,978.136
+Image4,Cso2,Conv_4,Org_1,Cell_2,105.821,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_2,Cso2.Conv_4.Org_1,7,978.136
+Image4,Cso2,Conv_4,Org_1,Cell_2,160.526,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_2,Cso2.Conv_4.Org_1,7,978.136
+Image4,Cso2,Conv_4,Org_1,Cell_2,170.167,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_2,Cso2.Conv_4.Org_1,7,978.136
+Image4,Cso2,Conv_4,Org_1,Cell_2,137.136,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_2,Cso2.Conv_4.Org_1,7,978.136
+Image4,Cso2,Conv_4,Org_1,Cell_3,127.104,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_3,Cso2.Conv_4.Org_1,7,874.929
+Image4,Cso2,Conv_4,Org_1,Cell_3,116.196,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_3,Cso2.Conv_4.Org_1,7,874.929
+Image4,Cso2,Conv_4,Org_1,Cell_3,94.285,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_3,Cso2.Conv_4.Org_1,7,874.929
+Image4,Cso2,Conv_4,Org_1,Cell_3,104.06,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_3,Cso2.Conv_4.Org_1,7,874.929
+Image4,Cso2,Conv_4,Org_1,Cell_3,126.556,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_3,Cso2.Conv_4.Org_1,7,874.929
+Image4,Cso2,Conv_4,Org_1,Cell_3,178.438,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_3,Cso2.Conv_4.Org_1,7,874.929
+Image4,Cso2,Conv_4,Org_1,Cell_3,128.29,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_4.Org_1.Cell_3,Cso2.Conv_4.Org_1,7,874.929
+Image3,Cso2,Conv_4,Org_2,Cell_1,109.158,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_4.Org_2.Cell_1,Cso2.Conv_4.Org_2,6,691.095
+Image3,Cso2,Conv_4,Org_2,Cell_1,140.662,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_4.Org_2.Cell_1,Cso2.Conv_4.Org_2,6,691.095
+Image3,Cso2,Conv_4,Org_2,Cell_1,168.267,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_4.Org_2.Cell_1,Cso2.Conv_4.Org_2,6,691.095
+Image3,Cso2,Conv_4,Org_2,Cell_1,100.699,Anchoring sheaths,4,NA,,OLs with bridges,Cso2.Conv_4.Org_2.Cell_1,Cso2.Conv_4.Org_2,6,691.095
+Image3,Cso2,Conv_4,Org_2,Cell_1,69.93,Bridged sheaths,5,47.243,170.629,OLs with bridges,Cso2.Conv_4.Org_2.Cell_1,Cso2.Conv_4.Org_2,6,691.095
+Image3,Cso2,Conv_4,Org_2,Cell_1,47.243,Bridge,,,,OLs with bridges,Cso2.Conv_4.Org_2.Cell_1,Cso2.Conv_4.Org_2,6,691.095
+Image3,Cso2,Conv_4,Org_2,Cell_1,170.629,Chain,,,,OLs with bridges,Cso2.Conv_4.Org_2.Cell_1,Cso2.Conv_4.Org_2,6,691.095
+Image3,Cso2,Conv_4,Org_2,Cell_1,102.379,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_4.Org_2.Cell_1,Cso2.Conv_4.Org_2,6,691.095
+Image3,Cso2,Conv_4,Org_2,Cell_2,98.586,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_4.Org_2.Cell_2,Cso2.Conv_4.Org_2,6,792.145
+Image3,Cso2,Conv_4,Org_2,Cell_2,228.331,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_4.Org_2.Cell_2,Cso2.Conv_4.Org_2,6,792.145
+Image3,Cso2,Conv_4,Org_2,Cell_2,152.63,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_4.Org_2.Cell_2,Cso2.Conv_4.Org_2,6,792.145
+Image3,Cso2,Conv_4,Org_2,Cell_2,96.207,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_4.Org_2.Cell_2,Cso2.Conv_4.Org_2,6,792.145
+Image3,Cso2,Conv_4,Org_2,Cell_2,112.273,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_4.Org_2.Cell_2,Cso2.Conv_4.Org_2,6,792.145
+Image3,Cso2,Conv_4,Org_2,Cell_2,104.118,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_4.Org_2.Cell_2,Cso2.Conv_4.Org_2,6,792.145
+Image13,Cs25,Conv_1,Org_2,Cell_3,122.016,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_3,Cs25.Conv_1.Org_2,9,715.532
+Image13,Cs25,Conv_1,Org_2,Cell_3,131.593,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_3,Cs25.Conv_1.Org_2,9,715.532
+Image13,Cs25,Conv_1,Org_2,Cell_3,79.172,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_3,Cs25.Conv_1.Org_2,9,715.532
+Image13,Cs25,Conv_1,Org_2,Cell_3,62.687,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_3,Cs25.Conv_1.Org_2,9,715.532
+Image13,Cs25,Conv_1,Org_2,Cell_3,80.904,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_3,Cs25.Conv_1.Org_2,9,715.532
+Image13,Cs25,Conv_1,Org_2,Cell_3,65.284,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_3,Cs25.Conv_1.Org_2,9,715.532
+Image13,Cs25,Conv_1,Org_2,Cell_3,11.665,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_3,Cs25.Conv_1.Org_2,9,715.532
+Image13,Cs25,Conv_1,Org_2,Cell_3,131.605,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_3,Cs25.Conv_1.Org_2,9,715.532
+Image13,Cs25,Conv_1,Org_2,Cell_3,30.606,Non-Bridged sheaths sheaths,9,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_3,Cs25.Conv_1.Org_2,9,715.532
+Image13,Cs25,Conv_1,Org_2,Cell_4,125.96,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,89.376,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,64.191,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,83.862,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,136.219,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,104.805,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,88.354,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,91.758,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,71.148,Non-Bridged sheaths sheaths,9,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,135.295,Non-Bridged sheaths sheaths,10,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,62.903,Non-Bridged sheaths sheaths,11,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,56.105,Non-Bridged sheaths sheaths,12,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,28.741,Non-Bridged sheaths sheaths,13,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,91.186,Non-Bridged sheaths sheaths,14,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image13,Cs25,Conv_1,Org_2,Cell_4,74.814,Non-Bridged sheaths sheaths,15,NA,,OLs without bridges,Cs25.Conv_1.Org_2.Cell_4,Cs25.Conv_1.Org_2,15,1304.717
+Image5,Cso2,Conv_5,Org_1,Cell_1,139.866,Anchoring sheaths,1,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_1,124.253,Bridged sheaths,2,1.96,264.119,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_1,1.96,Bridge,,,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_1,264.119,Chain,,,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_1,172.849,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_1,134.244,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_1,56.376,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_1,154.375,Anchoring sheaths,6,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_1,128.489,Bridged sheaths,7,2.483,282.864,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_1,2.483,Bridge,,,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_1,282.864,Chain,,,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_1,146.669,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_1,Cso2.Conv_5.Org_1,8,1057.121
+Image5,Cso2,Conv_5,Org_1,Cell_2,17.344,Anchoring sheaths,1,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_2,Cso2.Conv_5.Org_1,9,971.74
+Image5,Cso2,Conv_5,Org_1,Cell_2,160.316,Bridged sheaths,2,41.856,177.66,OLs with bridges,Cso2.Conv_5.Org_1.Cell_2,Cso2.Conv_5.Org_1,9,971.74
+Image5,Cso2,Conv_5,Org_1,Cell_2,41.856,Bridge,,,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_2,Cso2.Conv_5.Org_1,9,971.74
+Image5,Cso2,Conv_5,Org_1,Cell_2,177.66,Chain,,,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_2,Cso2.Conv_5.Org_1,9,971.74
+Image5,Cso2,Conv_5,Org_1,Cell_2,210.225,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_2,Cso2.Conv_5.Org_1,9,971.74
+Image5,Cso2,Conv_5,Org_1,Cell_2,134.091,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_2,Cso2.Conv_5.Org_1,9,971.74
+Image5,Cso2,Conv_5,Org_1,Cell_2,122.67,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_2,Cso2.Conv_5.Org_1,9,971.74
+Image5,Cso2,Conv_5,Org_1,Cell_2,20.73,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_2,Cso2.Conv_5.Org_1,9,971.74
+Image5,Cso2,Conv_5,Org_1,Cell_2,102.685,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_2,Cso2.Conv_5.Org_1,9,971.74
+Image5,Cso2,Conv_5,Org_1,Cell_2,122.796,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_2,Cso2.Conv_5.Org_1,9,971.74
+Image5,Cso2,Conv_5,Org_1,Cell_2,80.883,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cso2.Conv_5.Org_1.Cell_2,Cso2.Conv_5.Org_1,9,971.74
+Image20,Cso2,Conv_5,Org_2,Cell_1,165.021,Anchoring sheaths,1,NA,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_1,Cso2.Conv_5.Org_2,4,686.994
+Image20,Cso2,Conv_5,Org_2,Cell_1,156.459,Bridged sheaths_perpendicular,2,7.318,321.48,OLs with bridges,Cso2.Conv_5.Org_2.Cell_1,Cso2.Conv_5.Org_2,4,686.994
+Image20,Cso2,Conv_5,Org_2,Cell_1,7.318,Bridge,,,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_1,Cso2.Conv_5.Org_2,4,686.994
+Image20,Cso2,Conv_5,Org_2,Cell_1,321.48,Chain,,,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_1,Cso2.Conv_5.Org_2,4,686.994
+Image20,Cso2,Conv_5,Org_2,Cell_1,185.175,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_1,Cso2.Conv_5.Org_2,4,686.994
+Image20,Cso2,Conv_5,Org_2,Cell_1,180.339,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_1,Cso2.Conv_5.Org_2,4,686.994
+Image20,Cso2,Conv_5,Org_2,Cell_2,256.837,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_2,Cso2.Conv_5.Org_2,6,962.543
+Image20,Cso2,Conv_5,Org_2,Cell_2,119.799,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_2,Cso2.Conv_5.Org_2,6,962.543
+Image20,Cso2,Conv_5,Org_2,Cell_2,158.535,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_2,Cso2.Conv_5.Org_2,6,962.543
+Image20,Cso2,Conv_5,Org_2,Cell_2,160.808,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_2,Cso2.Conv_5.Org_2,6,962.543
+Image20,Cso2,Conv_5,Org_2,Cell_2,157.032,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_2,Cso2.Conv_5.Org_2,6,962.543
+Image20,Cso2,Conv_5,Org_2,Cell_2,109.532,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_2,Cso2.Conv_5.Org_2,6,962.543
+Image20,Cso2,Conv_5,Org_2,Cell_3,148.544,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_3,Cso2.Conv_5.Org_2,7,1127.502
+Image20,Cso2,Conv_5,Org_2,Cell_3,161.518,Anchoring sheaths,2,11.018,557.206,OLs with bridges,Cso2.Conv_5.Org_2.Cell_3,Cso2.Conv_5.Org_2,7,1127.502
+Image20,Cso2,Conv_5,Org_2,Cell_3,11.018,Bridge,,,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_3,Cso2.Conv_5.Org_2,7,1127.502
+Image20,Cso2,Conv_5,Org_2,Cell_3,278.603,Chain,,,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_3,Cso2.Conv_5.Org_2,7,1127.502
+Image20,Cso2,Conv_5,Org_2,Cell_3,106.067,Bridged sheaths,3,NA,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_3,Cso2.Conv_5.Org_2,7,1127.502
+Image20,Cso2,Conv_5,Org_2,Cell_3,194.965,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_3,Cso2.Conv_5.Org_2,7,1127.502
+Image20,Cso2,Conv_5,Org_2,Cell_3,232.934,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_3,Cso2.Conv_5.Org_2,7,1127.502
+Image20,Cso2,Conv_5,Org_2,Cell_3,209.571,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_3,Cso2.Conv_5.Org_2,7,1127.502
+Image20,Cso2,Conv_5,Org_2,Cell_3,73.903,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_5.Org_2.Cell_3,Cso2.Conv_5.Org_2,7,1127.502
+Image20,Cso2,Conv_5,Org_2,Cell_4,98.492,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_4,Cso2.Conv_5.Org_2,6,791.804
+Image20,Cso2,Conv_5,Org_2,Cell_4,121.2,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_4,Cso2.Conv_5.Org_2,6,791.804
+Image20,Cso2,Conv_5,Org_2,Cell_4,57.087,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_4,Cso2.Conv_5.Org_2,6,791.804
+Image20,Cso2,Conv_5,Org_2,Cell_4,288.01,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_4,Cso2.Conv_5.Org_2,6,791.804
+Image20,Cso2,Conv_5,Org_2,Cell_4,142.335,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_4,Cso2.Conv_5.Org_2,6,791.804
+Image20,Cso2,Conv_5,Org_2,Cell_4,84.68,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_4,Cso2.Conv_5.Org_2,6,791.804
+Image20,Cso2,Conv_5,Org_2,Cell_5,139.415,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_5,Cso2.Conv_5.Org_2,8,830.211
+Image20,Cso2,Conv_5,Org_2,Cell_5,111.422,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_5,Cso2.Conv_5.Org_2,8,830.211
+Image20,Cso2,Conv_5,Org_2,Cell_5,13.72,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_5,Cso2.Conv_5.Org_2,8,830.211
+Image20,Cso2,Conv_5,Org_2,Cell_5,99.287,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_5,Cso2.Conv_5.Org_2,8,830.211
+Image20,Cso2,Conv_5,Org_2,Cell_5,213.619,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_5,Cso2.Conv_5.Org_2,8,830.211
+Image20,Cso2,Conv_5,Org_2,Cell_5,59.374,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_5,Cso2.Conv_5.Org_2,8,830.211
+Image20,Cso2,Conv_5,Org_2,Cell_5,101.874,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_5,Cso2.Conv_5.Org_2,8,830.211
+Image20,Cso2,Conv_5,Org_2,Cell_5,91.5,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_5.Org_2.Cell_5,Cso2.Conv_5.Org_2,8,830.211
+Image6,Cso2,Conv_6,Org_1,Cell_1,83.855,Anchoring sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,83.503,Bridged sheaths,2,1.712,167.358,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,1.712,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,167.358,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,174.437,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,46.6,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,64.716,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,14.142,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,45.225,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,112.949,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,40.875,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,21.127,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_1,111.607,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_1,Cso2.Conv_6.Org_1,11,799.036
+Image6,Cso2,Conv_6,Org_1,Cell_2,183.347,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,121.52,Anchoring sheaths,2,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,66.07,Bridged sheaths,3,1.1,187.59,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,1.1,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,187.59,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,65.623,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,38.415,Anchoring sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,74.944,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,129.298,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,192.4,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,84.181,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,61.017,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,28.037,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,67.453,Non-Bridged sheaths sheaths,12,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,146.072,Non-Bridged sheaths sheaths,13,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,26.326,Bridged sheaths,14,28.018,64.741,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,28.018,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_2,64.741,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_2,Cso2.Conv_6.Org_1,14,1284.703
+Image6,Cso2,Conv_6,Org_1,Cell_3,172.72,Anchoring sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_3,Cso2.Conv_6.Org_1,8,1143.043
+Image6,Cso2,Conv_6,Org_1,Cell_3,112.018,Bridged sheaths,2,3.111,284.738,OLs with bridges,Cso2.Conv_6.Org_1.Cell_3,Cso2.Conv_6.Org_1,8,1143.043
+Image6,Cso2,Conv_6,Org_1,Cell_3,3.111,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_3,Cso2.Conv_6.Org_1,8,1143.043
+Image6,Cso2,Conv_6,Org_1,Cell_3,284.738,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_3,Cso2.Conv_6.Org_1,8,1143.043
+Image6,Cso2,Conv_6,Org_1,Cell_3,135.482,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_3,Cso2.Conv_6.Org_1,8,1143.043
+Image6,Cso2,Conv_6,Org_1,Cell_3,159.28,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_3,Cso2.Conv_6.Org_1,8,1143.043
+Image6,Cso2,Conv_6,Org_1,Cell_3,159.463,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_3,Cso2.Conv_6.Org_1,8,1143.043
+Image6,Cso2,Conv_6,Org_1,Cell_3,170.132,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_3,Cso2.Conv_6.Org_1,8,1143.043
+Image6,Cso2,Conv_6,Org_1,Cell_3,134.297,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_3,Cso2.Conv_6.Org_1,8,1143.043
+Image6,Cso2,Conv_6,Org_1,Cell_3,99.651,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_3,Cso2.Conv_6.Org_1,8,1143.043
+Image6,Cso2,Conv_6,Org_1,Cell_4,121.149,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_6.Org_1.Cell_4,Cso2.Conv_6.Org_1,11,999.729
+Image6,Cso2,Conv_6,Org_1,Cell_4,29.421,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_6.Org_1.Cell_4,Cso2.Conv_6.Org_1,11,999.729
+Image6,Cso2,Conv_6,Org_1,Cell_4,206.354,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_6.Org_1.Cell_4,Cso2.Conv_6.Org_1,11,999.729
+Image6,Cso2,Conv_6,Org_1,Cell_4,85.218,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_6.Org_1.Cell_4,Cso2.Conv_6.Org_1,11,999.729
+Image6,Cso2,Conv_6,Org_1,Cell_4,90.322,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_6.Org_1.Cell_4,Cso2.Conv_6.Org_1,11,999.729
+Image6,Cso2,Conv_6,Org_1,Cell_4,58.085,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_6.Org_1.Cell_4,Cso2.Conv_6.Org_1,11,999.729
+Image6,Cso2,Conv_6,Org_1,Cell_4,40.684,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_6.Org_1.Cell_4,Cso2.Conv_6.Org_1,11,999.729
+Image6,Cso2,Conv_6,Org_1,Cell_4,73.479,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_6.Org_1.Cell_4,Cso2.Conv_6.Org_1,11,999.729
+Image6,Cso2,Conv_6,Org_1,Cell_4,60.743,Non-Bridged sheaths sheaths,9,NA,,OLs without bridges,Cso2.Conv_6.Org_1.Cell_4,Cso2.Conv_6.Org_1,11,999.729
+Image6,Cso2,Conv_6,Org_1,Cell_4,178.045,Non-Bridged sheaths sheaths,10,NA,,OLs without bridges,Cso2.Conv_6.Org_1.Cell_4,Cso2.Conv_6.Org_1,11,999.729
+Image6,Cso2,Conv_6,Org_1,Cell_4,56.229,Non-Bridged sheaths sheaths,11,NA,,OLs without bridges,Cso2.Conv_6.Org_1.Cell_4,Cso2.Conv_6.Org_1,11,999.729
+Image6,Cso2,Conv_6,Org_1,Cell_5,77.415,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,274.426,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,87.992,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,72.684,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,110.334,Anchoring sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,47.477,Bridged sheaths,6,45.347,157.811,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,45.347,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,157.811,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,156.269,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,75.081,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,109.169,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,103.975,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,61.168,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image6,Cso2,Conv_6,Org_1,Cell_5,42.882,Non-Bridged sheaths sheaths,12,NA,,OLs with bridges,Cso2.Conv_6.Org_1.Cell_5,Cso2.Conv_6.Org_1,12,1218.872
+Image2,Cso2,Conv_6,Org_2,Cell_1,36.128,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,208.011,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,81.583,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,80.399,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,86.3,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,73.655,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,93.606,Anchoring sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,16.233,Bridged sheaths,8,10.712,109.839,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,10.712,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,109.839,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,80.169,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,110.236,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,159.31,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,159.916,Non-Bridged sheaths sheaths,12,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,104.425,Non-Bridged sheaths sheaths,13,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,63.464,Non-Bridged sheaths sheaths,14,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,84.967,Non-Bridged sheaths sheaths,15,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,13.232,Non-Bridged sheaths sheaths,16,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_1,99.871,Non-Bridged sheaths sheaths,17,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_1,Cso2.Conv_6.Org_2,17,1551.505
+Image2,Cso2,Conv_6,Org_2,Cell_2,92.239,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_2,Cso2.Conv_6.Org_2,8,741.833
+Image2,Cso2,Conv_6,Org_2,Cell_2,52.973,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_2,Cso2.Conv_6.Org_2,8,741.833
+Image2,Cso2,Conv_6,Org_2,Cell_2,127.827,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_2,Cso2.Conv_6.Org_2,8,741.833
+Image2,Cso2,Conv_6,Org_2,Cell_2,165.689,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_2,Cso2.Conv_6.Org_2,8,741.833
+Image2,Cso2,Conv_6,Org_2,Cell_2,86.849,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_2,Cso2.Conv_6.Org_2,8,741.833
+Image2,Cso2,Conv_6,Org_2,Cell_2,103.9,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_2,Cso2.Conv_6.Org_2,8,741.833
+Image2,Cso2,Conv_6,Org_2,Cell_2,68.77,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_2,Cso2.Conv_6.Org_2,8,741.833
+Image2,Cso2,Conv_6,Org_2,Cell_2,43.586,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_2,Cso2.Conv_6.Org_2,8,741.833
+Image2,Cso2,Conv_6,Org_2,Cell_3,129.659,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_3,Cso2.Conv_6.Org_2,11,870.561
+Image2,Cso2,Conv_6,Org_2,Cell_3,124.278,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_3,Cso2.Conv_6.Org_2,11,870.561
+Image2,Cso2,Conv_6,Org_2,Cell_3,50.918,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_3,Cso2.Conv_6.Org_2,11,870.561
+Image2,Cso2,Conv_6,Org_2,Cell_3,81.32,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_3,Cso2.Conv_6.Org_2,11,870.561
+Image2,Cso2,Conv_6,Org_2,Cell_3,49.425,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_3,Cso2.Conv_6.Org_2,11,870.561
+Image2,Cso2,Conv_6,Org_2,Cell_3,54.797,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_3,Cso2.Conv_6.Org_2,11,870.561
+Image2,Cso2,Conv_6,Org_2,Cell_3,54.206,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_3,Cso2.Conv_6.Org_2,11,870.561
+Image2,Cso2,Conv_6,Org_2,Cell_3,125.797,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_3,Cso2.Conv_6.Org_2,11,870.561
+Image2,Cso2,Conv_6,Org_2,Cell_3,71.839,Non-Bridged sheaths sheaths,9,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_3,Cso2.Conv_6.Org_2,11,870.561
+Image2,Cso2,Conv_6,Org_2,Cell_3,57.052,Non-Bridged sheaths sheaths,10,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_3,Cso2.Conv_6.Org_2,11,870.561
+Image2,Cso2,Conv_6,Org_2,Cell_3,71.27,Non-Bridged sheaths sheaths,11,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_3,Cso2.Conv_6.Org_2,11,870.561
+Image2,Cso2,Conv_6,Org_2,Cell_4,92.509,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,42.837,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,51.835,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,64.295,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,83.316,Anchoring sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,67.799,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,20.609,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,22.368,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,53.692,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,152.615,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,29.78,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,58.785,Bridged sheaths_perpendicular,12,4.733,142.101,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,4.733,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,142.101,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,32.453,Non-Bridged sheaths sheaths,13,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_4,38.156,Non-Bridged sheaths sheaths,14,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_4,Cso2.Conv_6.Org_2,14,811.049
+Image2,Cso2,Conv_6,Org_2,Cell_5,107.075,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,82.991,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,132.695,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,27.489,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,144.95,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,146.914,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,24.304,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,106.187,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,82.378,Non-Bridged sheaths sheaths,9,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,22.46,Non-Bridged sheaths sheaths,10,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,34.68,Non-Bridged sheaths sheaths,11,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,16.169,Non-Bridged sheaths sheaths,12,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_5,16.754,Non-Bridged sheaths sheaths,13,NA,,OLs without bridges,Cso2.Conv_6.Org_2.Cell_5,Cso2.Conv_6.Org_2,13,945.046
+Image2,Cso2,Conv_6,Org_2,Cell_6,89.382,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,77.709,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,126.992,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,105.808,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,71.496,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,145.662,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,74.031,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,56.795,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,79.127,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,20.737,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,77.725,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,118.764,Anchoring sheaths,12,NA,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,102.298,Bridged sheaths,13,1.405,221.062,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,1.405,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image2,Cso2,Conv_6,Org_2,Cell_6,221.062,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_2.Cell_6,Cso2.Conv_6.Org_2,13,1146.526
+Image7,Cso2,Conv_6,Org_3,Cell_1,53.952,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_1,Cso2.Conv_6.Org_3,8,1030.546
+Image7,Cso2,Conv_6,Org_3,Cell_1,146.366,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_1,Cso2.Conv_6.Org_3,8,1030.546
+Image7,Cso2,Conv_6,Org_3,Cell_1,89.134,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_1,Cso2.Conv_6.Org_3,8,1030.546
+Image7,Cso2,Conv_6,Org_3,Cell_1,103.404,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_1,Cso2.Conv_6.Org_3,8,1030.546
+Image7,Cso2,Conv_6,Org_3,Cell_1,120.9,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_1,Cso2.Conv_6.Org_3,8,1030.546
+Image7,Cso2,Conv_6,Org_3,Cell_1,81.64,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_1,Cso2.Conv_6.Org_3,8,1030.546
+Image7,Cso2,Conv_6,Org_3,Cell_1,195.635,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_1,Cso2.Conv_6.Org_3,8,1030.546
+Image7,Cso2,Conv_6,Org_3,Cell_1,239.515,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_1,Cso2.Conv_6.Org_3,8,1030.546
+Image7,Cso2,Conv_6,Org_3,Cell_2,102.681,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_2,Cso2.Conv_6.Org_3,5,621.134
+Image7,Cso2,Conv_6,Org_3,Cell_2,101.151,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_2,Cso2.Conv_6.Org_3,5,621.134
+Image7,Cso2,Conv_6,Org_3,Cell_2,84.201,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_2,Cso2.Conv_6.Org_3,5,621.134
+Image7,Cso2,Conv_6,Org_3,Cell_2,134.04,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_2,Cso2.Conv_6.Org_3,5,621.134
+Image7,Cso2,Conv_6,Org_3,Cell_2,199.061,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_2,Cso2.Conv_6.Org_3,5,621.134
+Image7,Cso2,Conv_6,Org_3,Cell_3,278.642,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,128.98,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,174.51,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,15.406,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,143.02,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,159.075,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,180.741,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,135.117,Anchoring sheaths,8,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,189.435,Bridged sheaths,9,7.145,324.552,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,7.145,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,324.552,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,73.33,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,179.799,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,107.337,Anchoring sheaths,12,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,160.135,Bridged sheaths,13,3.328,267.472,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,3.328,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_3,267.472,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_3,Cso2.Conv_6.Org_3,13,1925.527
+Image7,Cso2,Conv_6,Org_3,Cell_4,269.64,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_4,Cso2.Conv_6.Org_3,7,1006.091
+Image7,Cso2,Conv_6,Org_3,Cell_4,129.566,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_4,Cso2.Conv_6.Org_3,7,1006.091
+Image7,Cso2,Conv_6,Org_3,Cell_4,88.253,Anchoring sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_4,Cso2.Conv_6.Org_3,7,1006.091
+Image7,Cso2,Conv_6,Org_3,Cell_4,80.999,Bridged sheaths,4,3.258,169.252,OLs with bridges,Cso2.Conv_6.Org_3.Cell_4,Cso2.Conv_6.Org_3,7,1006.091
+Image7,Cso2,Conv_6,Org_3,Cell_4,3.258,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_4,Cso2.Conv_6.Org_3,7,1006.091
+Image7,Cso2,Conv_6,Org_3,Cell_4,169.252,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_4,Cso2.Conv_6.Org_3,7,1006.091
+Image7,Cso2,Conv_6,Org_3,Cell_4,68.421,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_4,Cso2.Conv_6.Org_3,7,1006.091
+Image7,Cso2,Conv_6,Org_3,Cell_4,164.045,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_4,Cso2.Conv_6.Org_3,7,1006.091
+Image7,Cso2,Conv_6,Org_3,Cell_4,205.167,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_4,Cso2.Conv_6.Org_3,7,1006.091
+Image7,Cso2,Conv_6,Org_3,Cell_5,206.485,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_5,Cso2.Conv_6.Org_3,8,1224.878
+Image7,Cso2,Conv_6,Org_3,Cell_5,127.715,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_5,Cso2.Conv_6.Org_3,8,1224.878
+Image7,Cso2,Conv_6,Org_3,Cell_5,120.839,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_5,Cso2.Conv_6.Org_3,8,1224.878
+Image7,Cso2,Conv_6,Org_3,Cell_5,139.488,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_5,Cso2.Conv_6.Org_3,8,1224.878
+Image7,Cso2,Conv_6,Org_3,Cell_5,97.121,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_5,Cso2.Conv_6.Org_3,8,1224.878
+Image7,Cso2,Conv_6,Org_3,Cell_5,183.2,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_5,Cso2.Conv_6.Org_3,8,1224.878
+Image7,Cso2,Conv_6,Org_3,Cell_5,149.378,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_5,Cso2.Conv_6.Org_3,8,1224.878
+Image7,Cso2,Conv_6,Org_3,Cell_5,200.652,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_6.Org_3.Cell_5,Cso2.Conv_6.Org_3,8,1224.878
+Image7,Cso2,Conv_6,Org_3,Cell_6,176.624,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,117.27,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,88.18,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,86.412,Anchoring sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,16.965,Bridged sheaths,5,6.416,103.377,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,6.416,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,103.377,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,162.628,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,100.325,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,99.02,Anchoring sheaths,8,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,50.497,Bridged sheaths,9,8.899,149.517,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,8.899,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,149.517,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,127.815,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,57.084,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,78.548,Non-Bridged sheaths sheaths,12,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,45.209,Anchoring sheaths,13,NA,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,49.273,Bridged sheaths,14,1.924,94.482,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,1.924,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image7,Cso2,Conv_6,Org_3,Cell_6,94.482,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_3.Cell_6,Cso2.Conv_6.Org_3,14,1255.85
+Image8,Cso2,Conv_6,Org_4,Cell_1,181.075,Anchoring sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_1,Cso2.Conv_6.Org_4,6,886.87
+Image8,Cso2,Conv_6,Org_4,Cell_1,84.387,Bridged sheaths,2,6.371,265.462,OLs with bridges,Cso2.Conv_6.Org_4.Cell_1,Cso2.Conv_6.Org_4,6,886.87
+Image8,Cso2,Conv_6,Org_4,Cell_1,6.371,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_1,Cso2.Conv_6.Org_4,6,886.87
+Image8,Cso2,Conv_6,Org_4,Cell_1,265.462,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_1,Cso2.Conv_6.Org_4,6,886.87
+Image8,Cso2,Conv_6,Org_4,Cell_1,181.636,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_1,Cso2.Conv_6.Org_4,6,886.87
+Image8,Cso2,Conv_6,Org_4,Cell_1,151.918,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_1,Cso2.Conv_6.Org_4,6,886.87
+Image8,Cso2,Conv_6,Org_4,Cell_1,136.137,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_1,Cso2.Conv_6.Org_4,6,886.87
+Image8,Cso2,Conv_6,Org_4,Cell_1,151.717,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_1,Cso2.Conv_6.Org_4,6,886.87
+Image9,Cso2,Conv_6,Org_4,Cell_6,147.46,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_6,149.883,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_6,126.73,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_6,123.889,Anchoring sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_6,32.309,Bridged sheaths,5,1.62,156.198,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_6,1.62,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_6,156.198,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_6,100.98,Bridged sheaths,6,1.62,224.869,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_6,1.62,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_6,224.869,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_6,119.24,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_6,165.855,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_6,Cso2.Conv_6.Org_4,8,966.346
+Image9,Cso2,Conv_6,Org_4,Cell_2,163.335,Anchoring sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_2,Cso2.Conv_6.Org_4,7,730.47
+Image9,Cso2,Conv_6,Org_4,Cell_2,40.558,Bridged sheaths,2,3.284,203.893,OLs with bridges,Cso2.Conv_6.Org_4.Cell_2,Cso2.Conv_6.Org_4,7,730.47
+Image9,Cso2,Conv_6,Org_4,Cell_2,3.284,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_2,Cso2.Conv_6.Org_4,7,730.47
+Image9,Cso2,Conv_6,Org_4,Cell_2,203.893,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_2,Cso2.Conv_6.Org_4,7,730.47
+Image9,Cso2,Conv_6,Org_4,Cell_2,134.331,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_2,Cso2.Conv_6.Org_4,7,730.47
+Image9,Cso2,Conv_6,Org_4,Cell_2,54.665,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_2,Cso2.Conv_6.Org_4,7,730.47
+Image9,Cso2,Conv_6,Org_4,Cell_2,209.442,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_2,Cso2.Conv_6.Org_4,7,730.47
+Image9,Cso2,Conv_6,Org_4,Cell_2,113.085,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_2,Cso2.Conv_6.Org_4,7,730.47
+Image9,Cso2,Conv_6,Org_4,Cell_2,15.054,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_2,Cso2.Conv_6.Org_4,7,730.47
+Image9,Cso2,Conv_6,Org_4,Cell_3,110.608,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_3,Cso2.Conv_6.Org_4,11,1502.755
+Image9,Cso2,Conv_6,Org_4,Cell_3,158.049,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_3,Cso2.Conv_6.Org_4,11,1502.755
+Image9,Cso2,Conv_6,Org_4,Cell_3,83,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_3,Cso2.Conv_6.Org_4,11,1502.755
+Image9,Cso2,Conv_6,Org_4,Cell_3,225.363,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_3,Cso2.Conv_6.Org_4,11,1502.755
+Image9,Cso2,Conv_6,Org_4,Cell_3,115.052,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_3,Cso2.Conv_6.Org_4,11,1502.755
+Image9,Cso2,Conv_6,Org_4,Cell_3,159.138,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_3,Cso2.Conv_6.Org_4,11,1502.755
+Image9,Cso2,Conv_6,Org_4,Cell_3,261.475,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_3,Cso2.Conv_6.Org_4,11,1502.755
+Image9,Cso2,Conv_6,Org_4,Cell_3,161.036,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_3,Cso2.Conv_6.Org_4,11,1502.755
+Image9,Cso2,Conv_6,Org_4,Cell_3,91.407,Non-Bridged sheaths sheaths,9,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_3,Cso2.Conv_6.Org_4,11,1502.755
+Image9,Cso2,Conv_6,Org_4,Cell_3,123.411,Non-Bridged sheaths sheaths,10,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_3,Cso2.Conv_6.Org_4,11,1502.755
+Image9,Cso2,Conv_6,Org_4,Cell_3,14.216,Non-Bridged sheaths sheaths,11,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_3,Cso2.Conv_6.Org_4,11,1502.755
+Image9,Cso2,Conv_6,Org_4,Cell_4,186.107,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_4,Cso2.Conv_6.Org_4,8,1187.714
+Image9,Cso2,Conv_6,Org_4,Cell_4,130.618,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_4,Cso2.Conv_6.Org_4,8,1187.714
+Image9,Cso2,Conv_6,Org_4,Cell_4,238.745,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_4,Cso2.Conv_6.Org_4,8,1187.714
+Image9,Cso2,Conv_6,Org_4,Cell_4,152.293,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_4,Cso2.Conv_6.Org_4,8,1187.714
+Image9,Cso2,Conv_6,Org_4,Cell_4,230.402,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_4,Cso2.Conv_6.Org_4,8,1187.714
+Image9,Cso2,Conv_6,Org_4,Cell_4,154.011,Anchoring sheaths,6,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_4,Cso2.Conv_6.Org_4,8,1187.714
+Image9,Cso2,Conv_6,Org_4,Cell_4,38.038,Bridged sheaths,7,21.324,192.049,OLs with bridges,Cso2.Conv_6.Org_4.Cell_4,Cso2.Conv_6.Org_4,8,1187.714
+Image9,Cso2,Conv_6,Org_4,Cell_4,21.324,Bridge,,,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_4,Cso2.Conv_6.Org_4,8,1187.714
+Image9,Cso2,Conv_6,Org_4,Cell_4,192.049,Chain,,,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_4,Cso2.Conv_6.Org_4,8,1187.714
+Image9,Cso2,Conv_6,Org_4,Cell_4,57.5,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_6.Org_4.Cell_4,Cso2.Conv_6.Org_4,8,1187.714
+Image9,Cso2,Conv_6,Org_4,Cell_5,197.552,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_5,Cso2.Conv_6.Org_4,9,1202.686
+Image9,Cso2,Conv_6,Org_4,Cell_5,72.246,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_5,Cso2.Conv_6.Org_4,9,1202.686
+Image9,Cso2,Conv_6,Org_4,Cell_5,142.212,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_5,Cso2.Conv_6.Org_4,9,1202.686
+Image9,Cso2,Conv_6,Org_4,Cell_5,177.87,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_5,Cso2.Conv_6.Org_4,9,1202.686
+Image9,Cso2,Conv_6,Org_4,Cell_5,141.119,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_5,Cso2.Conv_6.Org_4,9,1202.686
+Image9,Cso2,Conv_6,Org_4,Cell_5,155.471,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_5,Cso2.Conv_6.Org_4,9,1202.686
+Image9,Cso2,Conv_6,Org_4,Cell_5,116.018,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_5,Cso2.Conv_6.Org_4,9,1202.686
+Image9,Cso2,Conv_6,Org_4,Cell_5,22.91,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_5,Cso2.Conv_6.Org_4,9,1202.686
+Image9,Cso2,Conv_6,Org_4,Cell_5,177.288,Non-Bridged sheaths sheaths,9,NA,,OLs without bridges,Cso2.Conv_6.Org_4.Cell_5,Cso2.Conv_6.Org_4,9,1202.686
+Image21,Cso2,Conv_7,Org_1,Cell_1,223.138,Anchoring sheaths,1,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,17.771,Bridged sheaths,2,18.812,240.909,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,18.812,Bridge,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,240.909,Chain,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,31.919,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,140.405,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,121.57,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,159.945,Anchoring sheaths,6,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,46.816,Bridged sheaths,7,12.966,206.761,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,12.966,Bridge,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,206.761,Chain,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,61.135,Bridged sheaths,8,6.769,221.08,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,6.769,Bridge,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image21,Cso2,Conv_7,Org_1,Cell_1,221.08,Chain,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_1,Cso2.Conv_7.Org_1,8,802.699
+Image10,Cso2,Conv_7,Org_1,Cell_2,52.493,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,80.859,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,58.356,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,60.283,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,68.715,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,127.439,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,29.343,Bridged sheaths,7,31.521,220.761,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,31.521,Bridge,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,220.761,Chain,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,115.298,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,95.824,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,71.213,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,93.322,Anchoring sheaths,11,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,87.732,Non-Bridged sheaths sheaths,12,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,114.445,Non-Bridged sheaths sheaths,13,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,102.415,Bridged sheaths,14,1.344,145.925,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,1.344,Bridge,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,145.925,Chain,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,52.603,Anchoring sheaths,15,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,51.513,Anchoring sheaths,16,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,80.912,Bridged sheaths,17,0.787,132.425,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,0.787,Bridge,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,132.425,Chain,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,55.876,Non-Bridged sheaths sheaths,18,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,41.079,Non-Bridged sheaths sheaths,19,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image10,Cso2,Conv_7,Org_1,Cell_2,31.467,Non-Bridged sheaths sheaths,20,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_2,Cso2.Conv_7.Org_1,20,1471.187
+Image23,Cso2,Conv_7,Org_1,Cell_3,214.345,Anchoring sheaths,1,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_3,Cso2.Conv_7.Org_1,7,528.434
+Image23,Cso2,Conv_7,Org_1,Cell_3,49.687,Bridged sheaths,2,1.687,264.032,OLs with bridges,Cso2.Conv_7.Org_1.Cell_3,Cso2.Conv_7.Org_1,7,528.434
+Image23,Cso2,Conv_7,Org_1,Cell_3,1.687,Bridge,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_3,Cso2.Conv_7.Org_1,7,528.434
+Image23,Cso2,Conv_7,Org_1,Cell_3,264.032,Chain,,,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_3,Cso2.Conv_7.Org_1,7,528.434
+Image23,Cso2,Conv_7,Org_1,Cell_3,61.564,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_3,Cso2.Conv_7.Org_1,7,528.434
+Image23,Cso2,Conv_7,Org_1,Cell_3,79.307,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_3,Cso2.Conv_7.Org_1,7,528.434
+Image23,Cso2,Conv_7,Org_1,Cell_3,18.82,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_3,Cso2.Conv_7.Org_1,7,528.434
+Image23,Cso2,Conv_7,Org_1,Cell_3,8.192,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_3,Cso2.Conv_7.Org_1,7,528.434
+Image23,Cso2,Conv_7,Org_1,Cell_3,96.519,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_3,Cso2.Conv_7.Org_1,7,528.434
+Image23,Cso2,Conv_7,Org_1,Cell_4,264.292,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_7.Org_1.Cell_4,Cso2.Conv_7.Org_1,8,1045.432
+Image23,Cso2,Conv_7,Org_1,Cell_4,76.308,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_7.Org_1.Cell_4,Cso2.Conv_7.Org_1,8,1045.432
+Image23,Cso2,Conv_7,Org_1,Cell_4,236.568,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_7.Org_1.Cell_4,Cso2.Conv_7.Org_1,8,1045.432
+Image23,Cso2,Conv_7,Org_1,Cell_4,118.559,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_7.Org_1.Cell_4,Cso2.Conv_7.Org_1,8,1045.432
+Image23,Cso2,Conv_7,Org_1,Cell_4,128.059,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_7.Org_1.Cell_4,Cso2.Conv_7.Org_1,8,1045.432
+Image23,Cso2,Conv_7,Org_1,Cell_4,112.097,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_7.Org_1.Cell_4,Cso2.Conv_7.Org_1,8,1045.432
+Image23,Cso2,Conv_7,Org_1,Cell_4,95.168,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_7.Org_1.Cell_4,Cso2.Conv_7.Org_1,8,1045.432
+Image23,Cso2,Conv_7,Org_1,Cell_4,14.381,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_7.Org_1.Cell_4,Cso2.Conv_7.Org_1,8,1045.432
+Image24,Cso2,Conv_7,Org_1,Cell_5,112.56,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,127.938,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,180.442,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,209.545,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,48.685,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,105.257,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,69.402,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,52.345,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,102.432,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,207.277,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,173.051,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,80.503,Non-Bridged sheaths sheaths,12,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,18.051,Non-Bridged sheaths sheaths,13,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,36.174,Non-Bridged sheaths sheaths,14,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,60.773,Non-Bridged sheaths sheaths,15,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,59.843,Non-Bridged sheaths sheaths,16,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,27.399,Non-Bridged sheaths sheaths,17,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,62.296,Non-Bridged sheaths sheaths,18,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image24,Cso2,Conv_7,Org_1,Cell_5,63.428,Non-Bridged sheaths sheaths,19,NA,,OLs with bridges,Cso2.Conv_7.Org_1.Cell_5,Cso2.Conv_7.Org_1,19,1797.401
+Image22,Cs25,Conv_8,Org_1,Cell_1,85.17,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,107.271,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,57.443,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,91.638,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,106.88,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,73.848,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,45.477,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,27.935,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,35.43,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,27.072,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,43.683,Anchoring sheaths,11,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,79.807,Bridged sheaths,12,9.327,123.49,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,9.327,Bridge,,,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,123.49,Chain,,,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image22,Cs25,Conv_8,Org_1,Cell_1,30.861,Non-Bridged sheaths sheaths,13,NA,,OLs with bridges,Cs25.Conv_8.Org_1.Cell_1,Cs25.Conv_8.Org_1,13,812.515
+Image11,Cs25,Conv_9,Org_1,Cell_1,106.268,Anchoring sheaths,1,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,58.588,Bridged sheaths,2,3.282,164.856,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,3.282,Bridge,,,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,164.856,Chain,,,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,94.458,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,136.771,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,144.686,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,76.564,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,25.01,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,60.031,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,71.541,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,112.411,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,110.48,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,119.132,Non-Bridged sheaths sheaths,12,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,66.151,Non-Bridged sheaths sheaths,13,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,143.417,Non-Bridged sheaths sheaths,14,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,94.344,Non-Bridged sheaths sheaths,15,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image11,Cs25,Conv_9,Org_1,Cell_1,58.976,Non-Bridged sheaths sheaths,16,NA,,OLs with bridges,Cs25.Conv_9.Org_1.Cell_1,Cs25.Conv_9.Org_1,16,1478.828
+Image26,SHEF4,Conv_10,Org_1,Cell_1,38.547,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,42.11,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,39.821,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,23.267,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,36.588,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,39.84,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,43.727,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,67.03,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,32.676,Anchoring sheaths,9,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,20.338,Bridged sheaths,10,11.599,53.014,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,11.599,Bridge,,,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,53.014,Chain,,,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,37.442,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,71.07,Non-Bridged sheaths sheaths,12,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,14.845,Non-Bridged sheaths sheaths,13,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,12.649,Non-Bridged sheaths sheaths,14,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image26,SHEF4,Conv_10,Org_1,Cell_1,16.9,Non-Bridged sheaths sheaths,15,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_1,SHEF4.Conv_10.Org_1,15,536.85
+Image27,SHEF4,Conv_10,Org_1,Cell_3,159.033,Anchoring sheaths,1,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,52.566,Bridged sheaths,2,1.954,211.599,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,1.954,Bridge,,,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,211.599,Chain,,,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,78.347,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,97.694,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,90.015,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,47.791,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,89.262,Anchoring sheaths,7,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,25.965,Bridged sheaths,8,1.382,115.227,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,1.382,Bridge,,,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,115.227,Chain,,,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,96.86,Bridged sheaths,9,4.613,186.122,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,4.613,Bridge,,,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,186.122,Chain,,,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,89.856,Non-Bridged sheaths sheaths,9,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_3,104.922,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,SHEF4.Conv_10.Org_1.Cell_3,SHEF4.Conv_10.Org_1,11,932.311
+Image27,SHEF4,Conv_10,Org_1,Cell_4,193,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_4,SHEF4.Conv_10.Org_1,5,526.552
+Image27,SHEF4,Conv_10,Org_1,Cell_4,32.749,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_4,SHEF4.Conv_10.Org_1,5,526.552
+Image27,SHEF4,Conv_10,Org_1,Cell_4,38.191,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_4,SHEF4.Conv_10.Org_1,5,526.552
+Image27,SHEF4,Conv_10,Org_1,Cell_4,157.307,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_4,SHEF4.Conv_10.Org_1,5,526.552
+Image27,SHEF4,Conv_10,Org_1,Cell_4,105.305,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_4,SHEF4.Conv_10.Org_1,5,526.552
+Image16,SHEF4,Conv_10,Org_1,Cell_2,61.657,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_2,SHEF4.Conv_10.Org_1,10,683.174
+Image16,SHEF4,Conv_10,Org_1,Cell_2,121.387,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_2,SHEF4.Conv_10.Org_1,10,683.174
+Image16,SHEF4,Conv_10,Org_1,Cell_2,44.64,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_2,SHEF4.Conv_10.Org_1,10,683.174
+Image16,SHEF4,Conv_10,Org_1,Cell_2,124.124,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_2,SHEF4.Conv_10.Org_1,10,683.174
+Image16,SHEF4,Conv_10,Org_1,Cell_2,39.857,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_2,SHEF4.Conv_10.Org_1,10,683.174
+Image16,SHEF4,Conv_10,Org_1,Cell_2,67.542,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_2,SHEF4.Conv_10.Org_1,10,683.174
+Image16,SHEF4,Conv_10,Org_1,Cell_2,61.055,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_2,SHEF4.Conv_10.Org_1,10,683.174
+Image16,SHEF4,Conv_10,Org_1,Cell_2,80.363,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_2,SHEF4.Conv_10.Org_1,10,683.174
+Image16,SHEF4,Conv_10,Org_1,Cell_2,55.876,Non-Bridged sheaths sheaths,9,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_2,SHEF4.Conv_10.Org_1,10,683.174
+Image16,SHEF4,Conv_10,Org_1,Cell_2,26.673,Non-Bridged sheaths sheaths,10,NA,,OLs without bridges,SHEF4.Conv_10.Org_1.Cell_2,SHEF4.Conv_10.Org_1,10,683.174
+Image17,SHEF4,Conv_10,Org_2,Cell_1,185.114,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_1,SHEF4.Conv_10.Org_2,4,396.596
+Image17,SHEF4,Conv_10,Org_2,Cell_1,62.324,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_1,SHEF4.Conv_10.Org_2,4,396.596
+Image17,SHEF4,Conv_10,Org_2,Cell_1,125.165,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_1,SHEF4.Conv_10.Org_2,4,396.596
+Image17,SHEF4,Conv_10,Org_2,Cell_1,23.993,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_1,SHEF4.Conv_10.Org_2,4,396.596
+Image17,SHEF4,Conv_10,Org_2,Cell_2,179.803,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_2,SHEF4.Conv_10.Org_2,5,448.642
+Image17,SHEF4,Conv_10,Org_2,Cell_2,111.263,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_2,SHEF4.Conv_10.Org_2,5,448.642
+Image17,SHEF4,Conv_10,Org_2,Cell_2,102.603,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_2,SHEF4.Conv_10.Org_2,5,448.642
+Image17,SHEF4,Conv_10,Org_2,Cell_2,46.052,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_2,SHEF4.Conv_10.Org_2,5,448.642
+Image17,SHEF4,Conv_10,Org_2,Cell_2,8.921,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_2,SHEF4.Conv_10.Org_2,5,448.642
+Image17,SHEF4,Conv_10,Org_2,Cell_3,125.078,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_3,SHEF4.Conv_10.Org_2,4,402.443
+Image17,SHEF4,Conv_10,Org_2,Cell_3,139.079,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_3,SHEF4.Conv_10.Org_2,4,402.443
+Image17,SHEF4,Conv_10,Org_2,Cell_3,43.41,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_3,SHEF4.Conv_10.Org_2,4,402.443
+Image17,SHEF4,Conv_10,Org_2,Cell_3,94.876,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_3,SHEF4.Conv_10.Org_2,4,402.443
+Image17,SHEF4,Conv_10,Org_2,Cell_4,114.005,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_4,SHEF4.Conv_10.Org_2,4,548.521
+Image17,SHEF4,Conv_10,Org_2,Cell_4,163.773,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_4,SHEF4.Conv_10.Org_2,4,548.521
+Image17,SHEF4,Conv_10,Org_2,Cell_4,115.899,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_4,SHEF4.Conv_10.Org_2,4,548.521
+Image17,SHEF4,Conv_10,Org_2,Cell_4,154.844,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,SHEF4.Conv_10.Org_2.Cell_4,SHEF4.Conv_10.Org_2,4,548.521
+Image12,Cs25,Conv_11,Org_1,Cell_1,162.732,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_1,139.744,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_1,200.5,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_1,123.391,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_1,46.218,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_1,62.74,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_1,91.299,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_1,197.719,Non-Bridged sheaths sheaths,8,NA,,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_1,49.446,Anchoring sheaths,9,NA,,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_1,62.944,Bridged sheaths,10,51.039,112.39,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_1,51.039,Bridge,,,,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_1,112.39,Chain,,,,OLs with bridges,Cs25.Conv_11.Org_1.Cell_1,Cs25.Conv_11.Org_1,10,1136.733
+Image12,Cs25,Conv_11,Org_1,Cell_2,170.383,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_2,Cs25.Conv_11.Org_1,5,600.415
+Image12,Cs25,Conv_11,Org_1,Cell_2,157.022,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_2,Cs25.Conv_11.Org_1,5,600.415
+Image12,Cs25,Conv_11,Org_1,Cell_2,117.896,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_2,Cs25.Conv_11.Org_1,5,600.415
+Image12,Cs25,Conv_11,Org_1,Cell_2,79.291,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_2,Cs25.Conv_11.Org_1,5,600.415
+Image12,Cs25,Conv_11,Org_1,Cell_2,75.823,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_2,Cs25.Conv_11.Org_1,5,600.415
+Image12,Cs25,Conv_11,Org_1,Cell_3,51.144,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_3,Cs25.Conv_11.Org_1,9,949.566
+Image12,Cs25,Conv_11,Org_1,Cell_3,68.887,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_3,Cs25.Conv_11.Org_1,9,949.566
+Image12,Cs25,Conv_11,Org_1,Cell_3,148.477,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_3,Cs25.Conv_11.Org_1,9,949.566
+Image12,Cs25,Conv_11,Org_1,Cell_3,112.821,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_3,Cs25.Conv_11.Org_1,9,949.566
+Image12,Cs25,Conv_11,Org_1,Cell_3,141.64,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_3,Cs25.Conv_11.Org_1,9,949.566
+Image12,Cs25,Conv_11,Org_1,Cell_3,62.824,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_3,Cs25.Conv_11.Org_1,9,949.566
+Image12,Cs25,Conv_11,Org_1,Cell_3,148.317,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_3,Cs25.Conv_11.Org_1,9,949.566
+Image12,Cs25,Conv_11,Org_1,Cell_3,160.023,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_3,Cs25.Conv_11.Org_1,9,949.566
+Image12,Cs25,Conv_11,Org_1,Cell_3,55.433,Non-Bridged sheaths sheaths,9,NA,,OLs without bridges,Cs25.Conv_11.Org_1.Cell_3,Cs25.Conv_11.Org_1,9,949.566
+Image25,Cso2,Conv_2,Org_1,Cell_1,62.556,Non-Bridged sheaths sheaths,1,NA,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,65.933,Non-Bridged sheaths sheaths,2,NA,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,142.699,Non-Bridged sheaths sheaths,3,NA,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,68.544,Non-Bridged sheaths sheaths,4,NA,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,26.202,Non-Bridged sheaths sheaths,5,NA,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,4.455,Non-Bridged sheaths sheaths,6,NA,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,100.548,Non-Bridged sheaths sheaths,7,NA,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,17.952,Anchoring sheaths,8,NA,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,97.38,Bridged sheaths,9,18.903,115.332,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,18.903,Bridge,,,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,115.332,Chain,,,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,175.159,Non-Bridged sheaths sheaths,10,NA,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_1,101.613,Non-Bridged sheaths sheaths,11,NA,,OLs with bridges,Cso2.Conv_2.Org_1.Cell_1,Cso2.Conv_2.Org_1,11,863.041
+Image25,Cso2,Conv_2,Org_1,Cell_2,56.109,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,57.309,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,93.286,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,68.505,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,39.089,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,49.262,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,17.511,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,21.275,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,20.843,Non-Bridged sheaths sheaths,9,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,84.714,Non-Bridged sheaths sheaths,10,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,57.918,Non-Bridged sheaths sheaths,11,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,55.405,Non-Bridged sheaths sheaths,12,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,43.053,Non-Bridged sheaths sheaths,13,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,46.389,Non-Bridged sheaths sheaths,14,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_2,16.227,Non-Bridged sheaths sheaths,15,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_2,Cso2.Conv_2.Org_1,15,726.895
+Image25,Cso2,Conv_2,Org_1,Cell_3,154.831,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_3,Cso2.Conv_2.Org_1,8,627.214
+Image25,Cso2,Conv_2,Org_1,Cell_3,36.844,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_3,Cso2.Conv_2.Org_1,8,627.214
+Image25,Cso2,Conv_2,Org_1,Cell_3,100.303,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_3,Cso2.Conv_2.Org_1,8,627.214
+Image25,Cso2,Conv_2,Org_1,Cell_3,41.004,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_3,Cso2.Conv_2.Org_1,8,627.214
+Image25,Cso2,Conv_2,Org_1,Cell_3,72.331,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_3,Cso2.Conv_2.Org_1,8,627.214
+Image25,Cso2,Conv_2,Org_1,Cell_3,68.294,Non-Bridged sheaths sheaths,6,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_3,Cso2.Conv_2.Org_1,8,627.214
+Image25,Cso2,Conv_2,Org_1,Cell_3,71.412,Non-Bridged sheaths sheaths,7,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_3,Cso2.Conv_2.Org_1,8,627.214
+Image25,Cso2,Conv_2,Org_1,Cell_3,82.195,Non-Bridged sheaths sheaths,8,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_3,Cso2.Conv_2.Org_1,8,627.214
+Image25,Cso2,Conv_2,Org_1,Cell_4,93.939,Non-Bridged sheaths sheaths,1,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_4,Cso2.Conv_2.Org_1,5,600.544
+Image25,Cso2,Conv_2,Org_1,Cell_4,143.301,Non-Bridged sheaths sheaths,2,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_4,Cso2.Conv_2.Org_1,5,600.544
+Image25,Cso2,Conv_2,Org_1,Cell_4,99.366,Non-Bridged sheaths sheaths,3,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_4,Cso2.Conv_2.Org_1,5,600.544
+Image25,Cso2,Conv_2,Org_1,Cell_4,162.974,Non-Bridged sheaths sheaths,4,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_4,Cso2.Conv_2.Org_1,5,600.544
+Image25,Cso2,Conv_2,Org_1,Cell_4,100.964,Non-Bridged sheaths sheaths,5,NA,,OLs without bridges,Cso2.Conv_2.Org_1.Cell_4,Cso2.Conv_2.Org_1,5,600.544
