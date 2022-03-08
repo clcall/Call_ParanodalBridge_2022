@@ -132,7 +132,6 @@ end
 
 %% Plot standards
 ctrl = data.ctrl.datatable;
-cupr = data.cupr.datatable;
 bsln = data.bsln.datatable;
 l23 = data.L2_3.datatable;
 [ct,cu] = getFigColors;

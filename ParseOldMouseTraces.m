@@ -1,5 +1,5 @@
 function [out2, brgRatio] = ParseOldMouseTraces
-maindir = 'D:\ParanodalBridges\OldMice\allTraces';
+maindir = 'D:\GitHubRepos\Call_ParanodalBridge_2022\OldMOBPTraces';
 addpath(genpath(maindir))
 main = dir(maindir);
 files = {main.name};
