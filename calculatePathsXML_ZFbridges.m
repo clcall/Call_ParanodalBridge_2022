@@ -1,0 +1,160 @@
+function [ myelinPercent, allInternodes ] = calculatePathsXML_ZFbridges( xmlstruct )
+    [traceData_sheaths, traceData_lifeact] = parseData(xmlstruct);
+    frames_sheaths = cell2mat(traceData_sheaths(:,2));
+    frames_lifeact = cell2mat(traceData_lifeact(:,2));
+        
+    figure
+    for i=1:max(frames_sheaths)
+        temp = traceData_sheaths(frames_sheaths==i,:);
+        avgxyz = cell2mat(cellfun(@mean,temp(:,6),'UniformOutput',false));
+        avgx = avgxyz(:,1);
+        [~,I] = sort(avgx);
+        nfrag = size(temp,1);
+        d = NaN(2000,2);
+        lnth1 = 1;
+        for k = 1:nfrag
+            sheathedge = cell2mat(temp(I(k),6));
+            if cell2mat(temp(I(k),5)) % is a bridge
+                b=1;
+            else
+                b=0;
+            end
+            lifeact = traceData_lifeact{frames_lifeact==i,6};
+            [~,D] = knnsearch(lifeact,sheathedge);
+            lnth0 = lnth1;
+            lnth1 = lnth0 + length(D) -1;
+            d(lnth0:lnth1,1) = D;
+            d(lnth0:lnth1,2) = b;
+        end
+        idx = isnan(d(:,1));
+        d(idx,:)=[];
+        subplot(max(frames_sheaths),1,i)
+        hold on
+        h = plot(ones(size(d,1),1),'LineWidth',2);
+        
+        cdo = colormap('parula');
+        cd = interp1(linspace(0,1.5,length(cdo)),cdo,d(:,1));
+        cd = uint8(cd'*255);
+        logdx = all(cd==0);
+        if any(logdx)
+            cd(1,logdx) = uint8(cdo(end,1)*255);
+            cd(2,logdx) = uint8(cdo(end,2)*255);
+            cd(3,logdx) = uint8(cdo(end,3)*255);
+        end
+        cd(4,:) = 255;
+        drawnow
+        set(h.Edge,'ColorBinding','interpolated','ColorData',cd)
+        
+        ylim([0,1.8])
+        xlim([0,1000])
+        xticks([])
+        xticklabels([])
+        axis off
+        box off
+        
+        idx = find(d(:,2)==1);
+        if any(idx)
+            xline(idx(1),'Linewidth',1.5);
+            xline(idx(end),'Linewidth',1.5);
+        end
+        hold off
+    end
+    
+    
+%     traceNames = traceData_sheaths(:,1);
+%     traceMatData = cell2mat(traceData_sheaths(:,2:6));
+%          if sum(cellfun(@isempty,traceData_sheaths(:,2))) > 0
+%              warning('Format error. Something is mistyped.')
+%              return
+%          end
+%     axon_num = max(traceMatData(:,1)); % pulls out the number of axons
+%     totalAxonLength = [];
+%     totalSheathLength = [];
+%     avgInternodeLength = [];
+%     axonName = [];
+%     allInternodes = [];
+%     
+%     for i = 1:axon_num
+%         axon_idx = find(traceMatData(:,1)==i & traceMatData(:,2)==0);
+%         temp = traceMatData(axon_idx,:);
+%         tempStr = traceNames(axon_idx);
+%         if isempty(tempStr)
+%            continue 
+%         end
+%         tempStr = tempStr(1);
+%         totalAxonLength = [totalAxonLength; sum(temp(:,3))];
+%         axonName = [axonName; tempStr];
+%         
+%         %TOTAL SHEATH LENGTH
+%         sheath_idx = traceMatData(:,1)==i & traceMatData(:,2)~=0;
+%         internodes = traceMatData(sheath_idx,:);
+%         totalSheathLength = [totalSheathLength; sum(internodes(:,3))];
+%         
+%         %AVG INTERNODE LENGTH
+%         if any(traceMatData(:,5))
+%             uncut_ints = internodes(internodes(:,5)~=1,:);
+%             avgInternodeLength = [avgInternodeLength; mean(uncut_ints(:,3))];
+%             allInternodes = [allInternodes; uncut_ints(:,1:3)];
+%         else
+%             if(size(internodes,1) >= 3)
+%                 avgInternodeLength = [avgInternodeLength; mean(internodes(2:end-1,3))];
+%             else
+%                 avgInternodeLength = [avgInternodeLength; NaN];
+%             end  
+%         end
+%     end
+%     percentMyelin = (totalSheathLength ./ totalAxonLength)  * 100;
+%     myelinPercent = table(axonName,avgInternodeLength,totalAxonLength,totalSheathLength,percentMyelin);
+ end
+
+%----Local Function----
+function [ parsedData_sheaths, parsedData_lifeact ] = parseData(xmlstruct)
+    %get length of paths list
+    numPaths = size(xmlstruct.paths,2); 
+    traceName = cell(numPaths,1);
+    traceLength = cell(numPaths,1);
+    traceSWC = cell(numPaths,1);
+    traceColor = cell(numPaths,1);
+    traceFrame = cell(numPaths,1);
+    traceChannel = cell(numPaths,1);
+    tracePaths = cell(numPaths,1);
+    for i = 1:numPaths
+        traceName{i,1} = xmlstruct.paths(i).attribs.name;
+        traceLength{i,1} = xmlstruct.paths(i).attribs.reallength_smoothed;
+        traceSWC{i,1} = str2double(xmlstruct.paths(i).attribs.swctype);
+        if contains(xmlstruct.paths(i).attribs.color,'Orange')
+            traceColor{i,1} = 1; % meaning bridge
+        else
+            traceColor{i,1} = 0;
+        end
+        traceFrame{i,1} = str2double(xmlstruct.paths(i).attribs.frame);
+        traceChannel{i,1} = xmlstruct.paths(i).attribs.channel; 
+        tracePaths{i,1} = xmlstruct.paths(i).points.smoothed;
+    end
+    %PARSE TRACE INFO
+    %sheath extraction
+    index = find(contains(traceChannel,'1')); % Ch1 - binarized myrEGFP, Ch2 - myrEGFP, Ch3 - lifeact
+    Names = traceName(index);
+    Lengths = traceLength(index);
+    SWCs = traceSWC(index);
+    Colors = traceColor(index);
+    Paths = tracePaths(index);
+    Channels = traceChannel(index);
+    Frames = traceFrame(index);
+    
+    %create array to send main function name & length info
+    parsedData_sheaths = [Names, Frames, Lengths, SWCs, Colors, Paths];
+    
+    index = find(contains(traceChannel,'3')); % Ch1 - binarized myrEGFP, Ch2 - myrEGFP, Ch3 - lifeact
+    Names = traceName(index);
+    Lengths = traceLength(index);
+    SWCs = traceSWC(index);
+    Colors = traceColor(index);
+    Paths = tracePaths(index);
+    Channels = traceChannel(index);
+    Frames = traceFrame(index);
+    
+    %create array to send main function name & length info
+    parsedData_lifeact = [Names, Frames, Lengths, SWCs, Colors, Paths];
+    
+end
