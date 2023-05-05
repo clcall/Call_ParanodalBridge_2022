@@ -8,16 +8,11 @@ function figQuality(figh, axh, dim, heat)
     figh.Renderer = 'Painters';
     figh.Color = [1 1 1];
     figh.PaperPositionMode = 'auto'; 
-    if nargin>3
-        if heat
-            box on;
-        else
-            box off;
-        end
-    else
-        box off;
-    end
+
     %set(axh,'LooseInset',get(axh,'TightInset')) 
+    if ~(nargin>3 && heat)
+        box off
+    end
     
     allAxesInFigure = findall(figh,'type','axes');
     for i=1:size(allAxesInFigure,1)
