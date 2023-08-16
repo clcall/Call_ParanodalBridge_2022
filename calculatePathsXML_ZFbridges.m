@@ -1,4 +1,4 @@
-function [d,X,Delta,borders,origin,firstbrgtp] = calculatePathsXML_ZFbridges( xmlstruct, useImaginaryEdge, makeplot)
+function [d,X,Delta,borders,origin,firstbrgtp] = calculatePathsXML_ZFbridges( xmlstruct, edgepos, useImaginaryEdge, makeplot)
 [traceData_sheaths, traceData_lifeact] = parseData(xmlstruct);
 frames_sheaths = cell2mat(traceData_sheaths(:,2));
 frames_lifeact = cell2mat(traceData_lifeact(:,2));
@@ -8,6 +8,8 @@ Delta = cell(1,max(frames_sheaths));
 f1 = figure;
 %f2 = figure;
 firstbrg = 0;
+borders = cell(1,max(frames_sheaths));
+origin = cell(1,max(frames_sheaths));
 for i=1:max(frames_sheaths)
     temp = traceData_sheaths(frames_sheaths==i,:);
     if isempty(temp)
@@ -26,12 +28,13 @@ for i=1:max(frames_sheaths)
     nfrag = size(temp,1);
     d{i} = NaN(2000,2);
     lnth1 = 1;
-    borders = [];
-    origin = 0;
+    
     for k = 1:nfrag
+        flipflag = 0;
         sheathedge = cell2mat(temp(I(k),6));
-        if sheathedge(1,1) > sheathedge(end,1)
+        if sheathedge(1,1) > sheathedge(end,1) 
             sheathedge = flip(sheathedge);
+            flipflag = 1;
         end
         if cell2mat(temp(I(k),5)) == 1 % is a bridge
             b=1;
@@ -54,27 +57,51 @@ for i=1:max(frames_sheaths)
             b=0;
         end
         lifeact = traceData_lifeact{frames_lifeact==i,6};
-        [~,D] = knnsearch(lifeact,sheathedge);
+        [IDX,D] = knnsearch(lifeact,sheathedge);
+        % for debugging 
+%         figure
+%         plot3(lifeact(:,1),lifeact(:,2),lifeact(:,3),'r-');
+%         hold on
+%         plot3(sheathedge(:,1),sheathedge(:,2),sheathedge(:,3),'k-');
+%         hold off
+        
+
+        % MAKE EXCEPTION FOR BRIDGES THEMSELVES, WHICH CAN BE OPPOSITE
+        % HI/LO OF REST OF SHEATH
+        if contains(edgepos,'lo') % determine if sheath edge is top or bottom of sheath
+            D2 = sheathedge(:,2) - lifeact(IDX,2);
+        else
+            D2 = lifeact(IDX,2) - sheathedge(:,2);
+        end
+        D2(D2<0) = 0;
+        
+%         figure
+%         plot(D);
+%         hold on
+%         plot(D2);
+%         hold off
         lnth0 = lnth1;
-        lnth1 = lnth0 + length(D) -1;
-        d{i}(lnth0:lnth1,1) = D;
+        lnth1 = lnth0 + length(D2) -1;
+        d{i}(lnth0:lnth1,1) = D2;
         d{i}(lnth0:lnth1,2) = b;
         if b==1
-            borders = [borders,lnth0,lnth1];
+            borders{i} = [borders{i},lnth0,lnth1];
         end
-        if b==2
-            origin = lnth0;
+        if b==2 && ~flipflag
+            origin{i} = lnth0;
+        elseif b==2 && flipflag
+            origin{i} = lnth1; % use end of sheath if orientation was flipped
         end
     end
     idx = isnan(d{i}(:,1));
     d{i}(idx,:)=[];
-    if origin==0
+    if origin{i}==0
         X{i} = -lnth1:-1;
     else
-        X{i} = -origin:(lnth1-origin-1);
+        X{i} = -origin{i}:(lnth1-origin{i}-1);
     end
-    borders(borders<origin) = -(origin-borders(borders<origin));
-    borders(borders>origin) = (borders(borders>origin)-origin);
+    borders{i}(borders{i}<origin{i}) = -(origin{i}-borders{i}(borders{i}<origin{i}));
+    borders{i}(borders{i}>origin{i}) = (borders{i}(borders{i}>origin{i})-origin{i});
     
     %% PLOT RECENT CHANGE
     if i>1 && any(X{i-1})
@@ -111,8 +138,8 @@ for i=1:max(frames_sheaths)
         axis off
         box off
         
-        if any(borders)
-            xline(borders,'Linewidth',1.5);
+        if any(borders{i})
+            xline(borders{i},'Linewidth',1.5);
         end
         xline(0,'Linewidth',1.5,'Color','r');
         hold off

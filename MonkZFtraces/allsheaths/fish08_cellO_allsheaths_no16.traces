@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tracings [
+  <!ELEMENT tracings       (samplespacing,imagesize,path*,fill*)>
+  <!ELEMENT imagesize      EMPTY>
+  <!ELEMENT samplespacing  EMPTY>
+  <!ELEMENT path           (point+)>
+  <!ELEMENT point          EMPTY>
+  <!ELEMENT fill           (node*)>
+  <!ELEMENT node           EMPTY>
+  <!ATTLIST samplespacing  x                 CDATA           #REQUIRED>
+  <!ATTLIST samplespacing  y                 CDATA           #REQUIRED>
+  <!ATTLIST samplespacing  z                 CDATA           #REQUIRED>
+  <!ATTLIST samplespacing  units             CDATA           #REQUIRED>
+  <!ATTLIST imagesize      width             CDATA           #REQUIRED>
+  <!ATTLIST imagesize      height            CDATA           #REQUIRED>
+  <!ATTLIST imagesize      depth             CDATA           #REQUIRED>
+  <!ATTLIST path           id                CDATA           #REQUIRED>
+  <!ATTLIST path           primary           CDATA           #IMPLIED>
+  <!ATTLIST path           name              CDATA           #IMPLIED>
+  <!ATTLIST path           startson          CDATA           #IMPLIED>
+  <!ATTLIST path           startsindex       CDATA           #IMPLIED>
+  <!ATTLIST path           startsx           CDATA           #IMPLIED>
+  <!ATTLIST path           startsy           CDATA           #IMPLIED>
+  <!ATTLIST path           startsz           CDATA           #IMPLIED>
+  <!ATTLIST path           endson            CDATA           #IMPLIED>
+  <!ATTLIST path           endsindex         CDATA           #IMPLIED>
+  <!ATTLIST path           endsx             CDATA           #IMPLIED>
+  <!ATTLIST path           endsy             CDATA           #IMPLIED>
+  <!ATTLIST path           endsz             CDATA           #IMPLIED>
+  <!ATTLIST path           reallength        CDATA           #IMPLIED>
+  <!ATTLIST path           usefitted         (true|false)    #IMPLIED>
+  <!ATTLIST path           fitted            CDATA           #IMPLIED>
+  <!ATTLIST path           fittedversionof   CDATA           #IMPLIED>
+  <!ATTLIST path           swctype           CDATA           #IMPLIED>
+  <!ATTLIST path           color             CDATA           #IMPLIED>
+  <!ATTLIST path           channel           CDATA           #IMPLIED>
+  <!ATTLIST path         frame             CDATA           #IMPLIED>
+  <!ATTLIST point          x                 CDATA           #REQUIRED>
+  <!ATTLIST point          y                 CDATA           #REQUIRED>
+  <!ATTLIST point          z                 CDATA           #REQUIRED>
+  <!ATTLIST point          xd                CDATA           #IMPLIED>
+  <!ATTLIST point          yd                CDATA           #IMPLIED>
+  <!ATTLIST point          zd                CDATA           #IMPLIED>
+  <!ATTLIST point          tx                CDATA           #IMPLIED>
+  <!ATTLIST point          ty                CDATA           #IMPLIED>
+  <!ATTLIST point          tz                CDATA           #IMPLIED>
+  <!ATTLIST point          r                 CDATA           #IMPLIED>
+  <!ATTLIST fill           id                CDATA           #REQUIRED>
+  <!ATTLIST fill           frompaths         CDATA           #IMPLIED>
+  <!ATTLIST fill           metric            CDATA           #REQUIRED>
+  <!ATTLIST fill           threshold         CDATA           #REQUIRED>
+  <!ATTLIST fill           volume            CDATA           #IMPLIED>
+  <!ATTLIST node           id                CDATA           #REQUIRED>
+  <!ATTLIST node           x                 CDATA           #REQUIRED>
+  <!ATTLIST node           y                 CDATA           #REQUIRED>
+  <!ATTLIST node           z                 CDATA           #REQUIRED>
+  <!ATTLIST node           previousid        CDATA           #IMPLIED>
+  <!ATTLIST node           distance          CDATA           #REQUIRED>
+  <!ATTLIST node           status            (open|closed)   #REQUIRED>
+]>
+
+<tracings>
+  <samplespacing x="0.06" y="0.06" z="0.34" units="µm"/>
+  <imagesize width="3852" height="654" depth="59"/>
+  <path id="1" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (1)" reallength="0.0">
+    <point x="2248" y="374" z="23" xd="134.85" yd="22.41" zd="7.82"/>
+  </path>
+  <path id="2" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (2)" reallength="0.0">
+    <point x="2184" y="278" z="24" xd="131.01" yd="16.65" zd="8.16"/>
+  </path>
+  <path id="3" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (3)" reallength="0.0">
+    <point x="2232" y="240" z="25" xd="133.89" yd="14.37" zd="8.5"/>
+  </path>
+  <path id="4" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (4)" reallength="0.0">
+    <point x="2034" y="242" z="25" xd="122.00999999999999" yd="14.49" zd="8.5"/>
+  </path>
+  <path id="5" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (5)" reallength="0.0">
+    <point x="1957" y="154" z="26" xd="117.44999999999999" yd="9.209999999999999" zd="8.84"/>
+  </path>
+  <path id="6" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (6)" reallength="0.0">
+    <point x="2056" y="132" z="27" xd="123.33" yd="7.89" zd="9.180000000000001"/>
+  </path>
+  <path id="7" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (7)" reallength="0.0">
+    <point x="2064" y="148" z="31" xd="123.81" yd="8.85" zd="10.540000000000001"/>
+  </path>
+  <path id="8" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (8)" reallength="0.0">
+    <point x="2302" y="120" z="35" xd="138.09" yd="7.17" zd="11.9"/>
+  </path>
+  <path id="9" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (9)" reallength="0.0">
+    <point x="2260" y="92" z="35" xd="135.57" yd="5.49" zd="11.9"/>
+  </path>
+  <path id="10" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (10)" reallength="0.0">
+    <point x="1680" y="78" z="35" xd="100.77" yd="4.6499999999999995" zd="11.9"/>
+  </path>
+  <path id="11" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (11)" reallength="0.0">
+    <point x="2352" y="222" z="37" xd="141.09" yd="13.29" zd="12.58"/>
+  </path>
+  <path id="12" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (12)" reallength="0.0">
+    <point x="2420" y="162" z="29" xd="145.17" yd="9.69" zd="9.860000000000001"/>
+  </path>
+  <path id="13" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (13)" reallength="0.0">
+    <point x="2518" y="310" z="24" xd="151.04999999999998" yd="18.57" zd="8.16"/>
+  </path>
+  <path id="14" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (14)" reallength="0.0">
+    <point x="2528" y="266" z="32" xd="151.65" yd="15.93" zd="10.88"/>
+  </path>
+  <path id="15" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (15)" reallength="0.0">
+    <point x="2630" y="272" z="33" xd="157.76999999999998" yd="16.29" zd="11.22"/>
+  </path>
+  <path id="16" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (16)" reallength="0.0">
+    <point x="3170" y="118" z="29" xd="190.17" yd="7.05" zd="9.860000000000001"/>
+  </path>
+  <path id="17" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (17)" reallength="0.0">
+    <point x="3070" y="236" z="23" xd="184.17" yd="14.129999999999999" zd="7.82"/>
+  </path>
+  <path id="18" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (18)" reallength="0.0">
+    <point x="2762" y="184" z="25" xd="165.69" yd="11.01" zd="8.5"/>
+  </path>
+  <path id="19" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (19)" reallength="0.0">
+    <point x="2570" y="186" z="32" xd="154.17" yd="11.129999999999999" zd="10.88"/>
+  </path>
+  <path id="20" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (20)" reallength="0.0">
+    <point x="2606" y="146" z="31" xd="156.32999999999998" yd="8.73" zd="10.540000000000001"/>
+  </path>
+  <path id="21" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (21)" reallength="0.0">
+    <point x="2810" y="132" z="31" xd="168.57" yd="7.89" zd="10.540000000000001"/>
+  </path>
+  <path id="22" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (22)" reallength="0.0">
+    <point x="2740" y="88" z="40" xd="164.37" yd="5.25" zd="13.600000000000001"/>
+  </path>
+  <path id="23" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (23)" reallength="0.0">
+    <point x="2391" y="92" z="37" xd="143.48999999999998" yd="5.49" zd="12.58"/>
+  </path>
+  <path id="24" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (24)" reallength="0.0">
+    <point x="2590" y="220" z="41" xd="155.37" yd="13.17" zd="13.940000000000001"/>
+  </path>
+  <path id="25" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (25)" reallength="0.0">
+    <point x="2662" y="182" z="35" xd="159.69" yd="10.889999999999999" zd="11.9"/>
+  </path>
+  <path id="26" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (26)" reallength="0.0">
+    <point x="1558" y="450" z="35" xd="93.45" yd="26.97" zd="11.9"/>
+  </path>
+  <path id="27" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (27)" reallength="0.0">
+    <point x="1552" y="478" z="35" xd="93.09" yd="28.65" zd="11.9"/>
+  </path>
+  <path id="28" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (28)" reallength="0.0">
+    <point x="1554" y="502" z="35" xd="93.21" yd="30.09" zd="11.9"/>
+  </path>
+  <path id="29" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (29)" reallength="0.0">
+    <point x="1556" y="524" z="35" xd="93.33" yd="31.41" zd="11.9"/>
+  </path>
+  <path id="30" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (30)" reallength="0.0">
+    <point x="1610" y="526" z="35" xd="96.57" yd="31.529999999999998" zd="11.9"/>
+  </path>
+  <path id="31" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (31)" reallength="0.0">
+    <point x="1610" y="508" z="35" xd="96.57" yd="30.45" zd="11.9"/>
+  </path>
+  <path id="32" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (32)" reallength="0.0">
+    <point x="1602" y="478" z="35" xd="96.09" yd="28.65" zd="11.9"/>
+  </path>
+  <path id="33" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (33)" reallength="0.0">
+    <point x="1598" y="456" z="35" xd="95.85" yd="27.33" zd="11.9"/>
+  </path>
+  <path id="34" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (34)" reallength="0.0">
+    <point x="1554" y="556" z="35" xd="93.21" yd="33.33" zd="11.9"/>
+  </path>
+  <path id="35" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (35)" reallength="0.0">
+    <point x="1620" y="558" z="35" xd="97.17" yd="33.449999999999996" zd="11.9"/>
+  </path>
+  <path id="36" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (36)" reallength="0.0">
+    <point x="1668" y="460" z="35" xd="100.05" yd="27.57" zd="11.9"/>
+  </path>
+  <path id="37" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (37)" reallength="0.0">
+    <point x="1670" y="484" z="35" xd="100.17" yd="29.009999999999998" zd="11.9"/>
+  </path>
+  <path id="38" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (38)" reallength="0.0">
+    <point x="1660" y="508" z="35" xd="99.57" yd="30.45" zd="11.9"/>
+  </path>
+  <path id="39" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (39)" reallength="0.0">
+    <point x="1660" y="528" z="35" xd="99.57" yd="31.65" zd="11.9"/>
+  </path>
+  <path id="40" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (40)" reallength="0.0">
+    <point x="1666" y="552" z="35" xd="99.92999999999999" yd="33.089999999999996" zd="11.9"/>
+  </path>
+  <path id="41" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (41)" reallength="0.0">
+    <point x="1716" y="452" z="35" xd="102.92999999999999" yd="27.09" zd="11.9"/>
+  </path>
+  <path id="42" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (42)" reallength="0.0">
+    <point x="1720" y="484" z="35" xd="103.17" yd="29.009999999999998" zd="11.9"/>
+  </path>
+  <path id="43" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (43)" reallength="0.0">
+    <point x="1716" y="506" z="35" xd="102.92999999999999" yd="30.33" zd="11.9"/>
+  </path>
+  <path id="44" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (44)" reallength="0.0">
+    <point x="1726" y="524" z="35" xd="103.53" yd="31.41" zd="11.9"/>
+  </path>
+  <path id="45" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (45)" reallength="0.0">
+    <point x="1724" y="556" z="35" xd="103.41" yd="33.33" zd="11.9"/>
+  </path>
+  <path id="46" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (46)" reallength="0.0">
+    <point x="1776" y="458" z="35" xd="106.53" yd="27.45" zd="11.9"/>
+  </path>
+  <path id="47" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (47)" reallength="0.0">
+    <point x="1776" y="484" z="35" xd="106.53" yd="29.009999999999998" zd="11.9"/>
+  </path>
+  <path id="48" swctype="0" color="None" channel="1" frame="4" spines="0" primary="true" usefitted="false" name="Path (48)" reallength="0.0">
+    <point x="1778" y="504" z="35" xd="106.64999999999999" yd="30.209999999999997" zd="11.9"/>
+  </path>
+  <path id="49" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (49)" reallength="0.0">
+    <point x="2168" y="74" z="35" xd="130.04999999999998" yd="4.41" zd="11.9"/>
+  </path>
+  <path id="50" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (50)" reallength="0.0">
+    <point x="2318" y="68" z="39" xd="139.04999999999998" yd="4.05" zd="13.260000000000002"/>
+  </path>
+  <path id="51" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (51)" reallength="0.0">
+    <point x="2636" y="90" z="36" xd="158.13" yd="5.37" zd="12.24"/>
+  </path>
+  <path id="52" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (52)" reallength="0.0">
+    <point x="2170" y="102" z="35" xd="130.17" yd="6.09" zd="11.9"/>
+  </path>
+  <path id="53" swctype="0" color="Orange" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (53)" reallength="0.0">
+    <point x="2154" y="156" z="31" xd="129.21" yd="9.33" zd="10.540000000000001"/>
+  </path>
+  <path id="54" swctype="0" color="Orange" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (54)" reallength="0.0">
+    <point x="1712" y="126" z="34" xd="102.69" yd="7.529999999999999" zd="11.56"/>
+  </path>
+  <path id="55" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (55)" reallength="0.0">
+    <point x="1888" y="154" z="26" xd="113.25" yd="9.209999999999999" zd="8.84"/>
+  </path>
+  <path id="56" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (56)" reallength="0.0">
+    <point x="1598" y="124" z="30" xd="95.85" yd="7.41" zd="10.200000000000001"/>
+  </path>
+  <path id="57" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (57)" reallength="0.0">
+    <point x="1900" y="244" z="27" xd="113.97" yd="14.61" zd="9.180000000000001"/>
+  </path>
+  <path id="58" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (58)" reallength="0.0">
+    <point x="2104" y="410" z="25" xd="126.21" yd="24.57" zd="8.5"/>
+  </path>
+  <path id="59" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (59)" reallength="0.0">
+    <point x="2286" y="336" z="26" xd="137.13" yd="20.13" zd="8.84"/>
+  </path>
+  <path id="60" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (60)" reallength="0.0">
+    <point x="2216" y="272" z="34" xd="132.93" yd="16.29" zd="11.56"/>
+  </path>
+  <path id="61" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (61)" reallength="0.0">
+    <point x="2491" y="286" z="33" xd="149.48999999999998" yd="17.13" zd="11.22"/>
+  </path>
+  <path id="62" swctype="0" color="Orange" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (62)" reallength="0.0">
+    <point x="1846" y="218" z="39" xd="110.72999999999999" yd="13.049999999999999" zd="13.260000000000002"/>
+  </path>
+  <path id="63" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (63)" reallength="0.0">
+    <point x="2352" y="226" z="42" xd="141.09" yd="13.53" zd="14.280000000000001"/>
+  </path>
+  <path id="64" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (64)" reallength="0.0">
+    <point x="2560" y="192" z="31" xd="153.57" yd="11.49" zd="10.540000000000001"/>
+  </path>
+  <path id="65" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (65)" reallength="0.0">
+    <point x="3024" y="144" z="25" xd="181.41" yd="8.61" zd="8.5"/>
+  </path>
+  <path id="66" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (66)" reallength="0.0">
+    <point x="2836" y="176" z="25" xd="170.13" yd="10.53" zd="8.5"/>
+  </path>
+  <path id="67" swctype="0" color="Orange" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (67)" reallength="0.0">
+    <point x="2992" y="170" z="25" xd="179.48999999999998" yd="10.17" zd="8.5"/>
+  </path>
+  <path id="68" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (68)" reallength="0.0">
+    <point x="2906" y="234" z="25" xd="174.32999999999998" yd="14.01" zd="8.5"/>
+  </path>
+  <path id="69" swctype="0" color="None" channel="1" frame="9" spines="0" primary="true" usefitted="false" name="Path (69)" reallength="0.0">
+    <point x="1868" y="114" z="30" xd="112.05" yd="6.81" zd="10.200000000000001"/>
+  </path>
+  <path id="71" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (71)" reallength="0.0">
+    <point x="2042" y="420" z="21" xd="122.49" yd="25.169999999999998" zd="7.140000000000001"/>
+  </path>
+  <path id="72" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (72)" reallength="0.0">
+    <point x="2250" y="344" z="23" xd="134.97" yd="20.61" zd="7.82"/>
+  </path>
+  <path id="73" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (73)" reallength="0.0">
+    <point x="2036" y="298" z="33" xd="122.13" yd="17.849999999999998" zd="11.22"/>
+  </path>
+  <path id="74" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (74)" reallength="0.0">
+    <point x="2366" y="302" z="32" xd="141.93" yd="18.09" zd="10.88"/>
+  </path>
+  <path id="75" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (75)" reallength="0.0">
+    <point x="2830" y="242" z="19" xd="169.76999999999998" yd="14.49" zd="6.460000000000001"/>
+  </path>
+  <path id="76" swctype="0" color="Orange" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (76)" reallength="0.0">
+    <point x="2546" y="192" z="22" xd="152.73" yd="11.49" zd="7.48"/>
+  </path>
+  <path id="77" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (77)" reallength="0.0">
+    <point x="2210" y="208" z="31" xd="132.57" yd="12.45" zd="10.540000000000001"/>
+  </path>
+  <path id="78" swctype="0" color="Orange" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (78)" reallength="0.0">
+    <point x="2284" y="188" z="35" xd="137.01" yd="11.25" zd="11.9"/>
+  </path>
+  <path id="79" swctype="0" color="Orange" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (79)" reallength="0.0">
+    <point x="2488" y="144" z="26" xd="149.25" yd="8.61" zd="8.84"/>
+  </path>
+  <path id="80" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (80)" reallength="0.0">
+    <point x="2346" y="70" z="39" xd="140.73" yd="4.17" zd="13.260000000000002"/>
+  </path>
+  <path id="81" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (81)" reallength="0.0">
+    <point x="2474" y="78" z="37" xd="148.41" yd="4.6499999999999995" zd="12.58"/>
+  </path>
+  <path id="82" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (82)" reallength="0.0">
+    <point x="1928" y="100" z="37" xd="115.64999999999999" yd="5.97" zd="12.58"/>
+  </path>
+  <path id="83" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (83)" reallength="0.0">
+    <point x="1800" y="102" z="31" xd="107.97" yd="6.09" zd="10.540000000000001"/>
+  </path>
+  <path id="84" swctype="0" color="Orange" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (84)" reallength="0.0">
+    <point x="2380" y="238" z="39" xd="142.76999999999998" yd="14.25" zd="13.260000000000002"/>
+  </path>
+  <path id="85" swctype="0" color="Orange" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (85)" reallength="0.0">
+    <point x="1928" y="246" z="40" xd="115.64999999999999" yd="14.729999999999999" zd="13.600000000000001"/>
+  </path>
+  <path id="86" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (86)" reallength="0.0">
+    <point x="1552" y="152" z="30" xd="93.09" yd="9.09" zd="10.200000000000001"/>
+  </path>
+  <path id="87" swctype="0" color="Orange" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (87)" reallength="0.0">
+    <point x="1660" y="142" z="36" xd="99.57" yd="8.49" zd="12.24"/>
+  </path>
+  <path id="88" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (88)" reallength="0.0">
+    <point x="2082" y="164" z="31" xd="124.89" yd="9.81" zd="10.540000000000001"/>
+  </path>
+  <path id="89" swctype="0" color="Orange" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (89)" reallength="0.0">
+    <point x="1968" y="62" z="38" xd="118.05" yd="3.69" zd="12.920000000000002"/>
+  </path>
+  <path id="90" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (90)" reallength="0.0">
+    <point x="1810" y="264" z="29" xd="108.57" yd="15.809999999999999" zd="9.860000000000001"/>
+  </path>
+  <path id="91" swctype="0" color="None" channel="1" frame="13" spines="0" primary="true" usefitted="false" name="Path (91)" reallength="0.0">
+    <point x="1828" y="180" z="25" xd="109.64999999999999" yd="10.77" zd="8.5"/>
+  </path>
+  <path id="92" swctype="0" color="Orange" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (92)" reallength="0.0">
+    <point x="1798" y="66" z="39" xd="107.85" yd="3.9299999999999997" zd="13.260000000000002"/>
+  </path>
+  <path id="93" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (93)" reallength="0.0">
+    <point x="1994" y="114" z="36" xd="119.61" yd="6.81" zd="12.24"/>
+  </path>
+  <path id="94" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (94)" reallength="0.0">
+    <point x="2360" y="72" z="36" xd="141.57" yd="4.29" zd="12.24"/>
+  </path>
+  <path id="95" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (95)" reallength="0.0">
+    <point x="1254" y="122" z="33" xd="75.21" yd="7.29" zd="11.22"/>
+  </path>
+  <path id="96" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (96)" reallength="0.0">
+    <point x="1652" y="150" z="29" xd="99.09" yd="8.969999999999999" zd="9.860000000000001"/>
+  </path>
+  <path id="97" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (97)" reallength="0.0">
+    <point x="1792" y="128" z="33" xd="107.49" yd="7.6499999999999995" zd="11.22"/>
+  </path>
+  <path id="98" swctype="0" color="Orange" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (98)" reallength="0.0">
+    <point x="1322" y="154" z="34" xd="79.28999999999999" yd="9.209999999999999" zd="11.56"/>
+  </path>
+  <path id="99" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (99)" reallength="0.0">
+    <point x="2134" y="168" z="29" xd="128.01" yd="10.049999999999999" zd="9.860000000000001"/>
+  </path>
+  <path id="100" swctype="0" color="Orange" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (100)" reallength="0.0">
+    <point x="2454" y="144" z="27" xd="147.21" yd="8.61" zd="9.180000000000001"/>
+  </path>
+  <path id="101" swctype="0" color="Orange" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (101)" reallength="0.0">
+    <point x="2304" y="192" z="34" xd="138.21" yd="11.49" zd="11.56"/>
+  </path>
+  <path id="102" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (102)" reallength="0.0">
+    <point x="2238" y="210" z="28" xd="134.25" yd="12.57" zd="9.520000000000001"/>
+  </path>
+  <path id="103" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (103)" reallength="0.0">
+    <point x="1800" y="262" z="29" xd="107.97" yd="15.69" zd="9.860000000000001"/>
+  </path>
+  <path id="104" swctype="0" color="Orange" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (104)" reallength="0.0">
+    <point x="2022" y="246" z="39" xd="121.28999999999999" yd="14.729999999999999" zd="13.260000000000002"/>
+  </path>
+  <path id="105" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (105)" reallength="0.0">
+    <point x="2398" y="230" z="39" xd="143.85" yd="13.77" zd="13.260000000000002"/>
+  </path>
+  <path id="106" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (106)" reallength="0.0">
+    <point x="2090" y="294" z="32" xd="125.36999999999999" yd="17.61" zd="10.88"/>
+  </path>
+  <path id="107" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (107)" reallength="0.0">
+    <point x="2364" y="312" z="34" xd="141.81" yd="18.689999999999998" zd="11.56"/>
+  </path>
+  <path id="108" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (108)" reallength="0.0">
+    <point x="2244" y="348" z="22" xd="134.60999999999999" yd="20.849999999999998" zd="7.48"/>
+  </path>
+  <path id="109" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (109)" reallength="0.0">
+    <point x="2050" y="416" z="20" xd="122.97" yd="24.93" zd="6.800000000000001"/>
+  </path>
+  <path id="110" swctype="0" color="None" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (110)" reallength="0.0">
+    <point x="2858" y="236" z="20" xd="171.45" yd="14.129999999999999" zd="6.800000000000001"/>
+  </path>
+  <path id="111" swctype="0" color="Orange" channel="1" frame="15" spines="0" primary="true" usefitted="false" name="Path (111)" reallength="0.0">
+    <point x="2556" y="198" z="24" xd="153.32999999999998" yd="11.85" zd="8.16"/>
+  </path>
+  <path id="132" swctype="0" color="None" channel="1" frame="31" spines="0" primary="true" usefitted="false" name="placeholder" reallength="0.0">
+    <point x="2386" y="274" z="28" xd="143.13" yd="16.41" zd="9.520000000000001"/>
+  </path>
+</tracings>

@@ -1,5 +1,5 @@
-addpath(genpath('D:\GitHubRepos\OligodendrocyteAnalysisCode\'));
-prop_tbl = readtable('D:\GitHubRepos\OligodendrocyteAnalysisCode\ParanodalBridges\OwenUpdatedData\Proportion_cells_with_bridges_updated.xlsx');
+addpath(genpath('D:\GitHubRepos\Call_ParanodalBridge_2022'));
+prop_tbl = readtable('D:\GitHubRepos\Call_ParanodalBridge_2022\OwenUpdatedData\Proportion_cells_with_bridges_updated.xlsx');
 prop_tbl = prop_tbl(1:24,:);
 
 nonbridged = prop_tbl.Cells_with_0;
@@ -8,7 +8,7 @@ bridged = prop_tbl.Cells_with_1 + prop_tbl.Cells_with_2 + prop_tbl.Cells_with_3;
 prop = bridged ./ (nonbridged + bridged);
 
 %% sheaths per cell
-data = readtable('D:\GitHubRepos\OligodendrocyteAnalysisCode\ParanodalBridges\OwenUpdatedData\iPSC_myelinoid_quantification_sheathlengths_aggregatedpercell.csv');
+data = readtable('D:\GitHubRepos\Call_ParanodalBridge_2022\OwenUpdatedData\iPSC_myelinoid_quantification_sheathlengths_aggregatedpercell.csv');
 brg_idx = contains(data.Cell_type,'OLs with bridges');
 nonbrg_idx = contains(data.Cell_type,'OLs without bridges');
 
@@ -46,7 +46,7 @@ ylim([0 200])
 figQuality(gcf,gca,[2.4 2.2])
 
 %% length per cell per sheath type
-data = readtable('D:\GitHubRepos\OligodendrocyteAnalysisCode\ParanodalBridges\OwenUpdatedData\iPSC_myelinoid_quantification_sheathlengths.csv');
+data = readtable('D:\GitHubRepos\Call_ParanodalBridge_2022\OwenUpdatedData\iPSC_myelinoid_quantification_sheathlengths.csv');
 
 nonbrg_idx = contains(data.Sheath_type,'Regular');
 anchr_idx = contains(data.Sheath_type,'Anchored');
@@ -115,7 +115,7 @@ while j <= length(CellIDs)
     k = k+1;
 end
 
-data2 = readtable('D:\GitHubRepos\OligodendrocyteAnalysisCode\ParanodalBridges\OwenUpdatedData\iPSC_myelinoid_quantification_sheathlengths_reorganised_for_Chainlengths.csv');
+data2 = readtable('D:\GitHubRepos\Call_ParanodalBridge_2022\OwenUpdatedData\iPSC_myelinoid_quantification_sheathlengths_reorganised_for_Chainlengths.csv');
 
 chain_idx = ~isnan(data2.Chain_length);
 data2_chains = data2(chain_idx,:);
@@ -156,3 +156,19 @@ xlim([0 5])
 xticklabels({})
 ylim([0 400])
 figQuality(gcf,gca,[2.5 2.2])
+
+%% ACTIVITY DATA
+ctrlprops = [50 25 16.66666667 57.14285714 37.5 28.57142857 25 35.71428571 16.66666667 42.85714286 25 11.11111111 44.44444444];
+tentprops = [12.5 60 0 0 41.66666667 33.33333333 23.07692308 45.45454545 40 0 28.57142857 41.66666667 33.33333333];
+avg = [mean(ctrlprops),mean(tentprops)];
+sem = [calcSEM(ctrlprops),calcSEM(tentprops)];
+[ct,cu] = getFigColors;
+figure
+plotSpread({ctrlprops,tentprops},'distributionMarker','o','distributionColors',{ct,cu});
+hold on
+errorbar(avg,sem,'ko','MarkerSize',3,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5);
+hold off
+xlim([0 3])
+ylim([0 100])
+xticklabels({})
+figQuality(gcf,gca,[2.1 2.2])
