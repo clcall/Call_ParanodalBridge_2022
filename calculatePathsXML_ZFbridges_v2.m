@@ -1,29 +1,32 @@
-function [d,X,Delta,borders,origin,firstbrgtp] = calculatePathsXML_ZFbridges( xmlstruct, edgepos, useImaginaryEdge, makeplot)
+function [d,X,Delta,borders,origin,firstbrgtp,framesUsed] = calculatePathsXML_ZFbridges_v2( xmlstruct, edgepos, makeplot, TL, name)
 [traceData_sheaths, traceData_lifeact] = parseData(xmlstruct);
 frames_sheaths = cell2mat(traceData_sheaths(:,2));
 frames_lifeact = cell2mat(traceData_lifeact(:,2));
 d = cell(1,max(frames_sheaths));
 X = cell(1,max(frames_sheaths));
 Delta = cell(1,max(frames_sheaths));
+framesUsed = [];
 if makeplot
     f1 = figure;
+    f2 = figure;
 end
-%f2 = figure;
 firstbrg = 0;
 borders = cell(1,max(frames_sheaths));
 origin = cell(1,max(frames_sheaths));
 for i=1:max(frames_sheaths)
-    temp = traceData_sheaths(frames_sheaths==i,:);
+    temp = traceData_sheaths(frames_sheaths==i,:); % get sheaths for current timeframe
     if isempty(temp)
-        subplot(max(frames_sheaths),1,i)
-        ylim([0,1.8])
-        xlim([0,1000])
-        xticks([])
-        xticklabels([])
-        axis off
-        box off
+%         figure(f1)
+%         subplot(max(frames_sheaths),1,i)
+%         ylim([0,1.8])
+%         xlim([0,1000])
+%         xticks([])
+%         xticklabels([])
+%         axis off
+%         box off
         continue
     end
+    % organize trace points, sort from image left to right
     avgxyz = cell2mat(cellfun(@mean,temp(:,6),'UniformOutput',false));
     avgx = avgxyz(:,1);
     [~,I] = sort(avgx,'ascend');
@@ -31,7 +34,8 @@ for i=1:max(frames_sheaths)
     d{i} = NaN(2000,2);
     lnth1 = 1;
     
-    for k = 1:nfrag
+    organized = NaN(3,nfrag);
+    for k = 1:nfrag % running in order of left to right
         flipflag = 0;
         sheathedge = cell2mat(temp(I(k),6));
         if sheathedge(1,1) > sheathedge(end,1) 
@@ -44,29 +48,16 @@ for i=1:max(frames_sheaths)
                 firstbrgtp = i;
                 firstbrg = 1;
             end
-            % make straight line always on same edge as sheath traces
-            if nargin>1 && useImaginaryEdge
-                allpts = cell2mat(temp(:,6));
-                startI = knnsearch(allpts,sheathedge(1,:));
-                stopI = knnsearch(allpts,sheathedge(end,:));
-                start = allpts(startI,:);
-                stop = allpts(stopI,:);
-                sheathedge = [linspace(start(1),stop(1),size(sheathedge,1))' linspace(start(2),stop(2),size(sheathedge,1))' linspace(start(3),stop(3),size(sheathedge,1))'];
-            end
         elseif cell2mat(temp(I(k),5)) == 2 % has sheath origin
             b=2;
         else
             b=0;
         end
+        organized(1,k) = cell2mat(temp(I(k),3));
+        organized(2,k) = b;
+        organized(3,k) = flipflag;
         lifeact = traceData_lifeact{frames_lifeact==i,6};
         [IDX,D] = knnsearch(lifeact,sheathedge);
-        % for debugging 
-%         figure
-%         plot3(lifeact(:,1),lifeact(:,2),lifeact(:,3),'r-');
-%         hold on
-%         plot3(sheathedge(:,1),sheathedge(:,2),sheathedge(:,3),'k-');
-%         hold off
-        
 
         % MAKE EXCEPTION FOR BRIDGES THEMSELVES, WHICH CAN BE OPPOSITE
         % HI/LO OF REST OF SHEATH
@@ -77,11 +68,6 @@ for i=1:max(frames_sheaths)
         end
         D2(D2<0) = 0;
         
-%         figure
-%         plot(D);
-%         hold on
-%         plot(D2);
-%         hold off
         lnth0 = lnth1;
         lnth1 = lnth0 + length(D2) -1;
         d{i}(lnth0:lnth1,1) = D2;
@@ -95,6 +81,45 @@ for i=1:max(frames_sheaths)
             origin{i} = lnth1; % use end of sheath if orientation was flipped
         end
     end
+    
+    % PLOT REAL LENGTHS OF FRAGMENTS IN ORDER
+    if makeplot
+        figure(f2);
+        hold on
+        if size(organized,2)==1 % deal with singletons, ugh
+            if organized(3,1) % flipped
+                plot([-organized(1,1) 0],[TL(i) TL(i)],'k-','LineWidth',2)
+            else % not flipped
+                plot([0 organized(1,1)],[TL(i) TL(i)],'k-','LineWidth',2)
+            end
+        else
+            ori = find(organized(2,:)==2);
+            flipped = organized(3,ori);
+            if ~flipped
+                if ~(ori==1)
+                    ori = ori-1;
+                end
+            end
+            leftedge = sum(organized(1,1:ori));
+            sums = cumsum(organized(1,:));
+            edges = sums-sums(ori);
+            edges = [-leftedge,edges];
+            for s = 2:length(edges)
+                switch organized(2,s-1)
+                    case 0
+                        color = 'k';
+                    case 1
+                        color = 'r';
+                    case 2
+                        color = 'k';
+                end
+                plot([edges(s-1) edges(s)],[TL(i) TL(i)],'Color',color,'LineWidth',2)
+            end
+        end
+        
+        hold off
+    end
+    
     idx = isnan(d{i}(:,1));
     d{i}(idx,:)=[];
     if origin{i}==0
@@ -111,41 +136,49 @@ for i=1:max(frames_sheaths)
         idx2 = ismember(X{i},X{i-1}); % length of i
         delta = d{i}(idx2,1)-d{i-1}(idx1,1);
         Delta{i} = [X{i-1}(idx1)',delta];
+        framesUsed = [framesUsed; i];
     end
     %% PLOT ABSOLUTE DISTANCE
     if makeplot
-        figure(f1);
-        hold on
-        subplot(max(frames_sheaths),1,i)
-        %         h = plot(X,ones(size(d,1),1),'LineWidth',2);
-        h = plot(X{i},d{i}(:,1),'LineWidth',2);
-        
-        cdo = colormap('parula');
-        cd = interp1(linspace(0,1.2,length(cdo)),cdo,d{i}(:,1));
-        cd = uint8(cd'*255);
-        logdx = all(cd==0);
-        if any(logdx)
-            cd(1,logdx) = uint8(cdo(end,1)*255);
-            cd(2,logdx) = uint8(cdo(end,2)*255);
-            cd(3,logdx) = uint8(cdo(end,3)*255);
-        end
-        cd(4,:) = 255;
-        drawnow
-        set(h.Edge,'ColorBinding','interpolated','ColorData',cd)
-        
-        ylim([0,2])
-        xlim([-1500,1500])
-        xticks([])
-        xticklabels([])
-        axis off
-        box off
-        
-        if any(borders{i})
-            xline(borders{i},'Linewidth',1.5);
-        end
-        xline(0,'Linewidth',1.5,'Color','r');
-        hold off
+%         figure(f1);
+%         hold on
+%         subplot(max(frames_sheaths),1,i)
+%         %         h = plot(X,ones(size(d,1),1),'LineWidth',2);
+%         h = plot(X{i},d{i}(:,1),'LineWidth',2);
+%         
+%         cdo = colormap('parula');
+%         cd = interp1(linspace(0,1.2,length(cdo)),cdo,d{i}(:,1));
+%         cd = uint8(cd'*255);
+%         logdx = all(cd==0);
+%         if any(logdx)
+%             cd(1,logdx) = uint8(cdo(end,1)*255);
+%             cd(2,logdx) = uint8(cdo(end,2)*255);
+%             cd(3,logdx) = uint8(cdo(end,3)*255);
+%         end
+%         cd(4,:) = 255;
+%         drawnow
+%         set(h.Edge,'ColorBinding','interpolated','ColorData',cd)
+%         
+%         ylim([0,2])
+%         xlim([-1500,1500])
+%         xticks([])
+%         xticklabels([])
+%         axis off
+%         box off
+%         
+%         if any(borders{i})
+%             xline(borders{i},'Linewidth',1.5);
+%         end
+%         xline(0,'Linewidth',1.5,'Color','r');
+%         hold off
     end
+end
+if makeplot
+    figure(f2)
+    set(gca, 'YDir','reverse')
+    ylim([-20,120])
+    title(name)
+    figQuality(gcf,gca,[2,3.5])
 end
 end
 

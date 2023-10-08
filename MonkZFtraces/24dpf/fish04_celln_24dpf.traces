@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tracings [
+  <!ELEMENT tracings       (samplespacing,imagesize,path*,fill*)>
+  <!ELEMENT imagesize      EMPTY>
+  <!ELEMENT samplespacing  EMPTY>
+  <!ELEMENT path           (point+)>
+  <!ELEMENT point          EMPTY>
+  <!ELEMENT fill           (node*)>
+  <!ELEMENT node           EMPTY>
+  <!ATTLIST samplespacing  x                 CDATA           #REQUIRED>
+  <!ATTLIST samplespacing  y                 CDATA           #REQUIRED>
+  <!ATTLIST samplespacing  z                 CDATA           #REQUIRED>
+  <!ATTLIST samplespacing  units             CDATA           #REQUIRED>
+  <!ATTLIST imagesize      width             CDATA           #REQUIRED>
+  <!ATTLIST imagesize      height            CDATA           #REQUIRED>
+  <!ATTLIST imagesize      depth             CDATA           #REQUIRED>
+  <!ATTLIST path           id                CDATA           #REQUIRED>
+  <!ATTLIST path           primary           CDATA           #IMPLIED>
+  <!ATTLIST path           name              CDATA           #IMPLIED>
+  <!ATTLIST path           startson          CDATA           #IMPLIED>
+  <!ATTLIST path           startsindex       CDATA           #IMPLIED>
+  <!ATTLIST path           startsx           CDATA           #IMPLIED>
+  <!ATTLIST path           startsy           CDATA           #IMPLIED>
+  <!ATTLIST path           startsz           CDATA           #IMPLIED>
+  <!ATTLIST path           endson            CDATA           #IMPLIED>
+  <!ATTLIST path           endsindex         CDATA           #IMPLIED>
+  <!ATTLIST path           endsx             CDATA           #IMPLIED>
+  <!ATTLIST path           endsy             CDATA           #IMPLIED>
+  <!ATTLIST path           endsz             CDATA           #IMPLIED>
+  <!ATTLIST path           reallength        CDATA           #IMPLIED>
+  <!ATTLIST path           usefitted         (true|false)    #IMPLIED>
+  <!ATTLIST path           fitted            CDATA           #IMPLIED>
+  <!ATTLIST path           fittedversionof   CDATA           #IMPLIED>
+  <!ATTLIST path           swctype           CDATA           #IMPLIED>
+  <!ATTLIST path           color             CDATA           #IMPLIED>
+  <!ATTLIST path           channel           CDATA           #IMPLIED>
+  <!ATTLIST path         frame             CDATA           #IMPLIED>
+  <!ATTLIST point          x                 CDATA           #REQUIRED>
+  <!ATTLIST point          y                 CDATA           #REQUIRED>
+  <!ATTLIST point          z                 CDATA           #REQUIRED>
+  <!ATTLIST point          xd                CDATA           #IMPLIED>
+  <!ATTLIST point          yd                CDATA           #IMPLIED>
+  <!ATTLIST point          zd                CDATA           #IMPLIED>
+  <!ATTLIST point          tx                CDATA           #IMPLIED>
+  <!ATTLIST point          ty                CDATA           #IMPLIED>
+  <!ATTLIST point          tz                CDATA           #IMPLIED>
+  <!ATTLIST point          r                 CDATA           #IMPLIED>
+  <!ATTLIST fill           id                CDATA           #REQUIRED>
+  <!ATTLIST fill           frompaths         CDATA           #IMPLIED>
+  <!ATTLIST fill           metric            CDATA           #REQUIRED>
+  <!ATTLIST fill           threshold         CDATA           #REQUIRED>
+  <!ATTLIST fill           volume            CDATA           #IMPLIED>
+  <!ATTLIST node           id                CDATA           #REQUIRED>
+  <!ATTLIST node           x                 CDATA           #REQUIRED>
+  <!ATTLIST node           y                 CDATA           #REQUIRED>
+  <!ATTLIST node           z                 CDATA           #REQUIRED>
+  <!ATTLIST node           previousid        CDATA           #IMPLIED>
+  <!ATTLIST node           distance          CDATA           #REQUIRED>
+  <!ATTLIST node           status            (open|closed)   #REQUIRED>
+]>
+
+<tracings>
+  <samplespacing x="0.05953593780696599" y="0.05953593780696599" z="0.35" units="µm"/>
+  <imagesize width="3935" height="576" depth="111"/>
+  <path id="1" swctype="0" color="Orange" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (1)" reallength="0.0">
+    <point x="1528" y="215" z="84" xd="90.97091296904404" yd="12.800226628497688" zd="29.4"/>
+  </path>
+  <path id="2" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (2)" reallength="0.0">
+    <point x="2688" y="453" z="40" xd="160.00283285622112" yd="26.940011857652113" zd="14.0"/>
+  </path>
+  <path id="3" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (3)" reallength="0.0">
+    <point x="2136" y="435" z="68" xd="127.1389951867759" yd="25.868364977126728" zd="23.799999999999997"/>
+  </path>
+  <path id="4" swctype="0" color="Orange" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (4)" reallength="0.0">
+    <point x="2370" y="336" z="79" xd="141.07040463360593" yd="19.97430713423709" zd="27.65"/>
+  </path>
+  <path id="5" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (5)" reallength="0.0">
+    <point x="2217" y="291" z="69" xd="131.96140614914015" yd="17.29518993292362" zd="24.15"/>
+  </path>
+  <path id="6" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (6)" reallength="0.0">
+    <point x="1932" y="333" z="73" xd="114.99366387415482" yd="19.79569932081619" zd="25.549999999999997"/>
+  </path>
+  <path id="7" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (7)" reallength="0.0">
+    <point x="2993" y="306" z="50" xd="178.16129388734572" yd="18.18822900002811" zd="17.5"/>
+  </path>
+  <path id="8" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (8)" reallength="0.0">
+    <point x="3085" y="208" z="54" xd="183.6386001655866" yd="12.353707094945444" zd="18.9"/>
+  </path>
+  <path id="9" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (9)" reallength="0.0">
+    <point x="2891" y="218" z="58" xd="172.0886282310352" yd="12.949066473015103" zd="20.299999999999997"/>
+  </path>
+  <path id="10" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (10)" reallength="0.0">
+    <point x="2421" y="274" z="83" xd="144.10673746176118" yd="16.283078990205198" zd="29.049999999999997"/>
+  </path>
+</tracings>

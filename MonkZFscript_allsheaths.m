@@ -6,11 +6,13 @@ files = {fldr(3:end).name};
 n = length(files);
 alltimeSheaths = NaN(n,160);
 alltimeBrgs = NaN(n,160);
-
 colors = parula;
+SD = struct; %all sheath data
+
 figure(1);
 for f = 1:n
     name = files{f};
+    SD(f).name = name(1:12);
     xmlstruct = parseXML_SingleCell(name);
     timeline = gettimeline(name(1:12));
 
@@ -32,11 +34,6 @@ for f = 1:n
             numbrgs(i) = numbrgs(i-1);
         end
     end
-%     figure
-%     plot(timeline,numsheaths,'k-o')
-%     hold on
-%     plot(timeline,numbrgs,'r-o')
-%     hold off
     
     % adjusted timeline to peak of sheaths
     figure(1);
@@ -44,15 +41,36 @@ for f = 1:n
     peak = max(numsheaths);
     idx = find(numsheaths==peak);
     peakedge = idx(end);
+    SD(f).peakedge = peakedge;
     adjTL = timeline - timeline(peakedge);
+    SD(f).adjTL = adjTL;
     tempcolor = colors(round(256/n*f),:);
-    plot(adjTL,numsheaths,'LineStyle','-','Color',tempcolor)
-    plot(adjTL,numbrgs,'LineStyle','--','Color',tempcolor)
+    plot(adjTL,numsheaths,'LineStyle','-','Color',tempcolor,'LineWidth',2)
+    plot(adjTL,numbrgs,'LineStyle',':','Color',tempcolor,'LineWidth',2)
     hold off
     [~,scaledidx] = ismember(round(adjTL),-29:130);
     alltimeSheaths(f,scaledidx) = numsheaths;
     alltimeBrgs(f,scaledidx) = numbrgs;
 end
+
+temp = ~isnan(alltimeSheaths);
+idx = cell2mat(arrayfun(@(x) find(temp(x,:),1,'last'),1:size(alltimeSheaths,1),'UniformOutput',false));
+filledSheaths = fillmissing(alltimeSheaths(:,30:end),'linear',2);
+filledBrgs = fillmissing(alltimeBrgs(:,30:end),'linear',2);
+for i=1:length(idx)
+    if idx(i)<110
+        filledSheaths(i,idx(i)-29:81)=NaN;
+        filledBrgs(i,idx(i)-29:81)=NaN;
+    end
+end
+
+figure(1);
+hold on
+plot(0:80,mean(filledSheaths(:,1:81),'omitnan'),'LineStyle','-','Color','k','LineWidth',2)
+plot(0:80,mean(filledBrgs(:,1:81),'omitnan'),'LineStyle',':','Color','k','LineWidth',2)
+figQuality(gcf,gca,[4.6,2.5])
+xlim([-40 80])
+
         
 function [ parsedData_sheaths ] = parseData(xmlstruct)
 %get length of paths list

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tracings [
+  <!ELEMENT tracings       (samplespacing,imagesize,path*,fill*)>
+  <!ELEMENT imagesize      EMPTY>
+  <!ELEMENT samplespacing  EMPTY>
+  <!ELEMENT path           (point+)>
+  <!ELEMENT point          EMPTY>
+  <!ELEMENT fill           (node*)>
+  <!ELEMENT node           EMPTY>
+  <!ATTLIST samplespacing  x                 CDATA           #REQUIRED>
+  <!ATTLIST samplespacing  y                 CDATA           #REQUIRED>
+  <!ATTLIST samplespacing  z                 CDATA           #REQUIRED>
+  <!ATTLIST samplespacing  units             CDATA           #REQUIRED>
+  <!ATTLIST imagesize      width             CDATA           #REQUIRED>
+  <!ATTLIST imagesize      height            CDATA           #REQUIRED>
+  <!ATTLIST imagesize      depth             CDATA           #REQUIRED>
+  <!ATTLIST path           id                CDATA           #REQUIRED>
+  <!ATTLIST path           primary           CDATA           #IMPLIED>
+  <!ATTLIST path           name              CDATA           #IMPLIED>
+  <!ATTLIST path           startson          CDATA           #IMPLIED>
+  <!ATTLIST path           startsindex       CDATA           #IMPLIED>
+  <!ATTLIST path           startsx           CDATA           #IMPLIED>
+  <!ATTLIST path           startsy           CDATA           #IMPLIED>
+  <!ATTLIST path           startsz           CDATA           #IMPLIED>
+  <!ATTLIST path           endson            CDATA           #IMPLIED>
+  <!ATTLIST path           endsindex         CDATA           #IMPLIED>
+  <!ATTLIST path           endsx             CDATA           #IMPLIED>
+  <!ATTLIST path           endsy             CDATA           #IMPLIED>
+  <!ATTLIST path           endsz             CDATA           #IMPLIED>
+  <!ATTLIST path           reallength        CDATA           #IMPLIED>
+  <!ATTLIST path           usefitted         (true|false)    #IMPLIED>
+  <!ATTLIST path           fitted            CDATA           #IMPLIED>
+  <!ATTLIST path           fittedversionof   CDATA           #IMPLIED>
+  <!ATTLIST path           swctype           CDATA           #IMPLIED>
+  <!ATTLIST path           color             CDATA           #IMPLIED>
+  <!ATTLIST path           channel           CDATA           #IMPLIED>
+  <!ATTLIST path         frame             CDATA           #IMPLIED>
+  <!ATTLIST point          x                 CDATA           #REQUIRED>
+  <!ATTLIST point          y                 CDATA           #REQUIRED>
+  <!ATTLIST point          z                 CDATA           #REQUIRED>
+  <!ATTLIST point          xd                CDATA           #IMPLIED>
+  <!ATTLIST point          yd                CDATA           #IMPLIED>
+  <!ATTLIST point          zd                CDATA           #IMPLIED>
+  <!ATTLIST point          tx                CDATA           #IMPLIED>
+  <!ATTLIST point          ty                CDATA           #IMPLIED>
+  <!ATTLIST point          tz                CDATA           #IMPLIED>
+  <!ATTLIST point          r                 CDATA           #IMPLIED>
+  <!ATTLIST fill           id                CDATA           #REQUIRED>
+  <!ATTLIST fill           frompaths         CDATA           #IMPLIED>
+  <!ATTLIST fill           metric            CDATA           #REQUIRED>
+  <!ATTLIST fill           threshold         CDATA           #REQUIRED>
+  <!ATTLIST fill           volume            CDATA           #IMPLIED>
+  <!ATTLIST node           id                CDATA           #REQUIRED>
+  <!ATTLIST node           x                 CDATA           #REQUIRED>
+  <!ATTLIST node           y                 CDATA           #REQUIRED>
+  <!ATTLIST node           z                 CDATA           #REQUIRED>
+  <!ATTLIST node           previousid        CDATA           #IMPLIED>
+  <!ATTLIST node           distance          CDATA           #REQUIRED>
+  <!ATTLIST node           status            (open|closed)   #REQUIRED>
+]>
+
+<tracings>
+  <samplespacing x="0.07454687534004893" y="0.07454687534004893" z="0.3874843" units="µm"/>
+  <imagesize width="3156" height="748" depth="37"/>
+  <path id="1" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (1)" reallength="31.242379531949712">
+    <point x="1413" y="556" z="8" xd="105.29746141781912" yd="41.41078925139718" zd="3.0998744"/>
+    <point x="1461" y="527" z="8" xd="108.91298487181149" yd="39.286203304205785" zd="3.0998744"/>
+    <point x="1522" y="498" z="8" xd="113.46034426755448" yd="37.12434391934437" zd="3.0998744"/>
+    <point x="1577" y="486" z="8" xd="117.56042241125716" yd="36.22978141526378" zd="3.0998744"/>
+    <point x="1640" y="469" z="8" xd="122.25687555768025" yd="34.96248453448295" zd="3.0998744"/>
+    <point x="1707" y="449" z="8" xd="127.25151620546353" yd="33.47154702768197" zd="3.0998744"/>
+    <point x="1763" y="424" z="10" xd="131.42614122450627" yd="31.607875144180746" zd="3.8748430000000003"/>
+    <point x="1798" y="404" z="12" xd="134.03528186140798" yd="30.116937637379767" zd="4.6498116"/>
+  </path>
+  <path id="2" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (2)" reallength="22.759790687638183">
+    <point x="1482" y="487" z="10" xd="110.44119581628249" yd="36.2670548529338" zd="3.8748430000000003"/>
+    <point x="1551" y="468" z="10" xd="115.62220365241589" yd="34.8879376591429" zd="3.8748430000000003"/>
+    <point x="1612" y="453" z="10" xd="120.16956304815888" yd="33.76973452904217" zd="3.8748430000000003"/>
+    <point x="1679" y="440" z="11" xd="125.16420369594216" yd="32.80062514962153" zd="4.2623273"/>
+    <point x="1727" y="433" z="12" xd="128.7424537122645" yd="32.278797022241186" zd="4.6498116"/>
+    <point x="1780" y="427" z="12" xd="132.6934381052871" yd="31.831515770200895" zd="4.6498116"/>
+  </path>
+  <path id="3" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (3)" reallength="45.76838297464868">
+    <point x="1339" y="471" z="8" xd="99.78099264265549" yd="35.074304847493025" zd="3.0998744"/>
+    <point x="1429" y="449" z="8" xd="106.52748486092992" yd="33.47154702768197" zd="3.0998744"/>
+    <point x="1522" y="428" z="10" xd="113.46034426755448" yd="31.906062645540942" zd="3.8748430000000003"/>
+    <point x="1613" y="415" z="10" xd="120.24410992349893" yd="30.936953266120305" zd="3.8748430000000003"/>
+    <point x="1717" y="403" z="9" xd="127.99698495886402" yd="30.04239076203972" zd="3.4873587"/>
+    <point x="1811" y="403" z="10" xd="135.00439124082862" yd="30.04239076203972" zd="3.8748430000000003"/>
+    <point x="1852" y="401" z="10" xd="138.06081312977062" yd="29.89329701135962" zd="3.8748430000000003"/>
+    <point x="1904" y="380" z="10" xd="141.93725064745317" yd="28.327812629218595" zd="3.8748430000000003"/>
+    <point x="1941" y="379" z="10" xd="144.69548503503498" yd="28.253265753878544" zd="3.8748430000000003"/>
+  </path>
+  <path id="4" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (4)" reallength="37.76405426252259">
+    <point x="1473" y="402" z="6" xd="109.77027393822205" yd="29.930570449029645" zd="2.3249058"/>
+    <point x="1524" y="406" z="6" xd="113.60943801823457" yd="30.266031388059865" zd="2.3249058"/>
+    <point x="1592" y="396" z="6" xd="118.6786255413579" yd="29.520562634659377" zd="2.3249058"/>
+    <point x="1667" y="383" z="6" xd="124.26964119186157" yd="28.55145325523874" zd="2.3249058"/>
+    <point x="1752" y="370" z="6" xd="130.60612559576572" yd="27.582343875818104" zd="2.3249058"/>
+    <point x="1839" y="359" z="8" xd="137.09170375034998" yd="26.762328247077566" zd="3.0998744"/>
+    <point x="1896" y="358" z="7" xd="141.34087564473276" yd="26.68778137173752" zd="2.7123901"/>
+    <point x="1949" y="358" z="7" xd="145.29186003775536" yd="26.68778137173752" zd="2.7123901"/>
+    <point x="1974" y="363" z="7" xd="147.1555319212566" yd="27.060515748437762" zd="2.7123901"/>
+  </path>
+  <path id="5" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (5)" reallength="23.692422628982072">
+    <point x="1366" y="382" z="8" xd="101.79375827683681" yd="28.439632942228666" zd="3.0998744"/>
+    <point x="1447" y="381" z="9" xd="107.86932861705081" yd="28.402359504558643" zd="3.4873587"/>
+    <point x="1528" y="374" z="10" xd="113.90762551959477" yd="27.8805313771783" zd="3.8748430000000003"/>
+    <point x="1597" y="369" z="11" xd="119.05135991805814" yd="27.507797000478057" zd="4.2623273"/>
+    <point x="1640" y="368" z="11" xd="122.25687555768025" yd="27.433250125138006" zd="4.2623273"/>
+    <point x="1682" y="373" z="11" xd="125.3878443219623" yd="27.805984501838253" zd="4.2623273"/>
+  </path>
+  <path id="11" swctype="0" color="Blue" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (11)" reallength="53.48273574916699">
+    <point x="1066" y="288" z="13" xd="79.4793935917155" yd="21.432226660264067" zd="5.0372959"/>
+    <point x="1160" y="285" z="13" xd="86.47437539445676" yd="21.245859471913946" zd="5.0372959"/>
+    <point x="1239" y="283" z="13" xd="92.36357854632062" yd="21.096765721233847" zd="5.0372959"/>
+    <point x="1300" y="277" z="13" xd="96.91093794206361" yd="20.649484469193553" zd="5.0372959"/>
+    <point x="1357" y="264" z="13" xd="101.1601098364464" yd="19.68037508977292" zd="5.0372959"/>
+    <point x="1426" y="258" z="13" xd="106.30384423490977" yd="19.233093837732625" zd="5.0372959"/>
+    <point x="1526" y="266" z="14" xd="113.75853176891466" yd="19.829468840453014" zd="5.4247802"/>
+    <point x="1596" y="268" z="13" xd="118.97681304271809" yd="19.978562591133112" zd="5.0372959"/>
+    <point x="1650" y="260" z="12" xd="123.00234431108073" yd="19.382187588412723" zd="4.6498116"/>
+    <point x="1725" y="259" z="12" xd="128.5933599615844" yd="19.307640713072672" zd="4.6498116"/>
+    <point x="1780" y="258" z="12" xd="132.6934381052871" yd="19.233093837732625" zd="4.6498116"/>
+  </path>
+  <path id="12" swctype="0" color="Red" channel="1" frame="1" spines="0" usefitted="false" startson="11" startx="132.6934381052871" starty="19.233093837732625" startz="4.6498116" startsindex="10" name="Path (12)" reallength="11.212819276776962">
+    <point x="1780" y="258" z="12" xd="132.6934381052871" yd="19.233093837732625" zd="4.6498116"/>
+    <point x="1930" y="254" z="14" xd="143.87546940629443" yd="18.93490633637243" zd="5.4247802"/>
+  </path>
+  <path id="13" swctype="0" color="Orange" channel="1" frame="1" spines="0" usefitted="false" startson="12" startx="143.87546940629443" starty="18.93490633637243" startz="5.4247802" startsindex="1" name="Path (13)" reallength="11.200904994418087">
+    <point x="1930" y="254" z="14" xd="143.87546940629443" yd="18.93490633637243" zd="5.4247802"/>
+    <point x="2080" y="261" z="15" xd="155.05750070730178" yd="19.45673446375277" zd="5.8122645"/>
+  </path>
+  <path id="14" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (14)" reallength="21.99275519941032">
+    <point x="1349" y="292" z="12" xd="100.52646139605598" yd="21.780112078517625" zd="4.6498116"/>
+    <point x="1425" y="277" z="12" xd="106.22929735956973" yd="20.649484469193553" zd="4.6498116"/>
+    <point x="1485" y="274" z="13" xd="110.70210987997267" yd="20.425843843173407" zd="5.0372959"/>
+    <point x="1535" y="271" z="13" xd="114.4294536469751" yd="20.20220321715326" zd="5.0372959"/>
+    <point x="1597" y="274" z="14" xd="119.05135991805814" yd="20.425843843173407" zd="5.4247802"/>
+    <point x="1641" y="276" z="15" xd="122.3314224330203" yd="20.574937593853505" zd="5.8122645"/>
+  </path>
+  <path id="15" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (15)" reallength="41.59305595171054">
+    <point x="1654" y="274" z="15" xd="123.28810733321761" yd="20.388570405503383" zd="5.8122645"/>
+    <point x="1703" y="270" z="15" xd="126.95332870410333" yd="20.12765634181321" zd="5.8122645"/>
+    <point x="1781" y="265" z="15" xd="132.76798498062715" yd="19.754921965112967" zd="5.8122645"/>
+    <point x="1844" y="258" z="16" xd="137.46443812705024" yd="19.233093837732625" zd="6.1997488"/>
+    <point x="1890" y="266" z="16" xd="140.89359439269248" yd="19.829468840453014" zd="6.1997488"/>
+    <point x="1977" y="262" z="16" xd="147.37917254727674" yd="19.53128133909282" zd="6.1997488"/>
+    <point x="2033" y="261" z="16" xd="151.55379756631947" yd="19.45673446375277" zd="6.1997488"/>
+    <point x="2116" y="258" z="16" xd="157.74118821954355" yd="19.233093837732625" zd="6.1997488"/>
+    <point x="2210" y="255" z="16" xd="164.74859450150814" yd="19.00945321171248" zd="6.1997488"/>
+  </path>
+  <path id="18" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (18)" reallength="41.99436338325531">
+    <point x="1904" y="344" z="12" xd="141.89997720978315" yd="25.631700637753493" zd="4.6498116"/>
+    <point x="1834" y="353" z="12" xd="136.71896937364974" yd="26.315046995037275" zd="4.6498116"/>
+    <point x="1787" y="354" z="12" xd="133.21526623266743" yd="26.389593870377322" zd="4.6498116"/>
+    <point x="1724" y="349" z="12" xd="128.51881308624436" yd="26.016859493677078" zd="4.6498116"/>
+    <point x="1645" y="348" z="11" xd="122.6296099343805" yd="25.942312618337027" zd="4.2623273"/>
+    <point x="1587" y="353" z="10" xd="118.30589116465765" yd="26.315046995037275" zd="3.8748430000000003"/>
+    <point x="1546" y="361" z="10" xd="115.24946927571565" yd="26.911421997757664" zd="3.8748430000000003"/>
+    <point x="1498" y="359" z="9" xd="111.6712192593933" yd="26.762328247077566" zd="3.4873587"/>
+    <point x="1439" y="357" z="9" xd="107.27295361433042" yd="26.613234496397467" zd="3.4873587"/>
+    <point x="1408" y="353" z="9" xd="104.9620004787889" yd="26.315046995037275" zd="3.4873587"/>
+    <point x="1343" y="354" z="9" xd="100.11645358168572" yd="26.389593870377322" zd="3.4873587"/>
+  </path>
+  <path id="19" swctype="0" color="None" channel="1" frame="1" spines="0" primary="true" usefitted="false" name="Path (19)" reallength="49.04198631459361">
+    <point x="1227" y="382" z="7" xd="91.45659156301669" yd="28.464481900675352" zd="2.7123901"/>
+    <point x="1276" y="373" z="7" xd="95.12181293390243" yd="27.805984501838253" zd="2.7123901"/>
+    <point x="1326" y="366" z="7" xd="98.84915670090489" yd="27.284156374457908" zd="2.7123901"/>
+    <point x="1383" y="364" z="9" xd="103.09832859528767" yd="27.135062623777813" zd="3.4873587"/>
+    <point x="1417" y="364" z="9" xd="105.63292235684933" yd="27.135062623777813" zd="3.4873587"/>
+    <point x="1468" y="353" z="11" xd="109.43481299919183" yd="26.315046995037275" zd="4.2623273"/>
+    <point x="1545" y="347" z="12" xd="115.1749224003756" yd="25.86776574299698" zd="4.6498116"/>
+    <point x="1604" y="343" z="14" xd="119.57318804543849" yd="25.569578241636783" zd="5.4247802"/>
+    <point x="1674" y="345" z="15" xd="124.79146931924191" yd="25.71867199231688" zd="5.8122645"/>
+    <point x="1742" y="342" z="16" xd="129.86065684236524" yd="25.495031366296736" zd="6.1997488"/>
+    <point x="1791" y="334" z="16" xd="133.51345373402765" yd="24.898656363576343" zd="6.1997488"/>
+    <point x="1844" y="336" z="17" xd="137.46443812705024" yd="25.04775011425644" zd="6.5872331"/>
+    <point x="1877" y="331" z="17" xd="139.92448501327183" yd="24.675015737556198" zd="6.5872331"/>
+  </path>
+</tracings>
