@@ -32,31 +32,7 @@ for i = 1:size(files,1)
         % 8 - avg chain length
 end
 
-%% panel E
-totSheaths_bridges = [21; sheathsSNccrev(:,1); 14; 19; 27; 21];
-
-totSheaths_noBridges = [20; 11; 14; 7; 9; 19; 12; 9; 20; 8; 13; 18;...
-15.5; 14; 17; 13; 19; 27; 21; 11; 10; 10; 9; 12];
-
-avg = [mean(totSheaths_noBridges); mean(totSheaths_bridges)]
-sem = [calcSEM(totSheaths_noBridges,1); calcSEM(totSheaths_bridges,1)]
-figure
-plotSpread({totSheaths_noBridges,totSheaths_bridges},'distributionMarker','o','distributionColors',{[0.2 0.5 1],[1 0.5 0]})
-hold on
-errorbar(avg,sem,'ko','MarkerSize',3,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5)
-hold off
-xlim([0 3])
-ylim([0 25])
-% ylim([0 50])
-% xticklabels({'OLs without bridges','OLs with bridges'})
-xticklabels({})
-% ylabel('Number of sheaths per cell')
-figQuality(gcf,gca,[1.5,2]);
-% [p,tbl,stats] = kruskalwallis([totSheaths_bridges;totSheaths_noBridges],[ones(size(totSheaths_bridges));zeros(size(totSheaths_noBridges))])
-% [p,~,stats] = ranksum(totSheaths_bridges,totSheaths_noBridges)
-[~,p,tstat] = ttest2(totSheaths_bridges,totSheaths_noBridges)
-
-%% ALT PANEL E - # sheath initiations (i.e. num nonbrg + num anch)
+%% panel d - # sheath initiations (i.e. num nonbrg + num anch)
 totSheaths_bridges = [21; sheathsSNccrev(:,1); 14; 19; 27; 21] - [3; sheathsSNccrev(:,2); 1; 2; 4; 2];
 totSheaths_noBridges = [20; 11; 14; 7; 9; 19; 12; 9; 20; 8; 13; 18;...
 15.5; 14; 17; 13; 19; 27; 21; 11; 10; 10; 9; 12];
@@ -75,32 +51,11 @@ ylim([0 25])
 xticklabels({})
 % ylabel('Number of sheaths per cell')
 figQuality(gcf,gca,[1.5,2]);
-% [p,tbl,stats] = kruskalwallis([totSheaths_bridges;totSheaths_noBridges],[ones(size(totSheaths_bridges));zeros(size(totSheaths_noBridges))])
+[p,tbl,stats] = kruskalwallis([totSheaths_bridges;totSheaths_noBridges],[ones(size(totSheaths_bridges));zeros(size(totSheaths_noBridges))])
 % [p,~,stats] = ranksum(totSheaths_bridges,totSheaths_noBridges)
-[~,p,tstat] = ttest2(totSheaths_bridges,totSheaths_noBridges)
+% [~,p,tstat] = ttest2(totSheaths_bridges,totSheaths_noBridges)
 
-%% panel F
-avgSheathLnth_bridges = [24.16; sheathsSNccrev(:,3); 44.09; 36.25; 28.61; 27.77];
-
-avgSheathLnth_noBridges = [14.9379; 30.81409091; 22.42392857; 33.41207143; 29.15857143; 34.19541667; 34.67286667; 28.756; 29.88945455; 22.42542105; 20.62641667; 25.13257143; 37.46166667; 28.36675; 41.433125; 36.55338462;...
-34.33394444; 20.07180645; 44.09128571; 40.07058824; 38.87676923; 32.74336842; 26.66740741; 27.03080952; 34.27109091; 49.7854; 44.5586; 43.17977778; 49.27916667];
-
-avg = [mean(avgSheathLnth_noBridges); mean(avgSheathLnth_bridges)]
-sem = [calcSEM(avgSheathLnth_noBridges,1); calcSEM(avgSheathLnth_bridges,1)]
-figure
-plotSpread({avgSheathLnth_noBridges,avgSheathLnth_bridges},'distributionMarker','o','distributionColors',{[0.2 0.5 1],[1 0.5 0]})
-hold on
-errorbar(avg,sem,'ko','MarkerSize',3,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5)
-hold off
-xlim([0 3])
-ylim([0 60])
-% xticklabels({'OLs without bridges','OLs with bridges'})
-xticklabels({})
-% ylabel('Average sheath length ()')
-figQuality(gcf,gca,[1.5,2]);
-% [p,tbl,stats] = kruskalwallis([avgSheathLnth_bridges;avgSheathLnth_noBridges],[ones(size(avgSheathLnth_bridges));zeros(size(avgSheathLnth_noBridges))])
-[~,p,tstat] = ttest2(avgSheathLnth_bridges,avgSheathLnth_noBridges)
-%% panel C
+%% panel e
 nonBridgeSheath_avgLnth = [26.24; sheathsSNccrev(:,4); 47.37; 36.25; 38.61; 27.77];
 
 anchSheath_avgLnth = [22.76; sheathsSNccrev(:,5); 38.49; 24.02; 27.95; 22.08];
@@ -125,10 +80,10 @@ xticklabels({})
 % ylabel('Average length ()')
 figQuality(gcf,gca,[2.5,2]);
 
-% temp = [nonBridgeSheath_avgLnth; anchSheath_avgLnth; bridge_avgLnth; bridgeSheath_avgLnth; bridgeChain_avgLnth];
-% idx = [repmat({'nonbrg'},size(nonBridgeSheath_avgLnth)); repmat({'anch'},size(nonBridgeSheath_avgLnth)); repmat({'brg'},size(bridge_avgLnth));...
-%     repmat({'brgshth'},size(bridgeSheath_avgLnth)); repmat({'chain'},size(bridgeChain_avgLnth))];
-% [p,tbl,stats] = kruskalwallis(temp,idx)
+temp = [nonBridgeSheath_avgLnth; anchSheath_avgLnth; bridge_avgLnth; bridgeSheath_avgLnth; bridgeChain_avgLnth];
+idx = [repmat({'nonbrg'},size(nonBridgeSheath_avgLnth)); repmat({'anch'},size(nonBridgeSheath_avgLnth)); repmat({'brg'},size(bridge_avgLnth));...
+    repmat({'brgshth'},size(bridgeSheath_avgLnth)); repmat({'chain'},size(bridgeChain_avgLnth))];
+[p,tbl,stats] = kruskalwallis(temp,idx)
 
 %% ----Local Function----
 function [ traceName, traceLength, traceColor, chainLnths] = parseData(xmlstruct)

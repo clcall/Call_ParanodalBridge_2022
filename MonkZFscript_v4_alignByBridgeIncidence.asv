@@ -1,4 +1,4 @@
-function MonkZFscript_v3
+function MonkZFscript_v4_alignByBridgeIncidence
 % NOTE: run MonkZFscript_allsheaths.m FIRST to get SD struct with timelines
 SD = MonkZFscript_allsheaths(0);
 path = 'D:\GitHubRepos\Call_ParanodalBridge_2022\MonkZFtraces';
@@ -36,15 +36,30 @@ for f = 1:size(files,1)
     % get path data and Delta distance between sheath & lifeact
     makeplot = 0;
     [d,X,Delta,borders,origin,firstbrgtp,framesUsed] = calculatePathsXML_ZFbridges_v2(xmlstruct,edgepos,makeplot,TL,name);
-    allTL{f} = allTL{f}(framesUsed);
+%     allTL{f} = allTL{f}(framesUsed);
     
-    % smooth Delta and concatenate across timepoints
-    starts = NaN(size(Delta));
-    ends = NaN(size(Delta));
-    for i = 1:length(Delta)
-        if ~isempty(Delta{i})
-            starts(i) = min(Delta{i}(:,1));
-            ends(i) = max(Delta{i}(:,1));
+    %% PARSE BRIDGED REGIONS & TIMES
+    % get bridged times idx
+    brgtime = cell2mat(cellfun(@any,borders,'UniformOutput',false));
+    % find consecutive time with bridges
+    tmp = find(diff([NaN brgtime NaN] == 1));
+    brgtimeidx = reshape(tmp,2,[])'; % reshape in desired form
+    brgtimeidx = [brgtimeidx(:,1) brgtimeidx(:,2)-1]; % subtract 1 from second column
+    
+    %for now, just take longest consecutive timeframe
+    [~,row] = max(brgtimeidx(:,2)-brgtimeidx(:,1));
+    brgTL{f} = allTL{f}(brgtimeidx(row,1):brgtimeidx(row,2));
+    brgtimevect = brgtimeidx(row,1):brgtimeidx(row,2);
+    brgDelta = Delta(brgtimevect); % separate Delta for only brgtime
+    brgOrigin = origin(brgtimevect); % separate origin for only brgtime
+    
+    %% smooth brgDelta and concatenate across timepoints
+    starts = NaN(size(brgDelta));
+    ends = NaN(size(brgDelta));
+    for i = 1:length(brgDelta)
+        if ~isempty(brgDelta{i})
+            starts(i) = min(brgDelta{i}(:,1));
+            ends(i) = max(brgDelta{i}(:,1));
         else
             starts(i) = [];
             ends(i) = [];
@@ -52,21 +67,24 @@ for f = 1:size(files,1)
     end
     [rngstart,sI] = min(starts);
     [rngend,eI] = max(ends);
-    
-    globalorigin = origin{sI};
+    globalorigin = brgOrigin{sI};
     rng = rngstart:rngend;
+    
     Dadj = NaN(size(rng));
     Dall = [];
-    borders_copy = borders;
+    borders_copy = borders(brgtimevect);
     borders = {};
-    for i = 1:length(Delta)
-        if any(Delta{i})
-            Dadj(ismember(rng,Delta{i}(:,1))) = movmean(Delta{i}(:,2),50);
+    for i = 1:length(brgDelta)
+        if any(brgDelta{i})
+            Dadj(ismember(rng,brgDelta{i}(:,1))) = movmean(brgDelta{i}(:,2),50);
             Dall = [Dall;Dadj];
             borders = [borders, borders_copy(i)];
+        else
+            brgTL{f}(i) = [];
         end
-    end    
-    % calculate extension 
+    end
+    
+    %% calculate extension 
     wraps = abs(Dall);
     avgbrgwraps{f} = cell(1,size(Dall,1));
     avganchwraps{f} = NaN(1,size(Dall,1));
@@ -147,54 +165,103 @@ for f = 1:size(files,1)
         allnonbrg{f}(i) = mean(sum(wraps(1:i,idx),'omitnan'));
     end
 end
+%%
+elapsedtime = {};
+% figure
+% hold on
+for f = 2:size(files,1) %excluding sheath 1, with only 2 tps
+%     anch = smallestanch{f};
+%     brg = cell2mat(cellfun(@mean,avgbrgwraps{f},"UniformOutput",false));
+%     non = allnonbrg{f};
+    elapsedtime{f} = brgTL{f}-brgTL{f}(1);
+%     
+%     plot(elapsedtime{f},anch-anch(2),'b-');
+%     plot(elapsedtime{f},brg-brg(2),'r-');
+%     plot(elapsedtime{f},non-non(2),'g-');
+end
+% hold off
+% ylabel('Cumulative movement')
+% xlabel('Time')
+% legend('anchoring sheath','bridges','all non-anch sheath')
+% figQuality(gcf,gca,[4,2.5])
+
+%%
+brgratio = {};
+nonratio = {};
+brgratioM = [];
+nonratioM = [];
+anch_FI = [];
+brg_FI = [];
+non_FI = [];
+universalTL = 0:80;
+roundedTL = cellfun(@round,elapsedtime,'UniformOutput',false);
 
 figure
 hold on
-for f = 1:size(files,1)
-    plot(allTL{f},smallestanch{f},'b-');
-    plot(allTL{f},cell2mat(cellfun(@mean,avgbrgwraps{f},"UniformOutput",false)),'r-');
-    plot(allTL{f},allnonbrg{f},'g-');
+for f = 2:size(files,1) % excluding sheath 1, with only 2 tps
+%     anch = smallestanch{f};
+% %     anch = anch-anch(2);
+%     brg = cell2mat(cellfun(@mean,avgbrgwraps{f},"UniformOutput",false));
+% %     brg = brg-brg(2);
+%     non = allnonbrg{f};
+% %     non = non-non(2);
+%     
+%     brgratio{f} = brg ./ anch;
+%     temp = brgratio{f}';
+%     [brgratioM,temp] = forceConcat(brgratioM,temp,1);
+%     brgratioM = [brgratioM,temp];
+%     
+%     nonratio{f} = non ./ anch;
+%     temp = nonratio{f}';
+%     [nonratioM,temp] = forceConcat(nonratioM,temp,1);
+%     nonratioM = [nonratioM,temp];
+%     
+%     plot(elapsedtime{f},brgratio{f},'-r')
+%     plot(elapsedtime{f},nonratio{f},'-g')
+    
+    anch_FI(f-1,:) = averageSheathTLs(smallestanch{f},universalTL,roundedTL{f});
+    brg_FI(f-1,:) = averageSheathTLs(cell2mat(cellfun(@mean,avgbrgwraps{f},"UniformOutput",false)),universalTL,roundedTL{f});
+    non_FI(f-1,:) = averageSheathTLs(allnonbrg{f},universalTL,roundedTL{f});
+    
+    plot(elapsedtime{f},smallestanch{f},'Color',[52 75 160]./255)
+    plot(elapsedtime{f},cell2mat(cellfun(@mean,avgbrgwraps{f},"UniformOutput",false)),'r-')
+    plot(elapsedtime{f},allnonbrg{f},'Color','g')
 end
 hold off
-ylabel('Cumulative movement')
-xlabel('Time')
-legend('anchoring sheath','bridges','all non-anch sheath')
-figQuality(gcf,gca,[4,2.5])
-
-
-%% TIME VS CUMULATIVE MOVEMENT
-universalTL = -29:130;
-roundedTL = cellfun(@round,allTL,'UniformOutput',false);
-for f = 1:size(files,1)
-    anch_filledAvg(f,:)  = averageSheathTLs(avganchwraps{f},universalTL,roundedTL{f});
-    smallanch_filledAvg(f,:)  = averageSheathTLs(smallestanch{f},universalTL,roundedTL{f});
-    allbrgs_filledAvg(f,:)  = averageSheathTLs(cell2mat(cellfun(@mean,avgbrgwraps{f},"UniformOutput",false)),universalTL,roundedTL{f});
-    allnonbrg_filledAvg(f,:)  = averageSheathTLs(allnonbrg{f},universalTL,roundedTL{f});
-end
-
-
-avg_anch = mean(smallanch_filledAvg(:,36:101),1,'omitnan');
-avg_brg = mean(allbrgs_filledAvg(:,36:101),1,'omitnan');
-avg_nonbrg = mean(allnonbrg_filledAvg(:,36:101),1,'omitnan');
-
-sem_anch = calcSEM(smallanch_filledAvg(:,36:101),1);
-sem_brg = calcSEM(allbrgs_filledAvg(:,36:101),1);
-sem_nonbrg = calcSEM(allnonbrg_filledAvg(:,36:101),1);
 
 figure
 hold on
-shadedErrorBar(universalTL(36:101),avg_anch,sem_anch,'lineProps',{'Color',[52 75 160]./255});
-shadedErrorBar(universalTL(36:101),avg_brg,sem_brg,'lineProps',{'r-'});
-shadedErrorBar(universalTL(36:101),avg_nonbrg,sem_nonbrg,'lineProps',{'Color',[255 128 0]./255});
+avg_anch = mean(anch_FI,1,'omitnan');
+avg_brg = mean(brg_FI,1,'omitnan');
+avg_non = mean(non_FI,1,'omitnan');
+sem_anch = calcSEM(anch_FI,1);
+sem_brg = calcSEM(brg_FI,1);
+sem_non = calcSEM(non_FI,1);
+
+shadedErrorBar(universalTL(1:30),avg_anch(1:30),sem_anch(1:30),'lineProps',{'Color',[52 75 160]./255});
+shadedErrorBar(universalTL(1:30),avg_brg(1:30),sem_brg(1:30),'lineProps',{'r-'});
+shadedErrorBar(universalTL(1:30),avg_non(1:30),sem_non(1:30),'lineProps',{'Color',[255 128 0]./255});
 hold off
 figQuality(gcf,gca,[4 3])
 
+slopes = [];
+for i = 1:size(anch_FI,1)
+    if any(anch_FI(i,1:30))
+    useableLI = ~isnan(anch_FI(i,1:30));
+    a_pf = polyfit(universalTL(useableLI),anch_FI(i,useableLI),1);
+    b_pf = polyfit(universalTL(useableLI),brg_FI(i,useableLI),1);
+    n_pf = polyfit(universalTL(useableLI),non_FI(i,useableLI),1);
+    slopes = [slopes; a_pf(1) b_pf(1) n_pf(1)];
+end
+
+
+% LME
 Y = [];
 T = [];
 shthID = [];
 cellID = [];
 group = [];
-for i = 1:length(smallestanch)
+for i = 2:length(smallestanch)
     Y = [Y; [smallestanch{i} cell2mat(cellfun(@mean,avgbrgwraps{i},"UniformOutput",false)) allnonbrg{i}]'];
     T = [T; [roundedTL{i} roundedTL{i} roundedTL{i}]'];
     shthID = [shthID; repmat({num2str(i)},length(smallestanch{i})*3,1)];
@@ -205,53 +272,6 @@ end
 TBL = table(Y,T,shthID,cellID,group);
 lme_reml = fitlme(TBL,'Y ~ T*group + (1|cellID) + (1|cellID:shthID)','FitMethod','REML');
 disp(lme_reml)
-%% TIME VS RATIO
-% alltimeR = NaN(size(files,1),160);
-% tbl = table;
-% alltimes = [];
-% allR = [];
-% for f = 1:size(files,1)
-%     R = cell2mat(cellfun(@mean,avgbrgwraps{f},"UniformOutput",false)) ./ smallestanch{f};
-%     [~,scaledidx] = ismember(round(allTL{f}),-29:130);
-%     alltimeR(f,scaledidx) = R;
-%     [a,b] = forceConcat(alltimes,scaledidx',1);
-%     alltimes = [a b];
-%     [a,b] = forceConcat(allR,R',1);
-%     allR = [a b];
-%     
-%     tbl = [tbl; table({files(f).name(1:12)},{scaledidx},smallestanch(f),allnonbrg(f),{cell2mat(cellfun(@mean,avgbrgwraps{f},"UniformOutput",false))},{R})];
-%     
-% end
-% 
-% figure
-% plot(-29:130,alltimeR','o')
-% 
-% [row,col]=find(~isnan(alltimeR));
-% linidx = find(~isnan(alltimeR));
-% rs = alltimeR(linidx);
-% times = col;
-% id = row;
-% tbl2 = table(id,times,rs);
-% tbl2.id = nominal(tbl2.id);
-% 
-% lme4 = fitlme(tbl2,'rs ~ 1 + times + (1|id)','Exclude',[3 14 21 29 30 51 213]);
-% F = fitted(lme4);
-% R = response(lme4);
-% 
-% temp = tbl2.times-30;
-% RSx = rescale(-F,min(temp),max(temp));
-% tbl3 = table(ones(213,1),times, rs,'VariableNames',{'id','times','rs'}); % hard coded vector length
-% tbl3.id = nominal(tbl3.id);
-% [ypred,yCI] = predict(lme4,tbl3);
-% 
-% c = parula(16); % hard coded number of samples
-% figure
-% gscatter(RSx,R,tbl2.id,c)
-% hold on
-% plot(tbl3.times-30,yCI,'k--')
-% line(tbl3.times-30,ypred)
-% ylim([0 1.4])
-% figQuality(gcf,gca,[2.5 2])
 end
 %% local function
 function filled_indexed  = averageSheathTLs(cellinput,universalTL,roundedTL)

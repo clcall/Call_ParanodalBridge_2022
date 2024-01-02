@@ -16,18 +16,20 @@ origin = cell(1,max(frames_sheaths));
 for i=1:max(frames_sheaths)
     temp = traceData_sheaths(frames_sheaths==i,:); % get sheaths for current timeframe
     if isempty(temp)
-%         figure(f1)
-%         subplot(max(frames_sheaths),1,i)
-%         ylim([0,1.8])
-%         xlim([0,1000])
-%         xticks([])
-%         xticklabels([])
-%         axis off
-%         box off
+        if makeplot
+            figure(f1)
+            subplot(max(frames_sheaths),1,i)
+            ylim([0,1.8])
+            xlim([0,1000])
+            xticks([])
+            xticklabels([])
+            axis off
+            box off
+        end
         continue
     end
     % organize trace points, sort from image left to right
-    avgxyz = cell2mat(cellfun(@mean,temp(:,6),'UniformOutput',false));
+    avgxyz = cell2mat(cellfun(@(x) mean(x,1),temp(:,6),'UniformOutput',false));
     avgx = avgxyz(:,1);
     [~,I] = sort(avgx,'ascend');
     nfrag = size(temp,1);
@@ -37,7 +39,7 @@ for i=1:max(frames_sheaths)
     organized = NaN(3,nfrag);
     for k = 1:nfrag % running in order of left to right
         flipflag = 0;
-        sheathedge = cell2mat(temp(I(k),6));
+        sheathedge = cell2mat(temp(I(k),6)); 
         if sheathedge(1,1) > sheathedge(end,1) 
             sheathedge = flip(sheathedge);
             flipflag = 1;
@@ -56,15 +58,17 @@ for i=1:max(frames_sheaths)
         organized(1,k) = cell2mat(temp(I(k),3));
         organized(2,k) = b;
         organized(3,k) = flipflag;
-        lifeact = traceData_lifeact{frames_lifeact==i,6};
-        [IDX,D] = knnsearch(lifeact,sheathedge);
+        lifeact = traceData_lifeact{frames_lifeact==i,7}; % NOW USING VOXELS
+        sheathedge = cell2mat(temp(I(k),7)); % VOXELS
+%         [IDX,D] = knnsearch(lifeact,sheathedge);
+        [Lia,Locb] = ismember(sheathedge(:,1),lifeact(:,1));
 
-        % MAKE EXCEPTION FOR BRIDGES THEMSELVES, WHICH CAN BE OPPOSITE
-        % HI/LO OF REST OF SHEATH
-        if contains(edgepos,'lo') % determine if sheath edge is top or bottom of sheath
-            D2 = sheathedge(:,2) - lifeact(IDX,2);
+
+        % compare based on HI/LO of rest of sheath frags
+        if contains(edgepos,'lo') % determine if sheath edge is top or bottom of sheath; note: imagej origin is top left, so the "low" edge has a high Y value compared to the "high" edge
+            D2 = (sheathedge(Lia,2) - lifeact(Locb(Locb>0),2)).*0.06; %return scaled
         else
-            D2 = lifeact(IDX,2) - sheathedge(:,2);
+            D2 = (lifeact(Locb(Locb>0),2) - sheathedge(Lia,2)).*0.06;
         end
         D2(D2<0) = 0;
         
@@ -83,42 +87,41 @@ for i=1:max(frames_sheaths)
     end
     
     % PLOT REAL LENGTHS OF FRAGMENTS IN ORDER
-    if makeplot
-        figure(f2);
-        hold on
-        if size(organized,2)==1 % deal with singletons, ugh
-            if organized(3,1) % flipped
-                plot([-organized(1,1) 0],[TL(i) TL(i)],'k-','LineWidth',2)
-            else % not flipped
-                plot([0 organized(1,1)],[TL(i) TL(i)],'k-','LineWidth',2)
-            end
-        else
-            ori = find(organized(2,:)==2);
-            flipped = organized(3,ori);
-            if ~flipped
-                if ~(ori==1)
-                    ori = ori-1;
-                end
-            end
-            leftedge = sum(organized(1,1:ori));
-            sums = cumsum(organized(1,:));
-            edges = sums-sums(ori);
-            edges = [-leftedge,edges];
-            for s = 2:length(edges)
-                switch organized(2,s-1)
-                    case 0
-                        color = 'k';
-                    case 1
-                        color = 'r';
-                    case 2
-                        color = 'k';
-                end
-                plot([edges(s-1) edges(s)],[TL(i) TL(i)],'Color',color,'LineWidth',2)
-            end
-        end
-        
-        hold off
-    end
+%     if makeplot
+%         figure(f2);
+%         hold on
+%         if size(organized,2)==1 % deal with singletons, ugh
+%             if organized(3,1) % flipped
+%                 plot([-organized(1,1) 0],[TL(i) TL(i)],'k-','LineWidth',2)
+%             else % not flipped
+%                 plot([0 organized(1,1)],[TL(i) TL(i)],'k-','LineWidth',2)
+%             end
+%         else
+%             ori = find(organized(2,:)==2);
+%             flipped = organized(3,ori);
+%             if ~flipped
+%                 if ~(ori==1)
+%                     ori = ori-1;
+%                 end
+%             end
+%             leftedge = sum(organized(1,1:ori));
+%             sums = cumsum(organized(1,:));
+%             edges = sums-sums(ori);
+%             edges = [-leftedge,edges];
+%             for s = 2:length(edges)
+%                 switch organized(2,s-1)
+%                     case 0
+%                         color = 'k';
+%                     case 1
+%                         color = 'r';
+%                     case 2
+%                         color = 'k';
+%                 end
+%                 plot([edges(s-1) edges(s)],[TL(i) TL(i)],'Color',color,'LineWidth',2)
+%             end
+%         end
+%         hold off
+%     end
     
     idx = isnan(d{i}(:,1));
     d{i}(idx,:)=[];
@@ -138,12 +141,47 @@ for i=1:max(frames_sheaths)
         Delta{i} = [X{i-1}(idx1)',delta];
         framesUsed = [framesUsed; i];
     end
-    %% PLOT ABSOLUTE DISTANCE
+    %% PLOT relative delta
+    if makeplot & any(Delta{i})
+        figure(f1);
+        hold on
+        subplot(max(frames_sheaths),1,i)
+        h = plot(X{i-1}(idx1),ones(length(delta),1),'LineWidth',2);
+%         h = plot(X{i-1}(idx1),delta,'LineWidth',2); % use for line height
+        
+%         cdo = colormap('parula');
+%         cdo = customcolormap_preset('red-white-blue');
+        cdo = customcolormap([0 0.5 1], [0 0 1; 0.8 0.8 0.8; 1 0 0], 256);
+        cd = interp1(linspace(-1.1,1.1,length(cdo)),cdo,delta);
+        cd = uint8(cd'*255);
+        logdx = all(cd==0);
+        if any(logdx)
+            cd(1,logdx) = uint8(cdo(end,1)*255);
+            cd(2,logdx) = uint8(cdo(end,2)*255);
+            cd(3,logdx) = uint8(cdo(end,3)*255);
+        end
+        cd(4,:) = 255;
+        drawnow
+        set(h.Edge,'ColorBinding','interpolated','ColorData',cd)
+        
+        ylim([0 2])
+        xlim([-1200,1200])
+        xticks([])
+        xticklabels([])
+        axis off
+        box off
+        
+        if any(borders{i})
+            xline(borders{i},'Linewidth',1.5);
+        end
+        xline(0,'Linewidth',1.5,'Color',[0.5 0.5 0.5]);
+        hold off
+    end
+        %% PLOT absolute distance
     if makeplot
 %         figure(f1);
 %         hold on
 %         subplot(max(frames_sheaths),1,i)
-%         %         h = plot(X,ones(size(d,1),1),'LineWidth',2);
 %         h = plot(X{i},d{i}(:,1),'LineWidth',2);
 %         
 %         cdo = colormap('parula');
@@ -159,8 +197,8 @@ for i=1:max(frames_sheaths)
 %         drawnow
 %         set(h.Edge,'ColorBinding','interpolated','ColorData',cd)
 %         
-%         ylim([0,2])
-%         xlim([-1500,1500])
+%         ylim([0 2])
+%         xlim([-1200,1200])
 %         xticks([])
 %         xticklabels([])
 %         axis off
@@ -193,6 +231,7 @@ traceColor = cell(numPaths,1);
 traceFrame = cell(numPaths,1);
 traceChannel = cell(numPaths,1);
 tracePaths = cell(numPaths,1);
+traceVoxels = cell(numPaths,1);
 for i = 1:numPaths
     traceName{i,1} = xmlstruct.paths(i).attribs.name;
     traceLength{i,1} = xmlstruct.paths(i).attribs.reallength_smoothed;
@@ -207,6 +246,7 @@ for i = 1:numPaths
     traceFrame{i,1} = str2double(xmlstruct.paths(i).attribs.frame);
     traceChannel{i,1} = xmlstruct.paths(i).attribs.channel;
     tracePaths{i,1} = xmlstruct.paths(i).points.smoothed;
+    traceVoxels{i,1} = [xmlstruct.paths(i).points.x xmlstruct.paths(i).points.y xmlstruct.paths(i).points.z];
 end
 %PARSE TRACE INFO
 %sheath extraction
@@ -216,11 +256,12 @@ Lengths = traceLength(index);
 SWCs = traceSWC(index);
 Colors = traceColor(index);
 Paths = tracePaths(index);
+Voxels = traceVoxels(index);
 Channels = traceChannel(index);
 Frames = traceFrame(index);
 
 %create array to send main function name & length info
-parsedData_sheaths = [Names, Frames, Lengths, SWCs, Colors, Paths];
+parsedData_sheaths = [Names, Frames, Lengths, SWCs, Colors, Paths, Voxels];
 
 index = find(contains(traceChannel,'3')); % Ch1 - binarized myrEGFP, Ch2 - myrEGFP, Ch3 - lifeact
 Names = traceName(index);
@@ -228,10 +269,10 @@ Lengths = traceLength(index);
 SWCs = traceSWC(index);
 Colors = traceColor(index);
 Paths = tracePaths(index);
+Voxels = traceVoxels(index);
 Channels = traceChannel(index);
 Frames = traceFrame(index);
 
 %create array to send main function name & length info
-parsedData_lifeact = [Names, Frames, Lengths, SWCs, Colors, Paths];
-
+parsedData_lifeact = [Names, Frames, Lengths, SWCs, Colors, Paths, Voxels];
 end

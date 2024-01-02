@@ -368,7 +368,7 @@
   <path id="103" swctype="0" color="None" channel="1" frame="18" spines="0" primary="true" usefitted="false" name="Path (103)" reallength="0.0">
     <point x="1099" y="522" z="31" xd="65.44323431832493" yd="31.07983221453873" zd="10.85"/>
   </path>
-  <path id="104" swctype="0" color="Orange" channel="1" frame="18" spines="0" primary="true" usefitted="false" name="Path (104)" reallength="0.0">
+  <path id="104" swctype="0" color="Orange" channel="1" frame="18" spines="0" primary="true" usefitted="false" name="b1_0" reallength="0.0">
     <point x="904" y="609" z="35" xd="53.777137068309756" yd="36.238310590395784" zd="12.25"/>
   </path>
   <path id="105" swctype="0" color="None" channel="1" frame="18" spines="0" primary="true" usefitted="false" name="Path (105)" reallength="0.0">
