@@ -1,4 +1,4 @@
-function SD = MonkZFscript_allsheaths(makeplot)
+function [SD] = MonkZFscript_allsheaths(makeplot)
 path = 'D:\GitHubRepos\Call_ParanodalBridge_2022\MonkZFtraces\allsheaths';
 cd(path);
 fldr = dir(path);
@@ -83,11 +83,12 @@ for f = 1:n
 %         alltimeBrgs(f,scaledidx) = numbrgs;
 %     end
     
+    tempcolor = colors(round(256/n*f),:);
+    SD(f).cellcolor = tempcolor;
     %PROPORTIONAL
     if makeplot
         figure(1);
         hold on
-        tempcolor = colors(round(256/n*f),:);
         plot(adjTL,numsheaths./max(numsheaths),'LineStyle','-','Color',tempcolor,'LineWidth',2)
         plot(adjTL,numbrgs./numsheaths,'LineStyle',':','Color',tempcolor,'LineWidth',2)
         hold off

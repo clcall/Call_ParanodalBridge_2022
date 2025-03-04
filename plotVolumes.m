@@ -10,6 +10,8 @@ elseif contains(fldr,'notbridge')
     color = [147 167 172]./255;
 elseif contains(fldr,'L2_3')
     color = [0.7 0 0];
+elseif contains(fldr,'visL1')
+    color = c1./2;
 end
 q=[]; 
 for i = 1:length(index)

@@ -1,4 +1,4 @@
-% NOTE: requires plotbridges_v3.m to be run first to acquire single cell
+% NOTE: requires plotbridges_v4.m to be run first to acquire single cell
 % data
 
 maindir = 'D:\GitHubRepos\OligodendrocyteAnalysisCode\ParanodalBridges\';
@@ -166,7 +166,7 @@ pol_pv*2
 f = [3 5; 2 5; 0 7; 3 5; 1 1; 4 7; 4 7; 2 3; 6 6; 2 5; 5 7; 8 8; 2 6; 10 11; 6 6];
 
 function [p,tbl,stats] = plotit(nonpv,L23,pv,y_label,do_stats)
-[~,pvcol] = CTSMcolors;
+pvcol = [255 77 77]./255;
 avg = [mean(nonpv,'omitnan'),mean(L23),mean(pv)];
 sem = [calcSEM(nonpv,1),calcSEM(L23,1),calcSEM(pv,1)];
 

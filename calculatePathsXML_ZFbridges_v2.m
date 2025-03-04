@@ -87,41 +87,41 @@ for i=1:max(frames_sheaths)
     end
     
     % PLOT REAL LENGTHS OF FRAGMENTS IN ORDER
-%     if makeplot
-%         figure(f2);
-%         hold on
-%         if size(organized,2)==1 % deal with singletons, ugh
-%             if organized(3,1) % flipped
-%                 plot([-organized(1,1) 0],[TL(i) TL(i)],'k-','LineWidth',2)
-%             else % not flipped
-%                 plot([0 organized(1,1)],[TL(i) TL(i)],'k-','LineWidth',2)
-%             end
-%         else
-%             ori = find(organized(2,:)==2);
-%             flipped = organized(3,ori);
-%             if ~flipped
-%                 if ~(ori==1)
-%                     ori = ori-1;
-%                 end
-%             end
-%             leftedge = sum(organized(1,1:ori));
-%             sums = cumsum(organized(1,:));
-%             edges = sums-sums(ori);
-%             edges = [-leftedge,edges];
-%             for s = 2:length(edges)
-%                 switch organized(2,s-1)
-%                     case 0
-%                         color = 'k';
-%                     case 1
-%                         color = 'r';
-%                     case 2
-%                         color = 'k';
-%                 end
-%                 plot([edges(s-1) edges(s)],[TL(i) TL(i)],'Color',color,'LineWidth',2)
-%             end
-%         end
-%         hold off
-%     end
+    if makeplot
+        figure(f2);
+        hold on
+        if size(organized,2)==1 % deal with singletons, ugh
+            if organized(3,1) % flipped
+                plot([-organized(1,1) 0],[TL(i) TL(i)],'k-','LineWidth',2)
+            else % not flipped
+                plot([0 organized(1,1)],[TL(i) TL(i)],'k-','LineWidth',2)
+            end
+        else
+            ori = find(organized(2,:)==2);
+            flipped = organized(3,ori);
+            if ~flipped
+                if ~(ori==1)
+                    ori = ori-1;
+                end
+            end
+            leftedge = sum(organized(1,1:ori));
+            sums = cumsum(organized(1,:));
+            edges = sums-sums(ori);
+            edges = [-leftedge,edges];
+            for s = 2:length(edges)
+                switch organized(2,s-1)
+                    case 0
+                        color = 'k';
+                    case 1
+                        color = 'r';
+                    case 2
+                        color = 'k';
+                end
+                plot([edges(s-1) edges(s)],[TL(i) TL(i)],'Color',color,'LineWidth',2)
+            end
+        end
+        hold off
+    end
     
     idx = isnan(d{i}(:,1));
     d{i}(idx,:)=[];
@@ -142,41 +142,41 @@ for i=1:max(frames_sheaths)
         framesUsed = [framesUsed; i];
     end
     %% PLOT relative delta
-    if makeplot & any(Delta{i})
-        figure(f1);
-        hold on
-        subplot(max(frames_sheaths),1,i)
-        h = plot(X{i-1}(idx1),ones(length(delta),1),'LineWidth',2);
-%         h = plot(X{i-1}(idx1),delta,'LineWidth',2); % use for line height
-        
-%         cdo = colormap('parula');
-%         cdo = customcolormap_preset('red-white-blue');
-        cdo = customcolormap([0 0.5 1], [0 0 1; 0.8 0.8 0.8; 1 0 0], 256);
-        cd = interp1(linspace(-1.1,1.1,length(cdo)),cdo,delta);
-        cd = uint8(cd'*255);
-        logdx = all(cd==0);
-        if any(logdx)
-            cd(1,logdx) = uint8(cdo(end,1)*255);
-            cd(2,logdx) = uint8(cdo(end,2)*255);
-            cd(3,logdx) = uint8(cdo(end,3)*255);
-        end
-        cd(4,:) = 255;
-        drawnow
-        set(h.Edge,'ColorBinding','interpolated','ColorData',cd)
-        
-        ylim([0 2])
-        xlim([-1200,1200])
-        xticks([])
-        xticklabels([])
-        axis off
-        box off
-        
-        if any(borders{i})
-            xline(borders{i},'Linewidth',1.5);
-        end
-        xline(0,'Linewidth',1.5,'Color',[0.5 0.5 0.5]);
-        hold off
-    end
+%     if makeplot & any(Delta{i})
+%         figure(f1);
+%         hold on
+%         subplot(max(frames_sheaths),1,i)
+%         h = plot(X{i-1}(idx1),ones(length(delta),1),'LineWidth',2);
+% %         h = plot(X{i-1}(idx1),delta,'LineWidth',2); % use for line height
+%         
+% %         cdo = colormap('parula');
+% %         cdo = customcolormap_preset('red-white-blue');
+%         cdo = customcolormap([0 0.5 1], [0 0 1; 0.8 0.8 0.8; 1 0 0], 256);
+%         cd = interp1(linspace(-1.1,1.1,length(cdo)),cdo,delta);
+%         cd = uint8(cd'*255);
+%         logdx = all(cd==0);
+%         if any(logdx)
+%             cd(1,logdx) = uint8(cdo(end,1)*255);
+%             cd(2,logdx) = uint8(cdo(end,2)*255);
+%             cd(3,logdx) = uint8(cdo(end,3)*255);
+%         end
+%         cd(4,:) = 255;
+%         drawnow
+%         set(h.Edge,'ColorBinding','interpolated','ColorData',cd)
+%         
+%         ylim([0 2])
+%         xlim([-1200,1200])
+%         xticks([])
+%         xticklabels([])
+%         axis off
+%         box off
+%         
+%         if any(borders{i})
+%             xline(borders{i},'Linewidth',1.5);
+%         end
+%         xline(0,'Linewidth',1.5,'Color',[0.5 0.5 0.5]);
+%         hold off
+%     end
         %% PLOT absolute distance
     if makeplot
 %         figure(f1);

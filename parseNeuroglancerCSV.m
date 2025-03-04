@@ -1,0 +1,108 @@
+tbl = readtable('D:\GitHubRepos\Call_ParanodalBridge_2022\PinkyNascentEnsheathments.csv');
+tbl_perim = readtable('D:\GitHubRepos\Call_ParanodalBridge_2022\NascentEnsheathmentDiameters.xlsx');
+annots = tbl.Description;
+idx = ~cellfun(@isempty,annots);
+annots = annots(idx);
+pathstarts = find(idx) + 1;
+pathends = find(idx) - 1;
+pathends = [pathends(2:end); length(idx)];
+
+lnths = [];
+for i=1:length(pathstarts)
+    coords1 = tbl.Coordinate1(pathstarts(i):pathends(i));
+    spltC1 = split(coords1,{'(',',',' ',')'});
+    temp = str2double(spltC1);
+    C1 = [temp(:,2) temp(:,4) temp(:,6)];
+    
+    coords2 = tbl.Coordinate2(pathstarts(i):pathends(i));
+    spltC2 = split(coords2,{'(',',',' ',')'});
+    temp = str2double(spltC2);
+    C2 = [temp(:,2) temp(:,4) temp(:,6)];
+    
+    lnths(i) = sum(calcEuclid(C1,C2,[0.00358,0.00358,0.04]));
+end
+
+lnths = lnths';
+tbl2 = table(annots,lnths);
+tbl2 = sortrows(tbl2,'annots','ascend');
+
+tbl_perim.GroupNum = cellfun(@(x) x(1:2), tbl_perim.Var1, 'UniformOutput', false);
+uniqueGroups = unique(tbl_perim.GroupNum);
+averages = zeros(length(uniqueGroups), 1);
+
+for i = 1:length(uniqueGroups)
+    groupIdx = strcmp(tbl_perim.GroupNum, uniqueGroups{i});
+    temp = tbl_perim.Var2(groupIdx);
+    groupMean = mean(temp);
+    averages(i) = groupMean;
+end
+
+str2double(uniqueGroups);
+tbl2.diam = averages./pi;
+tbl2.irreg = contains(tbl2.annots,'branch') | contains(tbl2.annots,'TTT') | contains(tbl2.annots,'AIT') | contains(tbl2.annots,'dendrite')';
+
+tbl3 = tbl2(~contains(tbl2.annots,'dendrite'),:);
+tbl3 = sortrows(tbl3,'diam','ascend');
+tbl3.ascIdx = [1:size(tbl3,1)]';
+figure
+hold on
+plot(tbl3.ascIdx(tbl3.irreg==1),tbl3.diam(tbl3.irreg==1),'r.','MarkerSize',10)
+plot(tbl3.ascIdx(tbl3.irreg==0),tbl3.diam(tbl3.irreg==0),'k.','MarkerSize',10)
+ylim([0 1500])
+
+[~,p] = kstest2(tbl3.diam(tbl3.irreg==0), tbl3.diam(tbl3.irreg==1))
+
+tbl3 = sortrows(tbl3,'lnths','ascend');
+tbl3.ascIdx = [1:size(tbl3,1)]';
+figure
+hold on
+plot(tbl3.ascIdx(tbl3.irreg==1),tbl3.diam(tbl3.irreg==1),'r.','MarkerSize',10)
+plot(tbl3.ascIdx(tbl3.irreg==0),tbl3.diam(tbl3.irreg==0),'k.','MarkerSize',10)
+ylim([0 1500])
+
+[~,p] = kstest2(tbl3.diam(tbl3.irreg==0), tbl3.diam(tbl3.irreg==1))
+ranksum(tbl3.diam(tbl3.irreg==0), tbl3.diam(tbl3.irreg==1))
+ranksum(tbl3.lnths(tbl3.irreg==0), tbl3.lnths(tbl3.irreg==1))
+%%
+figure
+plotSpread(tbl3.diam,'distributionIdx',tbl3.irreg+1,'distributionMarker','.','distributionColors',[.5 .5 .5])
+hold on
+boxplot(tbl3.diam,tbl3.irreg)
+ylim([0 1400])
+figQuality(gcf,gca,[2 3])
+
+figure
+plotSpread(tbl3.lnths,'distributionIdx',tbl3.irreg+1,'distributionMarker','.','distributionColors',[.5 .5 .5])
+hold on
+boxplot(tbl3.lnths,tbl3.irreg)
+figQuality(gcf,gca,[2 3])
+ylim([0 90])
+%%
+tbl3.TTT = contains(tbl3.annots,'TTT');
+tbl3.AIT = contains(tbl3.annots,'AIT');
+tbl3.branch = contains(tbl3.annots,'branch');
+%%
+tot = length(tbl3.annots)
+numBranch = sum(contains(tbl3.annots,'branch'))
+numMultInit = sum(contains(tbl3.annots,'TTT'))
+numAlternate = sum(contains(tbl3.annots,'AIT'))
+
+numIrreg = sum(tbl3.irreg)
+
+numNA = sum(~tbl3.irreg)
+
+%% for 3x venn 
+numBranchONLY = sum(contains(annots,'branch') & ~contains(annots,'TTT') & ~contains(annots,'AIT'));
+numBranch_MultInit = sum(contains(annots,'branch') & contains(annots,'TTT'));
+
+numMultInitONLY = sum(contains(annots,'TTT') & ~contains(annots,'branch') & ~contains(annots,'AIT'));
+numMultInit_Alternate = sum(contains(annots,'TTT') & contains(annots,'AIT'));
+
+numAlternateONLY = sum(contains(annots,'AIT') & ~contains(annots,'branch') & ~contains(annots,'TTT'));
+numBranch_Alternate = sum(contains(annots,'branch') & contains(annots,'AIT'));
+
+numAllThree = sum(contains(annots,'branch') & contains(annots,'TTT') & contains(annots,'AIT'));
+
+cats = [numBranchONLY,numBranch_MultInit,numMultInitONLY,numMultInit_Alternate,numAlternateONLY,numBranch_Alternate,numAllThree];
+figure
+vennX(cats,100)

@@ -68,6 +68,9 @@ for f = 1:size(files,1)
     end    
     % calculate extension 
     wraps = abs(Dall);
+    allWraps{f} = wraps;
+    lastFrameIncl = ~isnan(wraps(end,:));
+    allEndWraps{f} = sum(wraps(:,lastFrameIncl),1,'omitnan');
     avgbrgwraps{f} = cell(1,size(Dall,1));
     avganchwraps{f} = NaN(1,size(Dall,1));
     smallestanch{f} = NaN(1,size(Dall,1));
@@ -147,6 +150,43 @@ for f = 1:size(files,1)
         allnonbrg{f}(i) = mean(sum(wraps(1:i,idx),'omitnan'));
     end
 end
+
+figure
+r = 56;
+tritest = [flip(1-(1/r):-1/r:0.1), 1, 1-(1/r):-1/r:0.1];
+for f = 1:size(files,1)
+    [~,idx] = min(abs(allTL{f} - 25)); %25 hrs
+    useable = ~isnan(allWraps{f}(idx,:));
+    sumwraps = sum(allWraps{f}(1:idx,useable),1,'omitnan');
+    sumwraps = rescale(imresize(sumwraps,[1,101]));
+    [~,maxidx] = max(sumwraps);
+%     if maxidx > 51
+%         sumwraps = flip(sumwraps);
+%     end
+    subplot(4,4,f,'TickDir','out')
+    hold on
+    [~,p] = kstest2(tritest,sumwraps);
+    if p<0.05
+        color = 'r';
+    else
+        color = 'k';
+    end
+    plot(tritest,'LineWidth',1.5)
+    plot(sumwraps,'LineWidth',1.5,'Color',color)
+%     title(['p = ' num2str(p)])
+    xlim([1 101])
+    xticks([1 51 101])
+    xticklabels([-1 0 1])
+    yticks([0 0.5 1])
+    yticklabels({'0.0' '0.5' '1.0'}) 
+    hold off
+    sumwraps_all(f,:) = sumwraps;
+end
+
+figure
+plot(rescale(mean(sumwraps_all)))
+[~,p] = kstest2(tritest,rescale(mean(sumwraps_all)))
+
 
 figure
 hold on

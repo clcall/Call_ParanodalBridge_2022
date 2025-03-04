@@ -14,7 +14,7 @@ for c = 1:length(cond)
         tempdata14 = ALL.(cond{c}).(an{a}).raw.(day{end});
         if contains(an{a},{'a129' 'a213'}) && contains(cond{c},{'ctrl','L2_3'})
             tempdata00 = tempdata14;
-        elseif contains(cond{c},'bsln') % work-around for d00 being empty in bsln struct
+        elseif contains(cond{c},{'bsln','visL1'}) % work-around for d00 being empty in bsln struct
             tempdata00 = tempdata14;
         else
             tempdata00 = ALL.(cond{c}).(an{a}).raw.d00;
@@ -112,12 +112,12 @@ for c = 1:length(cond)
         numbrgs = length(data.(cond{c}).(an{a}).lengths);
         anchNames(cellfun(@isempty,anchNames)) = [];
         nonbrgdata = tempdata14.Sheath_Info((~brgIdx & ~contains(tempdata14.Sheath_Info.intNames, anchNames)),:);
-        numNonbrg = length(tempdata14.Sheath_Info.intNames);
+        numNonbrg = length(tempdata14.Sheath_Info.intNames) - numbrgs;
         cellTotLength = sum(tempdata14.Sheath_Info.intLengths);
 %         cellTotNum = ALL.(cond{c}).(an{a}).num_FinalSheaths(end);
-        avganchlength = mean(anchdata14.intLengths);
-        avgbrglength = mean(brgdata14.intLengths);
-        totbrglength = sum(brgdata14.intLengths,'omitnan');
+        avganchlength = mean(cell2mat(data.(cond{c}).(an{a}).anchlengths));
+        avgbrglength = mean(cell2mat(data.(cond{c}).(an{a}).lengths));
+        totbrglength = sum(cell2mat(data.(cond{c}).(an{a}).lengths),'omitnan');
         avgNonbrglength = mean(nonbrgdata.intLengths);
         avgChainNodeRatio = mean(data.(cond{c}).(an{a}).noderatio,'omitnan');
         avgNonBrgNodeRatio = mean(nonbrgdata.node_class,'omitnan');
@@ -136,6 +136,8 @@ end
 ctrl = data.ctrl.datatable;
 bsln = data.bsln.datatable;
 l23 = data.L2_3.datatable;
+vis = data.visL1.datatable;
+cupr = data.cupr.datatable;
 [ct,cu] = getFigColors;
 colors = {[0.5 0.5 0.5],[0.5 0.5 0.5],ct,ct,cu,cu};
 xes = repmat(1:3,2,1);
@@ -143,21 +145,24 @@ xes = repmat(1:3,2,1);
 
 %% Average lengths for all sheath types
 colors2 = {[0.2 0.5 1],[52 75 160]./255,[1 0.5 0],[0.4 0.4 0.4]}; %,[1 0 0]
-% xes2 = repmat(1:2,2,1);
 all = [ctrl;bsln];
  
 y = {all.avgNonbrglength,all.avganchLength,all.avgbrglength,all.avgChainLengthSum};
+avg = cell2mat(cellfun(@(x) mean(x,'omitnan'),y,'UniformOutput',false));
+sem = cell2mat(cellfun(@(x) calcSEM(x,1),y,'UniformOutput',false));
 figure
 hold on
 plotSpread(y,'distributionMarker','o','distributionColors',colors2);
+errorbar(avg,sem,'ko','MarkerSize',4,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5)
 xticklabels({})
 ylim([0 200])
 figQuality(gcf,gca,[2 2.6])
 
 y2 = [all.avgNonbrglength;all.avganchLength;all.avgbrglength;all.avgChainLengthSum];
-idx = [repmat({'bsln_b'},size(bsln.cellname)); repmat({'bsln_nb'},size(bsln.cellname));...
-       repmat({'ctrl_b'},size(ctrl.cellname)); repmat({'ctrl_nb'},size(ctrl.cellname))];
-kruskalwallis(y2,idx);
+idx = [repmat({'non'},size(all.avgNonbrglength)); repmat({'anch'},size(all.avganchLength));...
+       repmat({'brg'},size(all.avgbrglength)); repmat({'chain'},size(all.avgChainLengthSum))];
+[p,tbl,stats] = kruskalwallis(y2,idx);
+compresults = multcompare(stats);
 %% Average chain length VS average sheath length
 y = {bsln.avgChainLengthSum, bsln.avgNonbrglength,...
     ctrl.avgChainLengthSum, ctrl.avgNonbrglength};
@@ -195,13 +200,7 @@ hold on
 errorbar(avg,sem,'ko','MarkerSize',4,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5);
 hold off
 xlim([0 3])
-% row1 = {'< 8wks' '> 8wks' '> 8wks'};
-% row2 = {' ' 'Control' 'Cuprizone'};
-% labelArray = [row1; row2];
-% labelArray = strjust(pad(labelArray),'center'); % 'left'(default)|'right'|'center
-% ticklabels = strtrim(sprintf('%s\\newline%s\n', labelArray{:}));
 ax = gca();
-% ax.XTickLabel = ticklabels;
 xticklabels({})
 figQuality(gcf,gca,[1.8 2.6])
 ytickformat('%.2f')
@@ -257,9 +256,6 @@ figQuality(gcf,gca,[3 2.7])
 
 %% CUPRIZONE COMPARISONS
 %% Proportion of bridges
-controls = [bsln; ctrl];
-
-
 y = {ctrl.numbrgs./(ctrl.numbrgs + ctrl.numNonbrg),...
     cupr.numbrgs./(cupr.numbrgs + cupr.numNonbrg)};
 
@@ -278,10 +274,10 @@ end
 figure
 errorbar(avg,sem,'ko','MarkerSize',5,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5)
 hold on
-plotSpread(y,'distributionIdx',idx2,'distributionMarker','o','distributionColors',{[0.5 0.5 0.5],cu})
+plotSpread(y,'distributionIdx',idx2,'distributionMarker','o','distributionColors',{ct,cu})
 hold off
 xlim([0 3])
-% ylim([0 0.25])
+ylim([0 0.15])
 ax = gca();
 xticklabels({'Control' 'Remyelinating'})
 figQuality(gcf,gca,[1.8 2.8])
@@ -308,6 +304,7 @@ y = {ctrl.avgbrglength, ctrl.avgNonbrglength,...
 
 plotEmUp(y,xes2,colors2)
 xticklabels({'Control' 'Remyelinating'})
+ylim([0 120])
 figQuality(gcf,gca,[2.8 2.2])
 
 y2 = [ctrl.avgbrglength; ctrl.avgNonbrglength;...
@@ -336,6 +333,49 @@ idx = [repmat({'bsln_b'},size(ctrl.cellname)); repmat({'bsln_nb'},size(ctrl.cell
 [p,tbl,stats] = kruskalwallis(y2,idx);
 multcompare(stats,"CType","dunn-sidak");
 
+%% Plotting all sheaths - chain lengths vs all lengths
+plotSheathLengthsPerCell(data,ALL);
+
+%% P36 visual cortex data
+
+%% (VIS) Proportion of bridges 
+y = vis.numbrgs./(vis.numbrgs + vis.numNonbrg);
+
+avg = mean(y);
+sem = calcSEM(y,1);
+
+figure
+plotSpread(y,'distributionMarker','o','distributionColors',[0.5 0.5 0.5])
+hold on
+errorbar(avg,sem,'ko','MarkerSize',4,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5);
+hold off
+xlim([0 2])
+ylim([0 .25])
+ax = gca();
+xticklabels({})
+figQuality(gcf,gca,[1.8 2.6])
+ytickformat('%.2f')
+
+%% (VIS) Average lengths for all sheath types
+colors2 = {[0.2 0.5 1],[52 75 160]./255,[1 0.5 0],[0.4 0.4 0.4]}; %,[1 0 0]
+all = vis;
+ 
+y = {all.avgNonbrglength,all.avganchLength,all.avgbrglength,all.avgChainLengthSum};
+avg = cell2mat(cellfun(@(x) mean(x,'omitnan'),y,'UniformOutput',false));
+sem = cell2mat(cellfun(@(x) calcSEM(x,1),y,'UniformOutput',false));
+figure
+hold on
+plotSpread(y,'distributionMarker','o','distributionColors',colors2);
+errorbar(avg,sem,'ko','MarkerSize',4,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5)
+xticklabels({})
+ylim([0 200])
+figQuality(gcf,gca,[2 2.6])
+
+y2 = [all.avgNonbrglength;all.avganchLength;all.avgbrglength;all.avgChainLengthSum];
+idx = [repmat({'non'},size(all.avgNonbrglength)); repmat({'anch'},size(all.avganchLength));...
+       repmat({'brg'},size(all.avgbrglength)); repmat({'chain'},size(all.avgChainLengthSum))];
+[p,tbl,stats] = kruskalwallis(y2,idx);
+compresults = multcompare(stats);
 %% Territory comparison
 % y = {bsln.xy, bsln.xy_nb, bsln.z, bsln.z_nb,...
 %     ctrl.xy, ctrl.xy_nb, ctrl.z, ctrl.z_nb};

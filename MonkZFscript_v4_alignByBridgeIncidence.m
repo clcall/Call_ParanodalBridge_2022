@@ -31,6 +31,7 @@ for f = 1:size(files,1)
     idx = contains({SD.name},name(1:12));
     peak = SD(idx).peakedge;
     TL = SD(idx).adjTL;
+    sheathcolors{f} = SD(idx).cellcolor;
     allTL{f} = TL;
     
     % get path data and Delta distance between sheath & lifeact
@@ -38,6 +39,8 @@ for f = 1:size(files,1)
     [d,X,Delta,borders,origin,firstbrgtp,framesUsed] = calculatePathsXML_ZFbridges_v2(xmlstruct,edgepos,makeplot,TL,name);
 %     allTL{f} = allTL{f}(framesUsed);
     
+    % make scaled wrap length comparison
+
     %% PARSE BRIDGED REGIONS & TIMES
     % get bridged times idx
     brgtime = cell2mat(cellfun(@any,borders,'UniformOutput',false));
@@ -164,6 +167,7 @@ for f = 1:size(files,1)
         idx(leftbord:rightbord) = 0;
         allnonbrg{f}(i) = mean(sum(wraps(1:i,idx),'omitnan'));
     end
+    
 end
 %%
 elapsedtime = {};
@@ -186,48 +190,18 @@ end
 % figQuality(gcf,gca,[4,2.5])
 
 %%
-brgratio = {};
-nonratio = {};
-brgratioM = [];
-nonratioM = [];
 anch_FI = [];
 brg_FI = [];
 non_FI = [];
 universalTL = 0:80;
 roundedTL = cellfun(@round,elapsedtime,'UniformOutput',false);
 
-% figure
-% hold on
 for f = 2:size(files,1) % excluding sheath 1, with only 2 tps
-%     anch = smallestanch{f};
-% %     anch = anch-anch(2);
-%     brg = cell2mat(cellfun(@mean,avgbrgwraps{f},"UniformOutput",false));
-% %     brg = brg-brg(2);
-%     non = allnonbrg{f};
-% %     non = non-non(2);
-%     
-%     brgratio{f} = brg ./ anch;
-%     temp = brgratio{f}';
-%     [brgratioM,temp] = forceConcat(brgratioM,temp,1);
-%     brgratioM = [brgratioM,temp];
-%     
-%     nonratio{f} = non ./ anch;
-%     temp = nonratio{f}';
-%     [nonratioM,temp] = forceConcat(nonratioM,temp,1);
-%     nonratioM = [nonratioM,temp];
-%     
-%     plot(elapsedtime{f},brgratio{f},'-r')
-%     plot(elapsedtime{f},nonratio{f},'-g')
-    
     anch_FI(f-1,:) = averageSheathTLs(smallestanch{f},universalTL,roundedTL{f});
     brg_FI(f-1,:) = averageSheathTLs(cell2mat(cellfun(@mean,avgbrgwraps{f},"UniformOutput",false)),universalTL,roundedTL{f});
     non_FI(f-1,:) = averageSheathTLs(allnonbrg{f},universalTL,roundedTL{f});
-    
-%     plot(elapsedtime{f},smallestanch{f},'Color',[52 75 160]./255)
-%     plot(elapsedtime{f},cell2mat(cellfun(@mean,avgbrgwraps{f},"UniformOutput",false)),'r-')
-%     plot(elapsedtime{f},allnonbrg{f},'Color','g')
+    colors(f-1,:) = sheathcolors{f};
 end
-% hold off
 
 figure
 hold on
@@ -245,6 +219,8 @@ hold off
 figQuality(gcf,gca,[4 3])
 
 slopes = [];
+figure 
+hold on
 for i = 1:size(anch_FI,1)
     if any(anch_FI(i,1:30))
         useableLI = ~isnan(anch_FI(i,1:30));
@@ -252,9 +228,16 @@ for i = 1:size(anch_FI,1)
         b_pf = polyfit(universalTL(useableLI),brg_FI(i,useableLI),1);
         n_pf = polyfit(universalTL(useableLI),non_FI(i,useableLI),1);
         slopes = [slopes; a_pf(1) b_pf(1) n_pf(1)];
+        plot([a_pf(1); n_pf(1)],'Color',colors(i,:),'LineStyle','-','Marker','o','LineWidth',1)
     end
 end
-
+hold off
+ylim([-0.05 0.25])
+xlim([0 3])
+xticks([1 2])
+xticklabels({})
+figQuality(gcf,gca,[2 3])
+        
 
 % LME
 Y = [];
