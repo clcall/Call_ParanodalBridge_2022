@@ -32,7 +32,7 @@ for i = 1:size(files,1)
         % 8 - avg chain length
 end
 
-%% panel d - # sheath initiations (i.e. num nonbrg + num anch)
+%% panel e - # sheath initiations (i.e. num nonbrg + num anch)
 totSheaths_bridges = [21; sheathsSNccrev(:,1); 14; 19; 27; 21] - [3; sheathsSNccrev(:,2); 1; 2; 4; 2];
 totSheaths_noBridges = [20; 11; 14; 7; 9; 19; 12; 9; 20; 8; 13; 18;...
 15.5; 14; 17; 13; 19; 27; 21; 11; 10; 10; 9; 12];
@@ -52,10 +52,8 @@ xticklabels({})
 % ylabel('Number of sheaths per cell')
 figQuality(gcf,gca,[1.5,2]);
 [p,tbl,stats] = kruskalwallis([totSheaths_bridges;totSheaths_noBridges],[ones(size(totSheaths_bridges));zeros(size(totSheaths_noBridges))])
-% [p,~,stats] = ranksum(totSheaths_bridges,totSheaths_noBridges)
-% [~,p,tstat] = ttest2(totSheaths_bridges,totSheaths_noBridges)
 
-%% panel e
+%% panel d
 nonBridgeSheath_avgLnth = [26.24; sheathsSNccrev(:,4); 47.37; 36.25; 38.61; 27.77];
 
 anchSheath_avgLnth = [22.76; sheathsSNccrev(:,5); 38.49; 24.02; 27.95; 22.08];
@@ -64,7 +62,7 @@ bridge_avgLnth = [2.94; sheathsSNccrev(:,6); 3.58; 4.52; 5.83; 7.11];
 
 bridgeSheath_avgLnth = [15.16; sheathsSNccrev(:,7); 24.44; 14.05; 21.13; 23.87];
 
-% INCLUDING BRIDGES THEMSELVES
+% Length of entire ensheathment, including bridges themselves
 bridgeChain_avgLnth = [40.85; sheathsSNccrev(:,8); 52.46; 51.19; 57.09; 54.85]; 
 
 avg = [mean(nonBridgeSheath_avgLnth); mean(anchSheath_avgLnth); mean(bridge_avgLnth); mean(bridgeSheath_avgLnth); mean(bridgeChain_avgLnth)]

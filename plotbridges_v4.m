@@ -166,7 +166,8 @@ compresults = multcompare(stats);
 %% Average chain length VS average sheath length
 y = {bsln.avgChainLengthSum, bsln.avgNonbrglength,...
     ctrl.avgChainLengthSum, ctrl.avgNonbrglength};
-
+xes2 = repmat(1:2,2,1);
+colors2 = {[0.5 0.5 0.5],[0.5 0.5 0.5],ct,ct};
 plotEmUp(y,xes2,colors2)
 xticklabels({})
 figQuality(gcf,gca,[2 2.6])
@@ -376,39 +377,3 @@ idx = [repmat({'non'},size(all.avgNonbrglength)); repmat({'anch'},size(all.avgan
        repmat({'brg'},size(all.avgbrglength)); repmat({'chain'},size(all.avgChainLengthSum))];
 [p,tbl,stats] = kruskalwallis(y2,idx);
 compresults = multcompare(stats);
-%% Territory comparison
-% y = {bsln.xy, bsln.xy_nb, bsln.z, bsln.z_nb,...
-%     ctrl.xy, ctrl.xy_nb, ctrl.z, ctrl.z_nb};
-% y = {[bsln.xy;ctrl.xy],[bsln.xy_nb;ctrl.xy_nb],[bsln.z;ctrl.z],[bsln.z_nb;ctrl.z_nb]};
-% colors2 = {[0.5 0.5 0.5],[0.5 0.5 0.5],ct,ct};
-% 
-% avg = reshape(cellfun(@(y) mean(y,'omitnan'),y),[],2)
-% sem = reshape(cellfun(@(y) calcSEM(y,1),y),[],2)
-% sz = cellfun(@length,y);
-% idx = arrayfun(@(x) ones(x,1), sz, 'UniformOutput', false);
-% idx2 = [];
-% for i = 1:length(idx)
-%     idx2 = [idx2; idx{i} .* i];
-% end
-% 
-% y2 = [bsln.xy; bsln.xy_nb; bsln.z; bsln.z_nb;...
-%     ctrl.xy; ctrl.xy_nb; ctrl.z; ctrl.z_nb];
-% 
-% y = [[bsln.xy;ctrl.xy],[bsln.xy_nb;ctrl.xy_nb],[bsln.z;ctrl.z],[bsln.z_nb;ctrl.z_nb]];
-% figure
-% color = [0.5 0.5 0.5];
-% x = [1 2; 3 4];
-% hold on
-% for i = 1:size(y,1)
-%     plot(x(1,:),y(i,1:2),'o-','Color',[0.5 0.5 0.5],'MarkerSize',3,'LineWidth',0.5);
-% end
-% for i = 1:size(y,1)
-%     plot(x(2,:),y(i,3:4),'o-','Color',[0.5 0.5 0.5],'MarkerSize',3,'LineWidth',0.5);
-% end
-% xlim([0.5,4.5]);
-% ylim([0,120]);
-% xticks([1.5,3.5]);
-% errorbar([1,2;3,4],avg',sem','ko','MarkerSize',2,'MarkerFaceColor','k','LineWidth',1.5,'CapSize',0)
-% hold off
-% set(gca,'XTickLabel',[])
-% figQuality(gcf,gca,[2,2.2]);

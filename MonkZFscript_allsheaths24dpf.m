@@ -1,4 +1,3 @@
-clear variables
 path = 'D:\GitHubRepos\Call_ParanodalBridge_2022\MonkZFtraces\allsheaths_24dpf';
 cd(path);
 fldr = dir(path);
@@ -7,23 +6,23 @@ n = length(files);
 alltimeSheaths = NaN(n,160);
 alltimeBrgs = NaN(n,160);
 colors = parula;
-SD = struct; %all sheath data
+SD24 = struct; %all sheath data
 
 for f = 1:n
     name = files{f};
-    SD(f).name = name(1:12);
+    SD24(f).name = name(1:12);
     xmlstruct = parseXML_SingleCell(name);
 
     parsedData_sheaths = parseData(xmlstruct);
-    SD(f).totsheaths = length(cell2mat(parsedData_sheaths(:,3)));
-    SD(f).numbridges = sum(cell2mat(parsedData_sheaths(:,3)));
-    SD(f).prop = SD(f).numbridges./SD(f).totsheaths;
+    SD24(f).totsheaths = length(cell2mat(parsedData_sheaths(:,3)));
+    SD24(f).numbridges = sum(cell2mat(parsedData_sheaths(:,3)));
+    SD24(f).prop = SD24(f).numbridges./SD24(f).totsheaths;
 end
 
 
 figure;
 hold on
-plotSpread([SD.prop]','distributionMarker','o','distributionColors','k');
+plotSpread([SD24.prop]','distributionMarker','o','distributionColors','k');
 figQuality(gcf,gca,[2,2.5])
 ylim([0 1])
         

@@ -1,6 +1,6 @@
-function MonkZFscript_v4_alignByBridgeIncidence
+function SD = MonkZFscript_v4_alignByBridgeIncidence(makeplot,makeplot2)
 % NOTE: run MonkZFscript_allsheaths.m FIRST to get SD struct with timelines
-SD = MonkZFscript_allsheaths(0);
+SD = MonkZFscript_allsheaths(1);
 path = 'D:\GitHubRepos\Call_ParanodalBridge_2022\MonkZFtraces';
 cd(path);
 files = dir(path);
@@ -35,15 +35,11 @@ for f = 1:size(files,1)
     allTL{f} = TL;
     
     % get path data and Delta distance between sheath & lifeact
-    makeplot = 0;
-    [d,X,Delta,borders,origin,firstbrgtp,framesUsed] = calculatePathsXML_ZFbridges_v2(xmlstruct,edgepos,makeplot,TL,name);
-%     allTL{f} = allTL{f}(framesUsed);
-    
-    % make scaled wrap length comparison
+    [d,X,Delta,bordersOri,origin,firstbrgtp,framesUsed] = calculatePathsXML_ZFbridges_v2(xmlstruct,edgepos,makeplot,makeplot2,TL,name);
 
     %% PARSE BRIDGED REGIONS & TIMES
     % get bridged times idx
-    brgtime = cell2mat(cellfun(@any,borders,'UniformOutput',false));
+    brgtime = cell2mat(cellfun(@any,bordersOri,'UniformOutput',false));
     % find consecutive time with bridges
     tmp = find(diff([NaN brgtime NaN] == 1));
     brgtimeidx = reshape(tmp,2,[])'; % reshape in desired form
@@ -75,7 +71,7 @@ for f = 1:size(files,1)
     
     Dadj = NaN(size(rng));
     Dall = [];
-    borders_copy = borders(brgtimevect);
+    borders_copy = bordersOri(brgtimevect);
     borders = {};
     for i = 1:length(brgDelta)
         if any(brgDelta{i})
@@ -89,6 +85,7 @@ for f = 1:size(files,1)
     
     %% calculate extension 
     wraps = abs(Dall);
+    allWraps{f} = wraps;
     avgbrgwraps{f} = cell(1,size(Dall,1));
     avganchwraps{f} = NaN(1,size(Dall,1));
     smallestanch{f} = NaN(1,size(Dall,1));
@@ -169,6 +166,7 @@ for f = 1:size(files,1)
     end
     
 end
+
 %%
 elapsedtime = {};
 % figure

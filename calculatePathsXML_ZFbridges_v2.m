@@ -1,4 +1,4 @@
-function [d,X,Delta,borders,origin,firstbrgtp,framesUsed] = calculatePathsXML_ZFbridges_v2( xmlstruct, edgepos, makeplot, TL, name)
+function [d,X,Delta,borders,origin,firstbrgtp,framesUsed] = calculatePathsXML_ZFbridges_v2( xmlstruct, edgepos, makeplot, makeplot2, TL, name)
 [traceData_sheaths, traceData_lifeact] = parseData(xmlstruct);
 frames_sheaths = cell2mat(traceData_sheaths(:,2));
 frames_lifeact = cell2mat(traceData_lifeact(:,2));
@@ -9,6 +9,7 @@ framesUsed = [];
 if makeplot
     f1 = figure;
     f2 = figure;
+    f3 = figure;
 end
 firstbrg = 0;
 borders = cell(1,max(frames_sheaths));
@@ -142,73 +143,71 @@ for i=1:max(frames_sheaths)
         framesUsed = [framesUsed; i];
     end
     %% PLOT relative delta
-%     if makeplot & any(Delta{i})
-%         figure(f1);
-%         hold on
-%         subplot(max(frames_sheaths),1,i)
-%         h = plot(X{i-1}(idx1),ones(length(delta),1),'LineWidth',2);
-% %         h = plot(X{i-1}(idx1),delta,'LineWidth',2); % use for line height
-%         
-% %         cdo = colormap('parula');
-% %         cdo = customcolormap_preset('red-white-blue');
-%         cdo = customcolormap([0 0.5 1], [0 0 1; 0.8 0.8 0.8; 1 0 0], 256);
-%         cd = interp1(linspace(-1.1,1.1,length(cdo)),cdo,delta);
-%         cd = uint8(cd'*255);
-%         logdx = all(cd==0);
-%         if any(logdx)
-%             cd(1,logdx) = uint8(cdo(end,1)*255);
-%             cd(2,logdx) = uint8(cdo(end,2)*255);
-%             cd(3,logdx) = uint8(cdo(end,3)*255);
-%         end
-%         cd(4,:) = 255;
-%         drawnow
-%         set(h.Edge,'ColorBinding','interpolated','ColorData',cd)
-%         
-%         ylim([0 2])
-%         xlim([-1200,1200])
-%         xticks([])
-%         xticklabels([])
-%         axis off
-%         box off
-%         
-%         if any(borders{i})
-%             xline(borders{i},'Linewidth',1.5);
-%         end
-%         xline(0,'Linewidth',1.5,'Color',[0.5 0.5 0.5]);
-%         hold off
-%     end
+    if makeplot2 & any(Delta{i})
+        figure(f1);
+        hold on
+        subplot(max(frames_sheaths),1,i)
+        h = plot(X{i-1}(idx1),ones(length(delta),1),'LineWidth',2);
+%         h = plot(X{i-1}(idx1),delta,'LineWidth',2); % use for line height
+        
+        cdo = customcolormap([0 0.5 1], [0 0 1; 0.8 0.8 0.8; 1 0 0], 256);
+        cd = interp1(linspace(-1.1,1.1,length(cdo)),cdo,delta);
+        cd = uint8(cd'*255);
+        logdx = all(cd==0);
+        if any(logdx)
+            cd(1,logdx) = uint8(cdo(end,1)*255);
+            cd(2,logdx) = uint8(cdo(end,2)*255);
+            cd(3,logdx) = uint8(cdo(end,3)*255);
+        end
+        cd(4,:) = 255;
+        drawnow
+        set(h.Edge,'ColorBinding','interpolated','ColorData',cd)
+        
+        ylim([0 2])
+        xlim([-1200,1200])
+        xticks([])
+        xticklabels([])
+        axis off
+        box off
+        
+        if any(borders{i})
+            xline(borders{i},'Linewidth',1.5);
+        end
+        xline(0,'Linewidth',1.5,'Color',[0.5 0.5 0.5]);
+        hold off
+    end
         %% PLOT absolute distance
-    if makeplot
-%         figure(f1);
-%         hold on
-%         subplot(max(frames_sheaths),1,i)
-%         h = plot(X{i},d{i}(:,1),'LineWidth',2);
-%         
-%         cdo = colormap('parula');
-%         cd = interp1(linspace(0,1.2,length(cdo)),cdo,d{i}(:,1));
-%         cd = uint8(cd'*255);
-%         logdx = all(cd==0);
-%         if any(logdx)
-%             cd(1,logdx) = uint8(cdo(end,1)*255);
-%             cd(2,logdx) = uint8(cdo(end,2)*255);
-%             cd(3,logdx) = uint8(cdo(end,3)*255);
-%         end
-%         cd(4,:) = 255;
-%         drawnow
-%         set(h.Edge,'ColorBinding','interpolated','ColorData',cd)
-%         
-%         ylim([0 2])
-%         xlim([-1200,1200])
-%         xticks([])
-%         xticklabels([])
-%         axis off
-%         box off
-%         
-%         if any(borders{i})
-%             xline(borders{i},'Linewidth',1.5);
-%         end
-%         xline(0,'Linewidth',1.5,'Color','r');
-%         hold off
+    if makeplot2
+        figure(f3);
+        hold on
+        subplot(max(frames_sheaths),1,i)
+        h = plot(X{i},d{i}(:,1),'LineWidth',2);
+        
+        cdo = colormap('parula');
+        cd = interp1(linspace(0,1.2,length(cdo)),cdo,d{i}(:,1));
+        cd = uint8(cd'*255);
+        logdx = all(cd==0);
+        if any(logdx)
+            cd(1,logdx) = uint8(cdo(end,1)*255);
+            cd(2,logdx) = uint8(cdo(end,2)*255);
+            cd(3,logdx) = uint8(cdo(end,3)*255);
+        end
+        cd(4,:) = 255;
+        drawnow
+        set(h.Edge,'ColorBinding','interpolated','ColorData',cd)
+        
+        ylim([0 2])
+        xlim([-1200,1200])
+        xticks([])
+        xticklabels([])
+        axis off
+        box off
+        
+        if any(borders{i})
+            xline(borders{i},'Linewidth',1.5);
+        end
+        xline(0,'Linewidth',1.5,'Color','r');
+        hold off
     end
 end
 if makeplot
