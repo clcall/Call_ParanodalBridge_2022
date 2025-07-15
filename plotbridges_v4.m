@@ -47,7 +47,7 @@ for c = 1:length(cond)
             continue
         end
         flag = [];
-        anchNames = cell(size(brgdata00,1),1);
+        anchNames = cell(size(brgdata00,1),1); %prealloc
         for i = 1:size(brgdata00,1)
             brgID = brgdata00.intIDs{i};
             temp = brgdata00.intStartsOn{i};
@@ -89,7 +89,7 @@ for c = 1:length(cond)
                     end
                 end
             else % anchoring sheath is normal, assign bridged and anchoring lengths
-                data.(cond{c}).(an{a}).lengths{i} = [brgdata14.intLengths(i), anchdata14.intLengths(1)];
+                 data.(cond{c}).(an{a}).lengths{i} = [brgdata14.intLengths(i), anchdata14.intLengths(1)];
                 data.(cond{c}).(an{a}).anchlengths{i} = anchdata14.intLengths(1);
                 data.(cond{c}).(an{a}).nodes{i} = [brgdata14.node_class(i), anchdata14.node_class(1)];
                 % add hasmltproc data
@@ -115,8 +115,8 @@ for c = 1:length(cond)
         numNonbrg = length(tempdata14.Sheath_Info.intNames) - numbrgs;
         cellTotLength = sum(tempdata14.Sheath_Info.intLengths);
 %         cellTotNum = ALL.(cond{c}).(an{a}).num_FinalSheaths(end);
-        avganchlength = mean(cell2mat(data.(cond{c}).(an{a}).anchlengths));
-        avgbrglength = mean(cell2mat(data.(cond{c}).(an{a}).lengths));
+        avganchlength = mean(cell2mat(data.(cond{c}).(an{a}).anchlengths),'omitnan');
+        avgbrglength = mean(cell2mat(data.(cond{c}).(an{a}).lengths),'omitnan');
         totbrglength = sum(cell2mat(data.(cond{c}).(an{a}).lengths),'omitnan');
         avgNonbrglength = mean(nonbrgdata.intLengths);
         avgChainNodeRatio = mean(data.(cond{c}).(an{a}).noderatio,'omitnan');
@@ -217,7 +217,7 @@ plotSpread({genBrgRatio,lostBrgRatio},'distributionMarker',{'o'}, 'distributionC
 figQuality(gcf,gca,[2,2.9])
 xticklabels({'Generated','Lost'})
 ytickformat('%.1f')
-p = kruskalwallis([genBrgRatio;lostBrgRatio],[zeros(size(genBrgRatio));ones(size(lostBrgRatio))])
+[p,tbl,stats] = kruskalwallis([genBrgRatio;lostBrgRatio],[zeros(size(genBrgRatio));ones(size(lostBrgRatio))])
 %% Cell tot length VS bridge number
 figure; plot(bsln.numbrgs,bsln.cellTotLength./1000,'o','MarkerEdgeColor',[0.5 0.5 0.5],'LineWidth',1); hold on;
 plot(ctrl.numbrgs,ctrl.cellTotLength./1000,'o','MarkerEdgeColor',ct,'LineWidth',1); hold off;
@@ -228,32 +228,32 @@ xlim([0 12])
 [R,P,RL,RU] = corrcoef(bsln.numbrgs,bsln.cellTotLength)
 [R,P,RL,RU] = corrcoef(ctrl.numbrgs,ctrl.cellTotLength)
 %% Proportion of bridges by length
-y = {bsln.totbrglength./(bsln.cellTotLength),...
-    ctrl.totbrglength./(ctrl.cellTotLength),...
-    cupr.totbrglength./(cupr.cellTotLength)};
-
-avg = reshape(cellfun(@(y) mean(y,'omitnan'),y),1,3);
-sem = reshape(cellfun(@(y) calcSEM(y,1),y),1,3);
-sz = cellfun(@length,y);
-idx = arrayfun(@(x) ones(x,1), sz, 'UniformOutput', false);
-idx2 = [];
-for i = 1:length(idx)
-    idx2 = [idx2; idx{i} .* i];
-end
-figure
-errorbar(avg,sem,'ko','MarkerSize',8,'MarkerFaceColor','w','LineWidth',1.5)
-hold on
-plotSpread(y,'distributionIdx',idx2,'distributionMarker','o','distributionColors',{[0.5 0.5 0.5],ct,cu})
-hold off
-xlim([0 4])
-row1 = {'< 8wks' '> 8wks' '> 8wks'};
-row2 = {' ' 'Control' 'Cuprizone'};
-labelArray = [row1; row2];
-labelArray = strjust(pad(labelArray),'center'); % 'left'(default)|'right'|'center
-ticklabels = strtrim(sprintf('%s\\newline%s\n', labelArray{:}));
-ax = gca();
-ax.XTickLabel = ticklabels;
-figQuality(gcf,gca,[3 2.7])
+% y = {bsln.totbrglength./(bsln.cellTotLength),...
+%     ctrl.totbrglength./(ctrl.cellTotLength),...
+%     cupr.totbrglength./(cupr.cellTotLength)};
+% 
+% avg = reshape(cellfun(@(y) mean(y,'omitnan'),y),1,3);
+% sem = reshape(cellfun(@(y) calcSEM(y,1),y),1,3);
+% sz = cellfun(@length,y);
+% idx = arrayfun(@(x) ones(x,1), sz, 'UniformOutput', false);
+% idx2 = [];
+% for i = 1:length(idx)
+%     idx2 = [idx2; idx{i} .* i];
+% end
+% figure
+% errorbar(avg,sem,'ko','MarkerSize',8,'MarkerFaceColor','w','LineWidth',1.5)
+% hold on
+% plotSpread(y,'distributionIdx',idx2,'distributionMarker','o','distributionColors',{[0.5 0.5 0.5],ct,cu})
+% hold off
+% xlim([0 4])
+% row1 = {'< 8wks' '> 8wks' '> 8wks'};
+% row2 = {' ' 'Control' 'Cuprizone'};
+% labelArray = [row1; row2];
+% labelArray = strjust(pad(labelArray),'center'); % 'left'(default)|'right'|'center
+% ticklabels = strtrim(sprintf('%s\\newline%s\n', labelArray{:}));
+% ax = gca();
+% ax.XTickLabel = ticklabels;
+% figQuality(gcf,gca,[3 2.7])
 
 %% CUPRIZONE COMPARISONS
 %% Proportion of bridges
@@ -310,10 +310,10 @@ figQuality(gcf,gca,[2.8 2.2])
 
 y2 = [ctrl.avgbrglength; ctrl.avgNonbrglength;...
      cupr.avgbrglength; cupr.avgNonbrglength];
-idx = [repmat({'bsln_b'},size(ctrl.cellname)); repmat({'bsln_nb'},size(ctrl.cellname));...
-       repmat({'ctrl_b'},size(cupr.cellname)); repmat({'ctrl_nb'},size(cupr.cellname))];
-[p,tbl,stats] = kruskalwallis(y2,idx);
-multcompare(stats,"CType","dunn-sidak");
+idx = [repmat({'ctrl_b'},size(ctrl.cellname)); repmat({'ctrl_nb'},size(ctrl.cellname));...
+       repmat({'cupr_b'},size(cupr.cellname)); repmat({'cupr_nb'},size(cupr.cellname))];
+[p,tbl,stats] = kruskalwallis(y2,idx)
+[c,m,~,gnames] = multcompare(stats,"CType","dunn-sidak")
 %% Average chain length VS average sheath length
 y = {ctrl.avgChainLengthSum, ctrl.avgNonbrglength,...
     cupr.avgChainLengthSum, cupr.avgNonbrglength};
@@ -329,14 +329,16 @@ p*2
 [~,p,tstat] = ttest(cupr.avgChainLengthSum,cupr.avgNonbrglength);
 p*2
 
-idx = [repmat({'bsln_b'},size(ctrl.cellname)); repmat({'bsln_nb'},size(ctrl.cellname));...
-       repmat({'ctrl_b'},size(cupr.cellname)); repmat({'ctrl_nb'},size(cupr.cellname))];
-[p,tbl,stats] = kruskalwallis(y2,idx);
-multcompare(stats,"CType","dunn-sidak");
+idx = [repmat({'ctrl_b'},size(ctrl.cellname)); repmat({'ctrl_nb'},size(ctrl.cellname));...
+       repmat({'cupr_b'},size(cupr.cellname)); repmat({'cupr_nb'},size(cupr.cellname))];
+[p,tbl,stats] = kruskalwallis(y2,idx)
+[c,m,~,gnames] = multcompare(stats,"CType","dunn-sidak")
 
 %% Plotting all sheaths - chain lengths vs all lengths
 plotSheathLengthsPerCell(data,ALL);
-
+figQuality(gcf,gca,[6,3])
+xticks([])
+xticklabels([])
 %% P36 visual cortex data
 
 %% (VIS) Proportion of bridges 

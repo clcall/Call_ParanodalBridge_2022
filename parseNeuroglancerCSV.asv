@@ -106,4 +106,4 @@ numAllThree = sum(contains(annots,'branch') & contains(annots,'TTT') & contains(
 
 cats = [numBranchONLY,numBranch_MultInit,numMultInitONLY,numMultInit_Alternate,numAlternateONLY,numBranch_Alternate,numAllThree];
 figure
-vennX(cats,.01)
+vennX(cats,20)

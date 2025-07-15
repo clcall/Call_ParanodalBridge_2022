@@ -52,7 +52,7 @@ xlim([.5 2.5])
 figQuality(gcf,gca,[2 3])
 xticklabels([])
 
-WSRp = signrank(out2(:,1),out2(:,2))
+[WSRp,h,stats] = signrank(out2(:,1),out2(:,2))
 
 brgRatio = sum(out2(:,1:2),2) ./ out2(:,4);
 %%
