@@ -206,6 +206,17 @@ xticklabels({})
 figQuality(gcf,gca,[1.8 2.6])
 ytickformat('%.2f')
 
+%% Proportion of bridges Layers 1-3
+l123 = [y2;l23.numbrgs./(l23.numbrgs + l23.numNonbrg)].*100;
+avg = mean(l123);
+sem = calcSEM(l123,1);
+figure
+plotSpread(l123,'distributionMarker','o','distributionColors',ct)
+hold on
+errorbar(avg,sem,'ko','MarkerSize',4,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5);
+hold off
+
+figQuality(gcf,gca,[1.8 2.6])
 %% bsln + ctrl generated VS OLD lost
 numbrgs = [bsln.numbrgs; ctrl.numbrgs];
 numtot = [bsln.numbrgs + bsln.numNonbrg; + ctrl.numbrgs + ctrl.numNonbrg];
