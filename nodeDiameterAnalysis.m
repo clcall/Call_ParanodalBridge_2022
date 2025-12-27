@@ -21,3 +21,11 @@ ylim([0 1500])
 figQuality(gcf,gca,[4 2])
 
 [h,p,ks2stat] = kstest2(t.diameter(logical(idx1+idx2)), t.diameter(logical(idx3+idx4)))
+
+figure
+hold on
+histogram(t.diameter(logical(idx1+idx2)));
+histogram(t.diameter(logical(idx3+idx4)));
+hold off
+figQuality(gcf,gca,[4 2])
+legend('non-bridged','bridged')

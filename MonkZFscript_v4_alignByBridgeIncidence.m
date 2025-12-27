@@ -255,7 +255,7 @@ TBL = table(Y,T,shthID,cellID,group);
 lme_reml = fitlme(TBL,'Y ~ T*group + (1|cellID) + (1|cellID:shthID)','FitMethod','REML');
 disp(lme_reml)
 end
-%% local function
+%% local functions
 function filled_indexed  = averageSheathTLs(cellinput,universalTL,roundedTL)
     TLidx = [];
     idxFL= [];

@@ -126,11 +126,12 @@ for c = 1:length(cond)
         [xy,z] = compareTerritories_bridges(tempdata14.xmlstruct,cond{c},1,doplot);
         [xy_nb,z_nb] = compareTerritories_bridges(tempdata14.xmlstruct,cond{c},0,doplot);
         
+
         data.(cond{c}).datatable = [data.(cond{c}).datatable; an(a),numbrgs,numNonbrg,avgbrglength,totbrglength,avgNonbrglength,avganchlength,avglengthSum,cellTotLength,avgChainNodeRatio,avgNonBrgNodeRatio,xy,z,xy_nb,z_nb];
+
     end
     data.(cond{c}).datatable(1,:) = [];
 end
-% DON'T OMIT NANS FOR SUMMARY STATS (within PNB chains)!!!! 
 
 %% Plot standards
 ctrl = data.ctrl.datatable;
@@ -141,7 +142,6 @@ cupr = data.cupr.datatable;
 [ct,cu] = getFigColors;
 colors = {[0.5 0.5 0.5],[0.5 0.5 0.5],ct,ct,cu,cu};
 xes = repmat(1:3,2,1);
-
 
 %% Average lengths for all sheath types
 colors2 = {[0.2 0.5 1],[52 75 160]./255,[1 0.5 0],[0.4 0.4 0.4]}; %,[1 0 0]
@@ -389,4 +389,54 @@ y2 = [all.avgNonbrglength;all.avganchLength;all.avgbrglength;all.avgChainLengthS
 idx = [repmat({'non'},size(all.avgNonbrglength)); repmat({'anch'},size(all.avganchLength));...
        repmat({'brg'},size(all.avgbrglength)); repmat({'chain'},size(all.avgChainLengthSum))];
 [p,tbl,stats] = kruskalwallis(y2,idx);
-compresults = multcompare(stats);
+compresults = multcompare(stats,'CType','dunn-sidak');
+
+%% Territory comparison
+bsln_xy = bsln.xy(~isnan(bsln.xy));
+bsln_xy_nb = bsln.xy_nb(~isnan(bsln.xy_nb));
+bsln_z = bsln.z(~isnan(bsln.z));
+bsln_z_nb = bsln.z_nb(~isnan(bsln.z_nb));
+
+ctrl_xy = ctrl.xy(~isnan(ctrl.xy));
+ctrl_xy_nb = ctrl.xy_nb(~isnan(ctrl.xy_nb));
+ctrl_z = ctrl.z(~isnan(ctrl.z));
+ctrl_z_nb = ctrl.z_nb(~isnan(ctrl.z_nb));
+
+y = {[bsln_xy;ctrl_xy],[bsln_xy_nb;ctrl_xy_nb],[bsln_z;ctrl_z],[bsln_z_nb;ctrl_z_nb]};
+colors2 = {[0.5 0.5 0.5],[0.5 0.5 0.5],ct,ct};
+
+avg = reshape(cellfun(@(y) mean(y,'omitnan'),y),[],2)
+sem = reshape(cellfun(@(y) calcSEM(y,1),y),[],2)
+% sz = cellfun(@length,y);
+% idx = arrayfun(@(x) ones(x,1), sz, 'UniformOutput', false);
+% idx2 = [];
+% for i = 1:length(idx)
+%     idx2 = [idx2; idx{i} .* i];
+% end
+% 
+% y2 = [bsln_xy; bsln_xy_nb; bsln_z; bsln_z_nb;...
+%     ctrl_xy; ctrl_xy_nb; ctrl_z; ctrl_z_nb];
+
+y = [[bsln_xy_nb;ctrl_xy_nb],[bsln_xy;ctrl_xy],[bsln_z_nb;ctrl_z_nb],[bsln_z;ctrl_z]];
+figure
+color = [0.5 0.5 0.5];
+x = [1 2; 3 4];
+hold on
+for i = 1:size(y,1)
+    plot(x(1,:),y(i,1:2),'o-','Color',[0.5 0.5 0.5],'MarkerSize',3,'LineWidth',0.5);
+end
+for i = 1:size(y,1)
+    plot(x(2,:),y(i,3:4),'o-','Color',[0.5 0.5 0.5],'MarkerSize',3,'LineWidth',0.5);
+end
+xlim([0.5,4.5]);
+ylim([0,120]);
+xticks([1.5,3.5]);
+errorbar([1,2;3,4],avg',sem','ko','MarkerSize',2,'MarkerFaceColor','k','LineWidth',1.5,'CapSize',0)
+hold off
+set(gca,'XTickLabel',[])
+figQuality(gcf,gca,[2,2.2]);
+
+[~,p,ci,stats] = ttest(y(:,1),y(:,2));
+xy_p = p.*2
+[~,p,ci,stats] = ttest(y(:,3),y(:,4));
+z_p = p.*2

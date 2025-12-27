@@ -20,6 +20,8 @@ ylim([0 40])
 xticklabels({})
 figQuality(gcf,gca,[2.1 2.2])
 
+[~,p,ci,stats] = ttest2(ctrlsheaths,bontsheaths);
+
 %% proportion of bridges
 avg = [mean(ctrlprop),mean(bontprop)];
 sem = [calcSEM(ctrlprop),calcSEM(bontprop)];
@@ -32,3 +34,5 @@ xlim([0 3])
 ylim([0 0.5])
 xticklabels({})
 figQuality(gcf,gca,[2.1 2.2])
+
+[~,p,ci,stats] = ttest2(ctrlbridges,bontbridges);

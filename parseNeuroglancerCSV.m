@@ -44,35 +44,22 @@ tbl2.irreg = contains(tbl2.annots,{'branch','TTT','AIT','dendrite'});
 tbl3 = tbl2(~contains(tbl2.annots,'dendrite'),:);
 tbl3 = sortrows(tbl3,'diam','ascend');
 tbl3.ascIdx = [1:size(tbl3,1)]';
-% figure
-% hold on
-% plot(tbl3.ascIdx(tbl3.irreg==1),tbl3.diam(tbl3.irreg==1),'r.','MarkerSize',10)
-% plot(tbl3.ascIdx(tbl3.irreg==0),tbl3.diam(tbl3.irreg==0),'k.','MarkerSize',10)
-% ylim([0 1500])
-% 
-% [~,p] = kstest2(tbl3.diam(tbl3.irreg==0), tbl3.diam(tbl3.irreg==1))
 
-% tbl3 = sortrows(tbl3,'lnths','ascend');
-% tbl3.ascIdx = [1:size(tbl3,1)]';
-% figure
-% hold on
-% plot(tbl3.ascIdx(tbl3.irreg==1),tbl3.diam(tbl3.irreg==1),'r.','MarkerSize',10)
-% plot(tbl3.ascIdx(tbl3.irreg==0),tbl3.diam(tbl3.irreg==0),'k.','MarkerSize',10)
-% ylim([0 1500])
-% 
-% [~,p] = kstest2(tbl3.diam(tbl3.irreg==0), tbl3.diam(tbl3.irreg==1))
-
+avg = [mean(tbl3.diam(tbl3.irreg==0)),mean(tbl3.diam(tbl3.irreg==1))];
+sem = [calcSEM(tbl3.diam(tbl3.irreg==0),1),calcSEM(tbl3.diam(tbl3.irreg==1),1)];
 figure
-plotSpread(tbl3.diam,'distributionIdx',tbl3.irreg+1,'distributionMarker','.','distributionColors',[.5 .5 .5])
+plotSpread(tbl3.diam,'distributionIdx',tbl3.irreg+1,'distributionMarker','o','distributionColors',[.5 .5 .5])
 hold on
-boxplot(tbl3.diam,tbl3.irreg)
-ylim([0 1400])
+errorbar(avg,sem,'ko','MarkerSize',4,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5)
+ylim([0 1200])
 figQuality(gcf,gca,[2 3])
 
+avg = [mean(tbl3.lnths(tbl3.irreg==0)),mean(tbl3.lnths(tbl3.irreg==1))];
+sem = [calcSEM(tbl3.lnths(tbl3.irreg==0),1),calcSEM(tbl3.lnths(tbl3.irreg==1),1)];
 figure
-plotSpread(tbl3.lnths,'distributionIdx',tbl3.irreg+1,'distributionMarker','.','distributionColors',[.5 .5 .5])
+plotSpread(tbl3.lnths,'distributionIdx',tbl3.irreg+1,'distributionMarker','o','distributionColors',[.5 .5 .5])
 hold on
-boxplot(tbl3.lnths,tbl3.irreg)
+errorbar(avg,sem,'ko','MarkerSize',4,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5)
 figQuality(gcf,gca,[2 3])
 ylim([0 90])
 

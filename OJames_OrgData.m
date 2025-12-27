@@ -72,6 +72,8 @@ while j <= length(CellIDs)
     mean_anchrLnths(k) = mean(templnths);
     k = k+1;
 end
+splitData = cellfun(@(x) strsplit(x, '.'), uniqCells, 'UniformOutput', false);
+splitAnchrs = vertcat(splitData{:});
 
 nonbrg_data = data(nonbrg_idx,:);
 CellIDs = nonbrg_data.CellID;
@@ -93,6 +95,8 @@ while j <= length(CellIDs)
     mean_nonbrgLnths(k) = mean(templnths);
     k = k+1;
 end
+splitData = cellfun(@(x) strsplit(x, '.'), uniqCells, 'UniformOutput', false);
+splitNonbrgs = vertcat(splitData{:});
 
 brg_data = data(brg_idx,:);
 CellIDs = brg_data.CellID;
@@ -114,6 +118,8 @@ while j <= length(CellIDs)
     mean_brgLnths(k) = mean(templnths);
     k = k+1;
 end
+splitData = cellfun(@(x) strsplit(x, '.'), uniqCells, 'UniformOutput', false);
+splitBrgs = vertcat(splitData{:});
 
 data2 = readtable('D:\GitHubRepos\Call_ParanodalBridge_2022\OwenUpdatedData\iPSC_myelinoid_quantification_sheathlengths_reorganised_for_Chainlengths.csv');
 
@@ -138,6 +144,19 @@ while j <= length(CellIDs)
     meanCellChains(k) = mean(templnths);
     k = k+1;
 end
+splitData = cellfun(@(x) strsplit(x, '.'), uniqCells, 'UniformOutput', false);
+splitChains = vertcat(splitData{:});
+
+lengths = num2cell([mean_brgLnths;mean_nonbrgLnths;mean_anchrLnths;meanCellChains]);
+types = [repmat({'brg'},[length(mean_brgLnths),1]);...
+        repmat({'nonbrg'},[length(mean_nonbrgLnths),1]);...
+        repmat({'anch'},[length(mean_anchrLnths),1]);...
+        repmat({'chain'},[length(meanCellChains),1])];
+ids = [splitBrgs;splitNonbrgs;splitAnchrs;splitChains];
+concatdata = [lengths types ids];
+    
+T = cell2table(concatdata, 'VariableNames', {'Length', 'Type', 'Cells', 'Conversion', 'Organoid', 'Cell'});
+mdl = fitlme(T,'Length ~ Type + (1|Cells) + (1|Conversion) + (1|Organoid) + (1|Cell)')
 
 sheathLnth_brg = mean_brgLnths;
 sheathLnth_nonbrg = mean_nonbrgLnths;
@@ -156,19 +175,3 @@ xlim([0 5])
 xticklabels({})
 ylim([0 400])
 figQuality(gcf,gca,[2.5 2.2])
-
-%% ACTIVITY DATA
-ctrlprops = [50 25 16.66666667 57.14285714 37.5 28.57142857 25 35.71428571 16.66666667 42.85714286 25 11.11111111 44.44444444];
-tentprops = [12.5 60 0 0 41.66666667 33.33333333 23.07692308 45.45454545 40 0 28.57142857 41.66666667 33.33333333];
-avg = [mean(ctrlprops),mean(tentprops)];
-sem = [calcSEM(ctrlprops),calcSEM(tentprops)];
-[ct,cu] = getFigColors;
-figure
-plotSpread({ctrlprops,tentprops},'distributionMarker','o','distributionColors',{ct,cu});
-hold on
-errorbar(avg,sem,'ko','MarkerSize',3,'MarkerFaceColor','k','CapSize',0,'LineWidth',1.5);
-hold off
-xlim([0 3])
-ylim([0 100])
-xticklabels({})
-figQuality(gcf,gca,[2.1 2.2])
