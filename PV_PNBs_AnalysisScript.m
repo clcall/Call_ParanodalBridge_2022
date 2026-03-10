@@ -44,14 +44,14 @@ for k = 1:length(files)
     tbl = table(branchPts,branches);
     if exist(currXmlstruct,'file')
         load(currXmlstruct)
-        PV_PNBs.(varname) = calculatePathsXML_PVpnb(xmlstruct,1,0);
+        PV_PNBs.(varname) = calculatePathsXML_PVpnb(xmlstruct,1,1);
         PV_PNBs.(varname) = [PV_PNBs.(varname) tbl];
     else
         tracesFile = fullfile(directory,files(k).name);                
         fprintf('Parsing traces file %s...\n',num2str(k));
         xmlstruct = parseXML_SingleCell(tracesFile);
         save([directory varname '.mat'],'xmlstruct');
-        PV_PNBs.(varname) = calculatePathsXML_PVpnb(xmlstruct,1,0);
+        PV_PNBs.(varname) = calculatePathsXML_PVpnb(xmlstruct,1,1);
         PV_PNBs.(varname) = [PV_PNBs.(varname) tbl];
         fprintf('Done.\n');
     end

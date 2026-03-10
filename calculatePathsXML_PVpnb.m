@@ -142,7 +142,7 @@ for i = 1:numPaths
     end
     if makeplots
         if contains(traceColor{i,1},'Yellow')
-            color = [0.2 0 1];
+            color = [1 0 0];
             mrkr = 16;
             bubr = 3;
             buba = 0.6;
